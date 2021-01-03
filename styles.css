@@ -29,7 +29,7 @@ h1, h2, h3, h4, h5, h6 {
 .play-drums-button {
   margin: 0;
   position: absolute;
-  top: 200%;
+  top: 500%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);

@@ -19,11 +19,9 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 0 100px;
   position: relative;
   min-height: 100vh;
-  /* will cover the 100% of viewport */
   overflow: hidden;
   display: block;
   padding-bottom: 100px;
-  /* height of your footer */
 }
 
 /* NavBar Animation  */
@@ -36,15 +34,13 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 25px;
     width: 8em;
     height: 2em;
-    color: orange;
-    border-left: 0.08em solid;
+    color: gold;
+    border-left: 0.05em solid;
     position: relative;
     margin-top: 0.8em;
     cursor: pointer;
 }
-.nav-item::before,
-.nav-item::after
- {
+.nav-item::before, .nav-item::after {
     content: '';
     position: absolute;
     width: inherit;
@@ -122,15 +118,11 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Play Drums Home Page Buttons */
 
-/* .play-drums-button {
-  margin: 20% 3% 5% 0;
-} */
-
 .play-drums-button {
 	background: linear-gradient(to right, gold, silver);
 	color: white;
-	--width: 250px;
-	--height: calc(var(--width) / 3);
+	--width: 150px;
+	--height: calc(var(--width) / 1.5);
 	/* width: var(--width); */
   width: 400px;
 	height: var(--height);
@@ -141,10 +133,10 @@ h1, h2, h3, h4, h5, h6 {
 	letter-spacing: 0.2em;
 	border: 1px solid darkgoldenrod;
 	border-radius: 2em;
-	transform: perspective(500px) rotateY(-15deg);
+	transform: perspective(500px) rotateY(-20deg);
 	text-shadow: 6px 3px 2px rgba(0, 0, 0, 0.2);
 	box-shadow: 2px 0 0 5px rgba(0, 0, 0, 0.2);
-	transition: 0.5s;
+	transition: 0.3s;
 	position: relative;
 	overflow: hidden;
   margin: 20px;
@@ -156,7 +148,7 @@ h1, h2, h3, h4, h5, h6 {
 	box-shadow: -2px 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-.play-drums-buttonx::before {
+.play-drums-button::before {
 	content: '';
 	position: absolute;
 	width: 100%;
@@ -274,11 +266,13 @@ height: 24px;
   .box {
     padding-top: 50px;
   }
+  .carousel-item {
+    padding-bottom: 50px;
+  }
+  .play-drums-button {
+    width: 400px;
+  }
 }
-.carousel-item {
-  padding-bottom: 50px;
-}
-
 
 /* Education section  */
 #education {

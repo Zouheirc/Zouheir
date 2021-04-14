@@ -31,54 +31,78 @@
 
 <body>
   <div class="main-container">
-  <section>
-    <header>
-      <div class="container-fluid">
-        <nav class="navbar bg-transparent navbar-expand-lg navbar-dark">
-          <a class="navbar-brand" href="index.html">Zouheir</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <span class="nav-animation"><a class="nav-link" href="login.html">Login</span></a>
-              </li>
-              <li class="nav-item">
-                <span class="nav-animation"><a class="nav-link" href="index.html">Home</span></a>
-              </li>
-              <li class="nav-item">
-                <span class="nav-animation"><a class="nav-link" href="contact.html">Contacts</span></a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </header>
-  </section>
     <section>
-      <div class="wrapper fadeInDown">
-        <div id="formContent">
-          <!-- Tabs Titles -->
-
-          <!-- Icon -->
-          <div class="fadeIn first">
-            <img src="css/images/Zouheir.Circle.png" id="icon" alt="User Icon" />
-            <h1 id="login-h1">Zouheir News</h1>
-          </div>
-          <!-- Login Form -->
-          <form>
-            <input type="text" id="login" class="fadeIn second" name="login" placeholder="Username">
-            <input type="text" id="password" class="fadeIn third" name="login" placeholder="Password">
-            <input type="submit" class="fadeIn fourth" value="Log In">
+      <header>
+        <div class="container-fluid">
+          <nav class="navbar bg-transparent navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="index.html">Zouheir</a>
+            <!-- <button class="brandName" onclick="window.location='index.html';">Zouheir's Website</button> -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <span onclick="window.location='login.html';">Login</span>
+                </li>
+                <li class="nav-item">
+                  <span onclick="window.location='index.html';">Home</span>
+                </li>
+                <li class="nav-item">
+                  <span onclick="window.location='contact.html';">Contacts</span>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+    </section>
+      <div class="container fadeInDown" id="container">
+        <div class="form-container sign-up-container">
+          <form class="form-login" action="#">
+            <h1 class="h1-login">Create Account</h1>
+            <div class="social-container">
+              <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+              <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <span class="span-login">or use your email for registration</span>
+            <input class="input-login" type="text" placeholder="Name" />
+            <input class="input-login" type="email" placeholder="Email" />
+            <input class="input-login" type="password" placeholder="Password" />
+            <button class="button-login">Sign Up</button>
           </form>
-          <!-- Remind Passowrd -->
-          <div id="formFooter">
-            <a class="underlineHover" href="index.html">Go to the Site</a>
+        </div>
+        <div class="form-container sign-in-container">
+          <form class="form-login" action="#">
+            <h1 class="h1-login">Sign in</h1>
+            <div class="social-container">
+              <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+              <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <span class="span-login">or use your account</span>
+            <input class="input-login" type="email" placeholder="Email" />
+            <input class="input-login" type="password" placeholder="Password" />
+            <a href="#">Forgot your password?</a>
+            <button class="button-login">Sign In</button>
+          </form>
+        </div>
+        <div class="overlay-container">
+          <div class="overlay">
+            <div class="overlay-panel overlay-left">
+              <h1>Welcome Back!</h1>
+              <p class="p-login">To keep connected with us please login with your personal info</p>
+              <button class="button-login ghost" id="signIn">Sign In</button>
+            </div>
+            <div class="overlay-panel overlay-right">
+              <h1>Hello, Friend!</h1>
+              <p p-login>Enter your personal details and start journey with us</p>
+              <button class="button-login ghost" id="signUp">Sign Up</button>
+            </div>
           </div>
         </div>
       </div>
-    </section>
     <footer id="footer">
       <a target="_blank" href="https://www.facebook.com/Zouheir.Chalouf"><i class="social-icon fab fa-facebook-f"></i></a>
       <a target="_blank" href="https://twitter.com/zouheirc?lang=en"><i class="social-icon fab fa-twitter"></i></a>
@@ -89,4 +113,5 @@
   <!-- Javascript  -->
   <script src="app.js" charset="utf-8"></script>
 </body>
+
 </html>

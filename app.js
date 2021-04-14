@@ -13,6 +13,8 @@
 
 // if (typeof (document) !== "undefined") {
 
+// Drums App
+
 let numberOfDrumButtons = document.querySelectorAll(".drum").length;
 
 for (let i = 0; i < numberOfDrumButtons; i++) {
@@ -79,6 +81,19 @@ function buttonAnimation(currentKey) {
   }, 100);
 }
 
+// Login app
+
+const signUpButton = document.getElementById('signUp');
+const signInButton = document.getElementById('signIn');
+const container = document.getElementById('container');
+
+signUpButton.addEventListener('click', () => {
+	container.classList.add("right-panel-active");
+});
+
+signInButton.addEventListener('click', () => {
+	container.classList.remove("right-panel-active");
+});
 
 
 // app.get("/", function (req, res) {

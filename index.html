@@ -15,6 +15,8 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
 
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
 
   <!-- Font Awesome -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
@@ -25,11 +27,20 @@
   <link rel="icon" type="image/png" sizes="32x32" href="css/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="css/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
+  <!-- Bootstrap Scripts -->
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
 </head>
+
 <body>
   <div class="main-container">
-    <header>
+    <header id="header">
       <div class="container-fluid">
         <nav class="navbar bg-transparent navbar-expand-lg navbar-dark">
           <a class="navbar-brand" href="index.html">Zouheir</a>
@@ -53,165 +64,367 @@
         </nav>
       </div>
     </header>
-    <div class="row">
+
+<div class="Zouheir-image">
+  <div class="row">
+    <div class="drums-resume-buttons">
       <div class="col-lg-6">
-        <button type="button" class="play-drums-button btn btn-light btn-lg" onclick="window.location='drum.html';">Play 🥁 Drum</button>
-        <button type="button" class="play-drums-button btn btn-outline-light btn-lg" onclick="window.location='#testimonials';">Go To Resume</button>
-      </div>
-      <div class="zouheir-image col-lg-6">
-        <img class="zouheir-img" src="css/images/Zouheir.Circle.png" alt="Zouheir's Photo">
+        <button type="button" class="play-drums-button btn btn-light btn-lg" onclick="window.location='drum.html';">Play 🥁 Drum</button><br>
+        <button type="button" class="play-drums-button push-image btn btn-outline-light btn-lg" onclick="window.location='#testimonials';">Go To Resume</button>
       </div>
     </div>
-    <section id="testimonials">
-      <div id="carouselWorkExperience" class="carousel slide" data-ride="false">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselWorkExperience" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselWorkExperience" data-slide-to="1"></li>
-          <li data-target="#carouselWorkExperience" data-slide-to="2"></li>
-          <li data-target="#carouselWorkExperience" data-slide-to="3"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <h1><strong>Senior Leasing Consultant</strong></h1>
-            <ul class="job-description">
-              <li>Completed lease form or agreement </li>
-              <li>Responsible for insuring the “model” apartments and target apartments are ready for show: responsible for maintaining work areas and office in clean and orderly manner: need to have an awareness of the “curb appeal” of the property
-              </li>
-              <li>Thorough knowledge of the lease terms, specifications and all community policies</li>
-              <li>Knowledgeable of current market conditions</li>
-              <li>Fully informed of current rental rates, sizes, locations and all amenities of property</li>
-              <li>Responsible to conduct out-reach marketing at least once per week</li>
-              <li>Develop and maintain an on-going resident retention program under direction of community manager.</li>
-              <li>Responsible to play an active role in the renewal process.</li>
-              <li>Responsible for proper maintenance of all resident and property files.</li>
-              <li>Responsible for maintaining and updating leasing and property information handbook and advertising log book</li>
-              <li>Efficient and timely processing of all required administrative forms, reports and related information.</li>
-              <li>Responsible for reporting unusual or extraordinary circumstances regarding the property or residents</li>
-              <li>Courteous, efficient handling of resident requests and complaints.</li>
-            </ul>
-            <img class="testimonial-image" src="css/images/Zouheir.Circle.png" alt="dog-profile">
-            <em>AlFardan Group, Doha - Qatar 2012-2016</em>
-          </div>
-          <div class="carousel-item">
-            <h1><strong>Senior Leasing Consultant</strong></h1>
-            <ul class="job-description">
-              <li>Completed lease form or agreement </li>
-              <li>Responsible for insuring the “model” apartments and target apartments are ready for show: responsible for maintaining work areas and office in clean and orderly manner: need to have an awareness of the “curb appeal” of the property
-              </li>
-              <li>Thorough knowledge of the lease terms, specifications and all community policies</li>
-              <li>Knowledgeable of current market conditions</li>
-              <li>Fully informed of current rental rates, sizes, locations and all amenities of property</li>
-              <li>Responsible to conduct out-reach marketing at least once per week</li>
-              <li>Develop and maintain an on-going resident retention program under direction of community manager.</li>
-              <li>Responsible to play an active role in the renewal process.</li>
-              <li>Responsible for proper maintenance of all resident and property files.</li>
-              <li>Responsible for maintaining and updating leasing and property information handbook and advertising log book</li>
-              <li>Efficient and timely processing of all required administrative forms, reports and related information.</li>
-              <li>Responsible for reporting unusual or extraordinary circumstances regarding the property or residents</li>
-              <li>Courteous, efficient handling of resident requests and complaints.</li>
-            </ul>
-            <img class="testimonial-image" src="css/images/Zouheir.Circle.png" alt="dog-profile">
-            <em>AlFardan Group, Doha - Qatar 2012-2016</em>
-          </div>
-          <div class="carousel-item">
-            <h1><strong>Senior Leasing Consultant</strong></h1>
-            <ul class="job-description">
-              <li>Completed lease form or agreement </li>
-              <li>Responsible for insuring the “model” apartments and target apartments are ready for show: responsible for maintaining work areas and office in clean and orderly manner: need to have an awareness of the “curb appeal” of the property
-              </li>
-              <li>Thorough knowledge of the lease terms, specifications and all community policies</li>
-              <li>Knowledgeable of current market conditions</li>
-              <li>Fully informed of current rental rates, sizes, locations and all amenities of property</li>
-              <li>Responsible to conduct out-reach marketing at least once per week</li>
-              <li>Develop and maintain an on-going resident retention program under direction of community manager.</li>
-              <li>Responsible to play an active role in the renewal process.</li>
-              <li>Responsible for proper maintenance of all resident and property files.</li>
-              <li>Responsible for maintaining and updating leasing and property information handbook and advertising log book</li>
-              <li>Efficient and timely processing of all required administrative forms, reports and related information.</li>
-              <li>Responsible for reporting unusual or extraordinary circumstances regarding the property or residents</li>
-              <li>Courteous, efficient handling of resident requests and complaints.</li>
-            </ul>
-            <img class="testimonial-image" src="css/images/Zouheir.Circle.png" alt="dog-profile">
-            <em>AlFardan Group, Doha - Qatar 2012-2016</em>
-          </div>
-          <div class="carousel-item">
-            <h1><strong>Senior Leasing Consultant</strong></h1>
-            <ul class="job-description">
-              <li>Completed lease form or agreement </li>
-              <li>Responsible for insuring the “model” apartments and target apartments are ready for show: responsible for maintaining work areas and office in clean and orderly manner: need to have an awareness of the “curb appeal” of the property
-              </li>
-              <li>Thorough knowledge of the lease terms, specifications and all community policies</li>
-              <li>Knowledgeable of current market conditions</li>
-              <li>Fully informed of current rental rates, sizes, locations and all amenities of property</li>
-              <li>Responsible to conduct out-reach marketing at least once per week</li>
-              <li>Develop and maintain an on-going resident retention program under direction of community manager.</li>
-              <li>Responsible to play an active role in the renewal process.</li>
-              <li>Responsible for proper maintenance of all resident and property files.</li>
-              <li>Responsible for maintaining and updating leasing and property information handbook and advertising log book</li>
-              <li>Efficient and timely processing of all required administrative forms, reports and related information.</li>
-              <li>Responsible for reporting unusual or extraordinary circumstances regarding the property or residents</li>
-              <li>Courteous, efficient handling of resident requests and complaints.</li>
-            </ul>
-            <img class="testimonial-image" src="css/images/Zouheir.Circle.png" alt="dog-profile">
-            <em>AlFardan Group, Doha - Qatar 2012-2016</em>
+  </div>
+</div>
+
+
+    <section id="introduction">
+        <div class="paper">
+          <div class="paper-content">
+            <h1>R</h1>
+            <textarea autofocus>Self Taught Web Developer for almost a year &#10;With excellent Communications skills &#10;Team player and fast learner &#10;Seeking opportunity as Web Developer</textarea>
           </div>
         </div>
-        <a class="carousel-control-prev" type="button" href="#carouselWorkExperience" data-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </a>
-        <a class="carousel-control-next" type="button" href="#carouselWorkExperience" data-slide="next">
-          <span class="carousel-control-next-icon carousel-control-size"></span>
-        </a>
+
+    </section>
+    <!-- Skills  -->
+    <section id="skills">
+      <div class="resume-heading-div">
+        <h1 class="resume-heading">1. My Skills</h1>
+      </div>
+      <div class="skills col-lg-12">
+        <div class="htmlProg ProgWidth">
+          <div class="p-skills">
+            <p>html</p>
+            <p>95%</p>
+          </div>
+          <div class="pp">
+            <div class="skillDiv">
+              <span class="skillBar htmlBar"></span>
+            </div>
+          </div>
+        </div>
+        <div class="cssProg ProgWidth">
+          <div class="p-skills">
+            <p>Css3</p>
+            <p>70%</p>
+          </div>
+          <div class="pp">
+            <div class="skillDiv">
+              <span class="skillBar cssBar"></span>
+            </div>
+          </div>
+        </div>
+        <div class="jsProg ProgWidth">
+          <div class="p-skills">
+            <p>JavaScript</p>
+            <p>50%</p>
+          </div>
+          <div class="pp">
+            <div class="skillDiv">
+              <span class="skillBar jsBar"></span>
+            </div>
+          </div>
+        </div>
+        <div class="BootStrapProg ProgWidth">
+          <div class="p-skills">
+            <p>BootStrap</p>
+            <p>85%</p>
+          </div>
+          <div class="pp">
+            <div class="skillDiv">
+              <span class="skillBar BootStrapBar"></span>
+            </div>
+          </div>
+        </div>
+        <div class="jQueryProg ProgWidth">
+          <div class="p-skills">
+            <p>jQuery</p>
+            <p>50%</p>
+          </div>
+          <div class="pp">
+            <div class="skillDiv">
+              <span class="skillBar jQueryBar"></span>
+            </div>
+          </div>
+        </div>
+        <div class="SqlProg ProgWidth">
+          <div class="p-skills">
+            <p>Sql</p>
+            <p>85%</p>
+          </div>
+          <div class="pp">
+            <div class="skillDiv">
+              <span class="skillBar SqlBar"></span>
+            </div>
+          </div>
+        </div>
+        <div class="ConfluenceProg ProgWidth">
+          <div class="p-skills">
+            <p>Confluence</p>
+            <p>85%</p>
+          </div>
+          <div class="pp">
+            <div class="skillDiv">
+              <span class="skillBar ConfluenceBar"></span>
+            </div>
+          </div>
+        </div>
+        <div class="JiraProg ProgWidth">
+          <div class="p-skills">
+            <p>Jira</p>
+            <p>85%</p>
+          </div>
+          <div class="pp">
+            <div class="skillDiv">
+              <span class="skillBar JiraBar"></span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="education">
+    <!-- Work Experience  -->
 
-      <h2>Education</h2>
-      <p>Special Training Courses.</p>
-
+    <section id="Work-experience">
       <div class="row">
-
-        <div class="education-column col-lg-4 col-md-6">
-          <div class="card">
-            <div class="card-header">
-              <h3>Bachelor Degree</h3>
-            </div>
-            <div class="card-body">
-              <h2>Business Administration</h2>
-              <p>2009</p>
-              <p>Beirut - Lebanon</p>
-              <button class="education-button btn btn-lg btn-success" type="button">View Certificate</button>
-            </div>
+        <div class="col-lg-12">
+          <div class="resume-heading-div">
+            <h1 class="resume-heading">2. Work Experience</h1>
           </div>
+          <ul class="timeline">
+            <li>
+              <div class="timeline-image">
+                <h1 class="job-title">2016-2021</h1>
+                <h6>USA - Illinois</h6>
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>Self Employed</h4>
+                  <h4 class="subheading">Self Employed</h4>
+                </div>
+                <div class="timeline-body">
+                  <div class="job-description">
+                    <ul class="text-white">
+                      <li>Completed lease form or agreement</li>
+                      <li>Responsible for insuring the “model” apartments and target apartments are ready for show: responsible for maintaining work areas and office in clean and orderly manner: need to have an awareness of the “curb appeal” of the
+                        property</li>
+                      <li>Thorough knowledge of the lease terms, specifications and all community policies</li>
+                      <li>Knowledgeable of current market conditions</li>
+                      <li>Fully informed of current rental rates, sizes, locations and all amenities of property</li>
+                      <li>Responsible to conduct out-reach marketing at least once per week</li>
+                      <li>Develop and maintain an on-going resident retention program under direction of community manager.</li>
+                      <li>Responsible to play an active role in the renewal process.</li>
+                      <li>Responsible for proper maintenance of all resident and property files.</li>
+                      <li>Responsible for maintaining and updating leasing and property information handbook and advertising log book</li>
+                      <li>Efficient and timely processing of all required administrative forms, reports and related information.</li>
+                      <li>Responsible for reporting unusual or extraordinary circumstances regarding the property or residents</li>
+                      <li>Courteous, efficient handling of resident requests and complaints.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="line"></div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+                <h1 class="job-title">2012-2016</h1>
+                <h6>Doha - Qatar</h6>
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>Alfardan Group</h4>
+                  <h4 class="subheading">Senior Leasing Consultant</h4>
+                </div>
+                <div class="timeline-body">
+                  <div class="job-description">
+                    <ul class="text-white">
+                      <li>Completed lease form or agreement</li>
+                      <li>Responsible for insuring the “model” apartments and target apartments are ready for show: responsible for maintaining work areas and office in clean and orderly manner: need to have an awareness of the “curb appeal” of the
+                        property</li>
+                      <li>Thorough knowledge of the lease terms, specifications and all community policies</li>
+                      <li>Knowledgeable of current market conditions</li>
+                      <li>Fully informed of current rental rates, sizes, locations and all amenities of property</li>
+                      <li>Responsible to conduct out-reach marketing at least once per week</li>
+                      <li>Develop and maintain an on-going resident retention program under direction of community manager.</li>
+                      <li>Responsible to play an active role in the renewal process.</li>
+                      <li>Responsible for proper maintenance of all resident and property files.</li>
+                      <li>Responsible for maintaining and updating leasing and property information handbook and advertising log book</li>
+                      <li>Efficient and timely processing of all required administrative forms, reports and related information.</li>
+                      <li>Responsible for reporting unusual or extraordinary circumstances regarding the property or residents</li>
+                      <li>Courteous, efficient handling of resident requests and complaints.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="line"></div>
+            </li>
+            <li>
+              <div class="timeline-image">
+                <h1 class="job-title">2011-2012</h1>
+                <h6>Doha, Qatar</h6>
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>SKS</h4>
+                  <h4 class="subheading">Business Consultant</h4>
+                </div>
+                <div class="timeline-body">
+                  <div class="job-description">
+                    <ul class="text-white">
+                      <li>Completed lease form or agreement</li>
+                      <li>Responsible for insuring the “model” apartments and target apartments are ready for show: responsible for maintaining work areas and office in clean and orderly manner: need to have an awareness of the “curb appeal” of the
+                        property</li>
+                      <li>Thorough knowledge of the lease terms, specifications and all community policies</li>
+                      <li>Knowledgeable of current market conditions</li>
+                      <li>Fully informed of current rental rates, sizes, locations and all amenities of property</li>
+                      <li>Responsible to conduct out-reach marketing at least once per week</li>
+                      <li>Develop and maintain an on-going resident retention program under direction of community manager.</li>
+                      <li>Responsible to play an active role in the renewal process.</li>
+                      <li>Responsible for proper maintenance of all resident and property files.</li>
+                      <li>Responsible for maintaining and updating leasing and property information handbook and advertising log book</li>
+                      <li>Efficient and timely processing of all required administrative forms, reports and related information.</li>
+                      <li>Responsible for reporting unusual or extraordinary circumstances regarding the property or residents</li>
+                      <li>Courteous, efficient handling of resident requests and complaints.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="line"></div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+                <h1 class="job-title">2006-2011</h1>
+                <h6>Dubai, UAE</h6>
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>New Horizons</h4>
+                  <h4 class="subheading">Account Manager</h4>
+                </div>
+                <div class="timeline-body">
+                  <div class="job-description">
+                    <ul class="text-white">
+                      <li>Completed lease form or agreement</li>
+                      <li>Responsible for insuring the “model” apartments and target apartments are ready for show: responsible for maintaining work areas and office in clean and orderly manner: need to have an awareness of the “curb appeal” of the
+                        property</li>
+                      <li>Thorough knowledge of the lease terms, specifications and all community policies</li>
+                      <li>Knowledgeable of current market conditions</li>
+                      <li>Fully informed of current rental rates, sizes, locations and all amenities of property</li>
+                      <li>Responsible to conduct out-reach marketing at least once per week</li>
+                      <li>Develop and maintain an on-going resident retention program under direction of community manager.</li>
+                      <li>Responsible to play an active role in the renewal process.</li>
+                      <li>Responsible for proper maintenance of all resident and property files.</li>
+                      <li>Responsible for maintaining and updating leasing and property information handbook and advertising log book</li>
+                      <li>Efficient and timely processing of all required administrative forms, reports and related information.</li>
+                      <li>Responsible for reporting unusual or extraordinary circumstances regarding the property or residents</li>
+                      <li>Courteous, efficient handling of resident requests and complaints.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
+      </div>
+    </section>
 
-        <div class="education-column col-lg-4 col-md-6">
-          <div class="card">
-            <div class="card-header">
-              <h3>IT Business Analyst</h3>
-            </div>
-            <div class="card-body">
-              <h2>On-Site Workshop</h2>
-              <p>2018</p>
-              <p>Illinois - USA</p>
-              <button class="education-button btn btn-lg btn-success" type="button">View Certificate</button>
-            </div>
-          </div>
+    <!-- Certifications  -->
+
+    <section id="certifications">
+      <div class="testimonials">
+        <div class="resume-heading-div">
+          <h1 class="resume-heading">3. Certifications</h1>
         </div>
-
-        <div class="education-column col-lg-4">
-          <div class="card">
-            <div class="card-header">
-              <h3>Web Development</h3>
+        <div id="carouselWorkExperience" class="carousel slide" data-ride="false">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselWorkExperience" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselWorkExperience" data-slide-to="1"></li>
+            <li data-target="#carouselWorkExperience" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <em>Bachelor Degree - Business Administration</em>
+              <div class="">
+                <img class="certificates" src="css/images/Bachelor-Degree.png" alt="Bachelor Degree - Business Administration">
+              </div>
+              <img class="testimonial-image" src="css/images/Zouheir.Circle.png" alt="dog-profile">
+              <em>Lebanese American University - 2009</em>
             </div>
-            <div class="card-body">
-              <h2>Online Self Education</h2>
-              <p>2020</p>
-              <p>Udemy</p>
-              <button class="education-button btn btn-lg btn-success" type="button">View Certificate</button>
+            <div class="carousel-item">
+              <em>IT Business Analyst</em>
+              <div class="">
+                <img class="certificates" src="css/images/IT-Business-Analyst.jpg" alt="IT Business Analyst Course">
+              </div>
+              <img class="testimonial-image" src="css/images/Zouheir.Circle.png" alt="dog-profile">
+              <em>Illinois, Schaumburg - 2018 - Online, Udemy.com - 2020</em>
+            </div>
+            <div class="carousel-item">
+              <em>Full Stack Web Development Course</em>
+              <div class="">
+                <img class="certificates" src="css/images/Web-Development.jpg" alt="The Complete 2020 Web Development Bootcamp online course">
+              </div>
+              <img class="testimonial-image" src="css/images/Zouheir.Circle.png" alt="dog-profile">
+              <em>Online, Udemy.com - 2020, 2021</em>
             </div>
           </div>
+          <a class="carousel-control-prev" type="button" href="#carouselWorkExperience" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" type="button" href="#carouselWorkExperience" data-slide="next">
+            <span class="carousel-control-next-icon carousel-control-size"></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Short Training Certificates -->
+
+    <section id="short-training-certifications">
+      <div class="resume-heading-div">
+        <h1 class="resume-heading">4. Short Training Courses</h1>
+      </div>
+      <div class="gallery" id="gallery">
+        <div class="gallery-item">
+          <div class="content"><img src="css/images/Diploma-Leadership.png" alt=""></div>
+        </div>
+        <div class="gallery-item">
+          <div class="content"><img src="css/images/administrative-Leadership.png" alt=""></div>
+        </div>
+        <div class="gallery-item">
+          <div class="content"><img src="css/images/Director-Outstanding-Preparation.png" alt=""></div>
+        </div>
+        <div class="gallery-item">
+          <div class="content"><img src="css/images/Communication-Skills.png" alt=""></div>
+        </div>
+        <div class="gallery-item">
+          <div class="content"><img src="css/images/Evaluation-Performance.png" alt=""></div>
+        </div>
+        <div class="gallery-item">
+          <div class="content"><img src="css/images/How-To-Succeed.png" alt=""></div>
+        </div>
+        <div class="gallery-item">
+          <div class="content"><img src="css/images/Leadership.png" alt=""></div>
+        </div>
+        <div class="gallery-item">
+          <div class="content"><img src="css/images/Meeting-Management.png" alt=""></div>
+        </div>
+        <div class="gallery-item">
+          <div class="content"><img src="css/images/Motivate-Your-Employees.png" alt=""></div>
+        </div>
+        <div class="gallery-item">
+          <div class="content"><img src="css/images/Strategic-Planning.png" alt=""></div>
+        </div>
+        <div class="gallery-item">
+          <div class="content"><img src="css/images/Time-Management.png" alt=""></div>
+        </div>
+        <div class="gallery-item">
+          <div class="content"><img src="css/images/Conflict-Management.png" alt=""></div>
+        </div>
+        <div class="gallery-item">
+          <div class="content"><img src="css/images/Authorization.png" alt=""></div>
+        </div>
+        <div class="gallery-item">
+          <div class="content"><img src="css/images/Body-Language.png" alt=""></div>
         </div>
       </div>
     </section>
@@ -223,12 +436,12 @@
       <p>© Copyright 2020 Zouheir Chalouf</p>
     </footer>
   </div>
-    <!-- Javascript  -->
-  <script src="app.js" charset="utf-8"></script>
-  <!-- Bootstrap Scripts -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!-- Javascript  -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+  <script src="app.js" charset="utf-8">
+  </script>
+
 </body>
 
 </html>

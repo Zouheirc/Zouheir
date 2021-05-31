@@ -1,5 +1,9 @@
 //jshint esversion:6
 
+
+
+
+
 // Certifications
 
 var gallery = document.querySelector('#gallery');

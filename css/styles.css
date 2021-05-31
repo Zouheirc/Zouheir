@@ -1,4 +1,9 @@
 /* Body Html Common Elements */
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: url("https://png.pngtree.com/thumb_back/fh260/back_pic/03/80/06/3757c30a762387b.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -8,6 +13,7 @@ body {
   height: 100%;
   position: relative;
 }
+
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat-Bold";
@@ -31,15 +37,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-item {
-  font-size: 1.0em;
-  width: 6em;
-  height: 1.3em;
+  font-size: 0.7em;
+  font-weight: 100;
+  width: 7em;
+  height: 1.5em;
   color: gold;
   border-left: 0.08em solid;
   position: relative;
   margin-top: 0.8em;
   cursor: pointer;
-  padding-right: 20px;
+  padding-right: 12px;
 }
 
 .nav-item::before,
@@ -87,7 +94,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container-fluid {
-  padding: 2% 11%;
+  padding: 2% 5%;
   position: relative;
 }
 
@@ -103,47 +110,10 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
 }
 
-.brandName {
-  border: 5px solid #2c3e50;
-  color: white;
-  display: block;
-  background-color: transparent;
-  font-family: 'trebuchet ms';
-  font-size: 1.5rem;
-  letter-spacing: 0.1rem;
-  padding: 1rem;
-  position: relative;
-  text-decoration: none;
-  text-transform: uppercase;
-  border-radius: 80%;
-}
-
-.brandName::before {
-  content: "";
-  background-color: #92967d;
-  box-shadow: 10px 10px 0 #c8c6a7,
-    20px 20px 0 #6e7c7c;
-  position: absolute;
-  left: 0.25rem;
-  top: 0.5rem;
-  height: 102%;
-  width: 102%;
-  z-index: -1;
-  transition: all 0.4s ease;
-  border-radius: 80%;
-}
-
-.brandName:hover::before {
-  box-shadow: none;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
 .z-logo {
-  font-size: 2rem;
   padding-left: 2%;
+  width: 100%
+  height: auto;
 }
 
 /* Home Page */
@@ -161,12 +131,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .welcome-page {
-  background: url("images/Zouheir.Circle.png") no-repeat 900px 200px fixed;
+  background: url("images/Zouheir.Circle.png") no-repeat 1000px 350px fixed;
   -webkit-background-size: 300px 300px;
   -moz-background-size: 300px 300px;
   -o-background-size: 300px 300px;
   background-size: 300px 300px;
-  padding: 3% 1%;
+  padding: 0% 1%;
 }
 
 /* Play Drums Home Page Buttons */
@@ -289,7 +259,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Skills */
 
-#skills {
+#Skills {
   padding: 20% 11% 3%;
   background: url("images/Skills-Background-Image.jpg") no-repeat center center fixed;
   background-size: cover;
@@ -436,7 +406,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Certifications */
 
 #short-training-certifications {
-  padding: 2% 11%;
+  padding: 2% 11% 10%;
 }
 
 .testimonials {
@@ -447,7 +417,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-#Work-experience {
+#Work-Experience {
   background: url("images/Work-Experience-Background-Image.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -894,17 +864,21 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
   }
 }
+@media (max-width: 900px) {
+  #short-training-certifications {
+    padding: 2% 11% 40%;
+  }
+}
 
 #footer {
   position: absolute;
-  bottom: 0;
   width: 100%;
-  max-height: 6rem;
+  bottom: 0%;
   text-align: center;
-  color: grey;
   left: 0%;
   font-size: 0.7rem;
   line-height: 0.2rem;
+  color: gray;
 }
 
 .social-icon {
@@ -1484,7 +1458,7 @@ h1, h2, h3, h4, h5, h6 {
   .gallery {
     grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
   }
-  #skills {
+  #Skills {
     padding: 80% 3% 1% 3%;
   }
 }

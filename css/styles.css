@@ -38,10 +38,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-item {
   font-size: 0.7em;
-  font-weight: 100;
+  font-weight: 600;
   width: 7.5em;
   height: 1.5em;
-  color: gold;
+  color: #228B22;
   border-left: 0.08em solid;
   position: relative;
   margin-top: 0.8em;
@@ -79,7 +79,7 @@ h1, h2, h3, h4, h5, h6 {
   box-sizing: border-box;
   border: 0.08em solid;
   border-radius: 10px;
-  background-color: #333;
+  background-color: #3C3333;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -140,8 +140,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Play Drums Home Page Buttons */
 .play-drums-button {
-  background: linear-gradient(to right, gold, silver);
-  color: white;
+  background: linear-gradient(to right, #228B22, silver);
+  color: black;
   --width: 100px;
   --height: calc(var(--width) / 1.5);
   /* width: var(--width); */
@@ -152,7 +152,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: calc(var(--height) / 2.5);
   font-family: sans-serif;
   letter-spacing: 0.2em;
-  border: 1px solid darkgoldenrod;
+  border: 2px solid darkgoldenrod;
   border-radius: 2em;
   transform: perspective(500px) rotateY(-20deg);
   text-shadow: 6px 3px 2px rgba(0, 0, 0, 0.2);
@@ -270,32 +270,31 @@ h1, h2, h3, h4, h5, h6 {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 70px);
     margin: 20px;
-    color: yellow;
+    color: #d8e3e7;
+    font-size: 0.9rem;
+    font-family: inherit;
     padding: 3% 8% 5% ;
   }
- .skl{
-     margin-left: 20px;
-     color: gold;
- }
+
 .sklLine{
     position: relative;
     bottom: 8px;
     visibility: hidden;
     padding-left: 6px;
-    color: green;
+    color: #228B22;
 }
   .ProgWidth {
-    padding: 0px 20px;
+    padding: 0 20px;
   }
   .skillDiv {
-    height: 0.8rem;
+    height: 0.7rem;
     width: 100%;
-    background-color: white;
+    background-color: #c8c2bc;
   }
   .skillBar {
     display: block;
     height: 100%;
-    background-color: rgb(26, 204, 19);
+    background-color: #228B22;
   }
   .p-skills {
     display: flex;
@@ -415,6 +414,12 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
 }
 
+.certificates-heading {
+  color: #d8e3e7;
+  font-size: 0.9rem;
+  font-family: inherit;
+}
+
 
 #Work-Experience {
   background: url("images/Work-Experience-Background-Image.jpg") no-repeat center center fixed;
@@ -424,6 +429,69 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover;
 }
 
+.read-more-state {
+  display: none;
+}
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: .25s ease;
+}
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 9999em;
+}
+.read-more-state ~ .read-more-trigger:before {
+  content: 'Show more';
+}
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: 'Show less';
+}
+
+/* Readmore Button */
+
+.custom-btn {
+  padding: 8px 15px;
+  font-family: inherit;
+  font-weight: 900;
+  background: transparent;
+  outline: none !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  color: #d8e3e7;
+}
+
+.btn-12 {
+  border: 4px solid #228B22;
+  z-index: 1;
+  margin: 10px 0 0 40px;
+}
+.btn-12:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: #228B22;
+  transition: all 0.3s ease;
+}
+.btn-12:hover {
+  color: #fff;
+  border: 4px solid transparent;
+}
+.btn-12:hover:after {
+  top: 0;
+  height: 100%;
+}
+.btn-12:active {
+  top: 2px;
+}
 
 .testimonial-image {
   width: 10%;
@@ -431,14 +499,24 @@ h1, h2, h3, h4, h5, h6 {
   margin: 20px;
 }
 
-.job-description {
-  text-align: left;
+.certificates {
+  max-width: 90%;
+  height: auto;
+  padding: 8% 0 3%;
 }
 
-.certificates {
-  max-width: 70%;
-  height: auto;
-  padding-top: 8%;
+.job-description {
+  text-align: left;
+  color: #aaaaaa;
+  font-size: 0.7rem;
+  font-family: inherit;
+  font-weight: 600;
+}
+
+.job-title {
+  color: #d8e3e7;
+  font-size: 1.1rem;
+  font-family: inherit;
 }
 
 .carousel-item {
@@ -498,7 +576,7 @@ h1, h2, h3, h4, h5, h6 {
       grid-template-columns: repeat(1, 1fr);
       grid-template-rows: repeat(2, 70px);
       margin: 20px;
-      color: yellow;
+      color: #d8e3e7;
       padding-left: 0;
     }
 
@@ -556,6 +634,12 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+@media (min-width: 1200px) {
+  .timeline-image-small-screen {
+    display: none;
+  }
+}
+
 @media (max-width: 1200px) {
   .line {
     display: none;
@@ -564,14 +648,18 @@ h1, h2, h3, h4, h5, h6 {
   .timeline-image {
     display: none;
   }
+
+  .timeline-image-small-screen {
+    display: block;
+    color: #228B22;
+    font-size: 0.9rem;
+    font-family: inherit;
+  }
+
   .horizontal-div {
     width: 100%;
     height: 2%;
   }
-  /* .paper {
-    width: 100%;
-    height: 3%;
-  } */
 }
 
 .timeline {
@@ -632,7 +720,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 100;
   position: absolute;
   left: 50%;
-  background-color: rgb(26, 204, 19);
+  background-color: #228B22;
   width: 200px;
   height: 100px;
   margin-left: -100px;
@@ -641,7 +729,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .timeline>li .timeline-image h4 {
   margin-top: 12px;
-  font-size: 10px;
+  color: #228B22;
+  font-size: 0.9rem;
+  font-family: inherit;
   line-height: 14px;
 }
 
@@ -673,32 +763,35 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 22px;
   margin-bottom: 4px;
   padding: 0;
-  color: #b3b3b3;
+  color: #d8e3e7;
+  font-size: 0.9rem;
+  font-family: inherit;
 }
 
-.job-description {
-  font-size: 0.6rem
-}
-
-.job-title {
-  font-size: 90%;
+.job-location {
+  color: #d8e3e7;
+  font-size: 1rem;
+  font-family: inherit;
   text-align: center;
-  padding-top: 10%;
+  padding-top: 3%;
+  margin-top: 5%;
 }
 
 .timeline .timeline-heading .subheading {
   margin: 0;
   padding: 0;
   text-transform: none;
-  font-size: 18px;
-  color: white;
+  color: #d8e3e7;
+  font-size: 0.9rem;
+  font-family: inherit;
 }
 
 .timeline .timeline-body>p,
 .timeline .timeline-body>ul {
   margin-bottom: 0;
-  color: #808080;
-  font-size: 0.7rem;
+  color: #d8e3e7;
+  font-size: 0.9rem;
+  font-family: inherit;
 }
 
 /*Style for even div.line*/
@@ -710,7 +803,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 55%;
   width: 10px;
   height: 110%;
-  background-color: rgb(26, 204, 19);
+  background-color: #228B22;
   -ms-transform: rotate(-25deg);
   -webkit-transform: rotate(-25deg);
   -moz-transform: rotate(-25deg);
@@ -727,7 +820,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 40%;
   width: 10px;
   height: 120%;
-  background-color: rgb(26, 204, 19);
+  background-color: #228B22;
   -ms-transform: rotate(22deg);
   -webkit-transform: rotate(22deg);
   -moz-transform: rotate(22deg);
@@ -899,11 +992,11 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 3px;
   font-size: 3.2em;
   line-height: 48px;
-  color: #ffe05d;
-  background: #ffe05d;
-  background: -moz-linear-gradient(left, #c04d00 0%, #ffe05d 100%) !important;
-  background: -webkit-linear-gradient(left, #c04d00 0%, #ffe05d 100%) !important;
-  background: linear-gradient(to right, #c04d00 0%, #ffe05d 100%) !important;
+  color: #228B22;
+  background: #228B22;
+  background: -moz-linear-gradient(left, #c04d00 0%, #228B22 100%) !important;
+  background: -webkit-linear-gradient(left, #c04d00 0%, #228B22 100%) !important;
+  background: linear-gradient(to right, #c04d00 0%, #228B22 100%) !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
 }
@@ -942,7 +1035,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 18px;
   line-height: 26px;
   font-weight: 400;
-  color: #ffe05d;
+  color: #228B22;
   cursor: text;
   transition: -webkit-transform .2s ease-in-out;
   transition: transform .2s ease-in-out;
@@ -953,7 +1046,7 @@ h1, h2, h3, h4, h5, h6 {
 .contact-form .submit-btn {
   display: inline-block;
   background-color: #000;
-  background-image: linear-gradient(125deg, #a72879, #064497);
+  background-image: linear-gradient(125deg, #228B22, #064497);
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -1052,7 +1145,7 @@ h1, h2, h3, h4, h5, h6 {
 #formContent {
   -webkit-border-radius: 10px 10px 10px 10px;
   border-radius: 10px 10px 10px 10px;
-  background: #edeef7;
+  background: #C0C0C0;
   padding: 30px;
   width: 90%;
   max-width: 350px;
@@ -1064,8 +1157,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #formFooter {
-  background-color: #dddddd;
-  border-top: 1px solid #dce8f1;
+  background-color: #C0C0C0;
+  border-top: 1px solid #C0C0C0;
   padding: 25px;
   text-align: center;
   -webkit-border-radius: 0 0 10px 10px;
@@ -1102,9 +1195,9 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 20px;
   border: 1px solid;
   background-color: #f0a500;
-  background: -webkit-linear-gradient(to right, #f0a500, black);
-  background: linear-gradient(to right, #f0a500, #393e46);
-  color: #FFFFFF;
+  background: -webkit-linear-gradient(to right, #000, #f0a500);
+  background: linear-gradient(to right, #000, #f0a500);
+  color: #C0C0C0;
   font-size: 12px;
   font-weight: bold;
   padding: 12px 45px;
@@ -1123,11 +1216,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .button-login.ghost {
   background-color: transparent;
-  border-color: #FFFFFF;
+  border-color: #C0C0C0;
 }
 
 .form-login {
-  background-color: #FFFFFF;
+  background-color: #C0C0C0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1146,7 +1239,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container {
-  background-color: #fff;
+  background-color: #C0C0C0;
   border-radius: 10px;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
     0 10px 10px rgba(0, 0, 0, 0.22);
@@ -1208,7 +1301,7 @@ h1, h2, h3, h4, h5, h6 {
 .overlay {
   background: black;
   background: -webkit-linear-gradient(to right, black, black);
-  background: linear-gradient(to right, black, #f0a500, #f0a500, black);
+  background: linear-gradient(to right, black, #228B22, #228B22, black);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0;
@@ -1356,9 +1449,6 @@ h1, h2, h3, h4, h5, h6 {
   54%,
   56%,
   100% {
-/*     color: #fccaff;
-    text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
-      0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
   text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
     color: #fff6a9;
   }

@@ -438,7 +438,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Short Courses Certificates */
 
 #Courses {
-  padding: 2% 11% 10%;
+  padding: 2% 11% 4%;
   background: url("images/Short-Training-Background.png") no-repeat center center fixed;
   background-size: cover;
 }
@@ -998,7 +998,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 900px) {
   #Courses {
-    padding: 2% 11% 40%;
+    padding: 2% 11% 30%;
   }
 }
 

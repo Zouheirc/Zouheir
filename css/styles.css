@@ -42,6 +42,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* NavBar Animation  */
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.dropdown-menu {
+  margin-top: 0;
+}
+
 .navbar-nav .dropdown-menu {
   padding: 0;
   list-style-type: none;

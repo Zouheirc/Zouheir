@@ -4,8 +4,9 @@
 // font-size: 0.9rem;
 // font-family: inherit;
 
-// Certifications
 
+
+// Certifications
 
 let modalId = $('#image-gallery');
 

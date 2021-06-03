@@ -14,6 +14,16 @@ body {
   position: relative;
 }
 
+.drums-page {
+  background: url("images/Drums-Background.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover, contain;
+  height: 100%;
+  position: relative;
+}
+
 
 h1, h2, h3, h4, h5, h6 {
   text-align: center;
@@ -32,9 +42,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* NavBar Animation  */
-.navbar-nav {
+.navbar-nav .dropdown-menu {
   padding: 0;
   list-style-type: none;
+  background: transparent;
+  border: none;
+  border-radius: 0;
 }
 
 .navbar-toggler {
@@ -42,7 +55,8 @@ h1, h2, h3, h4, h5, h6 {
   outline-color: green !important;
 }
 
-.nav-item {
+
+.nav-item, .dropdown-button {
   font-size: 0.7em;
   font-weight: 600;
   width: 7.5em;
@@ -64,21 +78,31 @@ h1, h2, h3, h4, h5, h6 {
   z-index: -1;
 }
 
-.nav-item::before {
+.dropdown-button::before,
+.dropdown-button::after {
+  content: '';
+  position: absolute;
+  border-left: inherit;
+  z-index: -1;
+}
+
+.nav-item::before,
+.dropdown-button::before {
   height: 80%;
   top: 10%;
   left: calc(-0.15em - 0.08em * 2);
   filter: brightness(0.8);
 }
 
-.nav-item::after {
+.nav-item::after,
+.dropdown-button::after {
   height: 60%;
   top: 20%;
   left: calc(-0.15em * 2 - 0.08em * 3);
   filter: brightness(0.6);
 }
 
-.nav-item span {
+.nav-item span, .dropdown-button span {
   position: relative;
   height: 120%;
   top: -10%;
@@ -95,8 +119,12 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
 }
 
-.nav-item:hover span {
+.nav-item:hover span, .dropdown-button:hover span {
   transform: translateX(0.15em);
+}
+
+.dropdown-toggle {
+  color: green
 }
 
 .container-fluid {
@@ -409,7 +437,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Short Courses Certificates */
 
-#Short-Courses {
+#Courses {
   padding: 2% 11% 10%;
   background: url("images/Short-Training-Background.png") no-repeat center center fixed;
   background-size: cover;
@@ -506,7 +534,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 20px;
 }
 
-#Certifications {
+#Education {
   background: url("images/Short-Training-Background.png") no-repeat center center fixed;
   background-size: cover;
 }
@@ -969,7 +997,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 @media (max-width: 900px) {
-  #Short-Courses {
+  #Courses {
     padding: 2% 11% 40%;
   }
 }

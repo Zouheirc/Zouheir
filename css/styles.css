@@ -134,7 +134,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container-fluid {
-  padding: 2% 5% 2% 12%;
+  padding: 2% 5% 2% 11%;
   position: relative;
 }
 
@@ -153,6 +153,24 @@ h1, h2, h3, h4, h5, h6 {
 .z-logo {
   width: 130%;
   height: 20%;
+}
+
+.p-logo {
+  font-size: 55px;
+  color: #228B22;
+  font-weight: 600;
+  position: absolute;
+  z-index: 0;
+  margin: 10px 0 0 10px;
+  font-family: Sacramento;
+}
+
+.moon-logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  box-shadow: 5px 5px 0 0 #228B22;
+  cursor: pointer;
 }
 
 /* Home Page */
@@ -196,7 +214,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
   position: relative;
   overflow: hidden;
-  margin: 110px 40px 0 0;
+  margin: -20px 0 0 380px;
 }
 
 .push-image::before {
@@ -727,6 +745,10 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 50px;
   }
 
+
+.Blazing {
+  font-size: 1.8rem;
+}
   .carousel-item {
     padding-bottom: 50px;
   }
@@ -734,6 +756,8 @@ h1, h2, h3, h4, h5, h6 {
   .download-resume {
     --width: 50px;
     padding-bottom: 40px;
+    margin: 170px 0 0 70px;
+    position: absolute;
   }
 
   .push-image {
@@ -767,7 +791,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   #introduction {
-    padding: 10% auto;
+    padding: 20% auto;
   }
 
   .paper {

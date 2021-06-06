@@ -4,6 +4,12 @@
 // font-size: 0.9rem;
 // font-family: inherit;
 
+// Projects Section
+
+
+
+// DropDown navbar
+
 $(document).ready(function(){
     $(".dropdown").hover(function(){
         var dropdownMenu = $(this).children(".dropdown-menu");

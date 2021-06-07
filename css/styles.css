@@ -156,7 +156,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .p-logo {
-  font-size: 55px;
+  font-size: 40px;
   color: #228B22;
   font-weight: 600;
   position: absolute;
@@ -166,8 +166,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .moon-logo {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   box-shadow: 5px 5px 0 0 #228B22;
   cursor: pointer;
@@ -745,6 +745,13 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 50px;
   }
 
+  .moon-logo, .p-logo {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
 
 .Blazing {
   font-size: 1.8rem;
@@ -756,7 +763,7 @@ h1, h2, h3, h4, h5, h6 {
   .download-resume {
     --width: 50px;
     padding-bottom: 40px;
-    margin: 170px 0 0 70px;
+    margin: -110px 0 0 110px;
     position: absolute;
   }
 

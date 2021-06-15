@@ -1226,7 +1226,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.6rem;
   }
   .welcome-page {
-    background: url("images/Zouheir.Circle.png") no-repeat 70% 85% fixed;
+    background: url("images/Zouheir.Circle.png") no-repeat 70% 90% fixed;
     -webkit-background-size: 90px 90px;
     -moz-background-size: 90px 90px;
     -o-background-size: 90px 90px;
@@ -1234,6 +1234,6 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0 3%;
   }
   .p-logo {
-    margin: 20px 0 0 15px;
+    margin: 15px 0 0 15px;
   }
 }

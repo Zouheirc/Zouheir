@@ -14,6 +14,7 @@ body {
   counter-reset: Heading;
 }
 
+
 .drums-page {
   background: url("images/Drums-Background.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -183,7 +184,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .welcome-page {
-  background: url("images/Zouheir.Circle.png") no-repeat 950px 280px fixed;
+  background: url("images/Zouheir.Circle.png") no-repeat 80% 70% fixed;
   -webkit-background-size: 300px 300px;
   -moz-background-size: 300px 300px;
   -o-background-size: 300px 300px;
@@ -191,7 +192,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 3%;
 }
 
-.introduction {
+.introducing {
   padding: 5% 0 10% 10%;
 }
 
@@ -218,40 +219,49 @@ h1, h2, h3, h4, h5, h6 {
   color: #d8e3e7;
 }
 
-/* introduction */
-#Summary-test {
-  width: 100%;
-  height: 4%;
-  background-color: rgb(51, 59, 80);
-  position: absolute;
-  z-index: initial;
+/* Resume Summary */
+
+
+
+#skills-introduction {
+  background: url("images/Skills-Background-Image.jpg") no-repeat center center fixed;
+  background-size: cover;
 }
 
-.summary-content {
-  padding: 22% 20%;
-  margin: 1% 20% 40% 20%;
+.introduction {
+  background: url("images/Introduction-background-image.png") no-repeat;
+  background-size: 100% 50%;
+  padding-top: 20px;
+}
+
+.summary-div {
+  padding: 300px 0;
+  margin: 0.1% 20% 5% 20%;
   background-color: rgb(51, 59, 80);
   box-shadow: 0 0 10px rgb(20, 25, 30);
   -moz-box-shadow: 0 0 10px rgb(20, 25, 30);
   -webkit-box-shadow: 0 0 10px rgb(20, 25, 30);
   -o-box-shadow: 0 0 10px rgb(20, 25, 30);
   border-radius: 10px;
+  position: relative;
+}
+
+.summary-logo-div {
+  position: absolute;
+  top: 5%;
+  left: 25%;
+  width: 50%;
 }
 
 .summary-logo {
-  position: absolute;
-  top: 25%;
-  left: 24%;
-  width: 50%;
-  padding-left: 23%;
+  padding-left: 40%;
 }
 
 .summary-p {
   position: absolute;
-  top: 55%;
+  top: 20%;
   left: 25%;
   width: 50%;
-  padding: 0 5%;
 }
 
 .summary-text {
@@ -266,14 +276,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .summary-download-button {
   position: absolute;
-  top: 170%;
+  top: 70%;
   left: 25%;
   width: 50%;
-  padding-left: 23%;
+  padding-left: 10%;
 }
 
 .download-button {
-  position: relative;
   right: 25%;
   display: inline-block;
   background: #228B22;
@@ -287,17 +296,76 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transition: all ease-in-out 300ms;
   transition: all ease-in-out 300ms;
 }
+
 .download-button:hover {
-  color: #fff;
+  color: #228B22;
+  font-weight: 700;
   background-color: transparent;
   border: 4px solid #228B22;
   box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2);
   -webkit-transform: translate(0px, -10px) scale(1.0);
-          transform: translate(0px, -10px) scale(1.0);
+  transform: translate(0px, -10px) scale(1.0);
 }
 
+@media (max-width: 1250px) {
+  .summary-div {
+    padding: 300px 35%;
+  }
+  .summary-logo-div {
+    left: 25%;
+  }
+  .summary-p {
+    top: 15%;
+    left: 0%;
+    width: 100%;
+  }
+  .summary-text {
+    padding-top: 80px;
+    font-size: 80%;
+  }
+  .summary-download-button {
+    top: 400px;
+    left: 25%;
+    width: 100%;
+  }
+  .download-button {
+    font-size: 0.8rem;
+    padding: 2% 4%;
+  }
+}
+@media (max-width: 950px) {
+  .summary-div {
+    padding: 450px 35%;
+  }
+}
+@media (max-width: 500px) {
+  .summary-div {
+    padding: 350px 35%;
+  }
+  .summary-logo-div {
+    left: 20%;
+  }
+  .summary-p {
+    top: 15%;
+    left: 0%;
+    width: 100%;
+  }
+  .summary-text {
+    padding-top: 90px;
+    font-size: 50%;
+  }
+  .summary-download-button {
+    top: 300px;
+    left: 15%;
+    width: 100%;
+  }
+  .download-button {
+    font-size: 0.6rem;
+  }
+}
 
 /* Home Page Heading */
+
 @import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
 
 .resume-heading-div {
@@ -366,11 +434,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Skills */
+
 #Skills {
-  padding: 60% 11% 8%;
-  background: url("images/Skills-Background-Image.jpg") no-repeat center center fixed;
-  background-size: cover;
+  padding: 0% 11% 8%;
 }
+
 
 .skills {
   display: grid;
@@ -673,7 +741,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.3s ease;
   position: relative;
   display: inline-block;
-  color: #d8e3e7;
+  color: #fff;
 }
 
 .btn-12 {
@@ -715,6 +783,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Education */
+
 .testimonials {
   text-align: center;
   color: #fff;
@@ -739,19 +808,6 @@ h1, h2, h3, h4, h5, h6 {
   padding: 8% 0 3%;
 }
 
-.job-description {
-  text-align: left;
-  color: #aaaaaa;
-  font-size: 0.7rem;
-  font-family: inherit;
-  font-weight: 600;
-}
-
-.job-title {
-  color: #d8e3e7;
-  font-size: 1.1rem;
-  font-family: inherit;
-}
 
 .carousel-item {
   padding: 3% 15%;
@@ -768,6 +824,20 @@ h1, h2, h3, h4, h5, h6 {
 .carousel-control-next-icon, .carousel-control-prev-icon {
   width: 40%;
   height: 40%;
+}
+
+.job-description {
+  text-align: left;
+  color: #fff;
+  font-size: 0.7rem;
+  font-family: inherit;
+  font-weight: 400;
+}
+
+.job-title {
+  color: #fff;
+  font-size: 1.1rem;
+  font-family: inherit;
 }
 
 .timeline {
@@ -1027,7 +1097,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   #Skills {
-    padding-top: 70%;
+    padding-top: 20%;
   }
 
   .timeline>li:nth-child(odd) {
@@ -1083,7 +1153,6 @@ h1, h2, h3, h4, h5, h6 {
 .social-icon {
   margin: 20px 10px;
 }
-
 
 /* Short Training Certificates */
 #Courses {

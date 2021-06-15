@@ -7,7 +7,6 @@
 // Projects Section
 
 
-
 // DropDown navbar
 
 $(document).ready(function(){

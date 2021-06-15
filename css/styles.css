@@ -1215,12 +1215,12 @@ h1, h2, h3, h4, h5, h6 {
   .summary-p {
     position: absolute;
     top: calc(45% - 50px);
-    left: calc(35% - 50px);
+    left: calc(40% - 50px);
   }
   .summary-download-button {
     position: absolute;
     top: calc(90% - 50px);
-    left: calc(45% - 50px);
+    left: calc(50% - 50px);
   }
   .download-button {
     font-size: 0.6rem;

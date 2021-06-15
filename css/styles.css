@@ -1207,12 +1207,26 @@ h1, h2, h3, h4, h5, h6 {
   .summary-text {
     font-size: 50%;
   }
-
+  .summary-logo-div {
+    position: absolute;
+    top: calc(20% - 50px);
+    left: calc(55% - 50px);
+  }
+  .summary-p {
+    position: absolute;
+    top: calc(45% - 50px);
+    left: calc(35% - 50px);
+  }
+  .summary-download-button {
+    position: absolute;
+    top: calc(90% - 50px);
+    left: calc(45% - 50px);
+  }
   .download-button {
     font-size: 0.6rem;
   }
   .welcome-page {
-    background: url("images/Zouheir.Circle.png") no-repeat 70% 79% fixed;
+    background: url("images/Zouheir.Circle.png") no-repeat 70% 85% fixed;
     -webkit-background-size: 90px 90px;
     -moz-background-size: 90px 90px;
     -o-background-size: 90px 90px;
@@ -1220,6 +1234,6 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0 3%;
   }
   .p-logo {
-    margin: 10px 0 0 15px;
+    margin: 20px 0 0 15px;
   }
 }

@@ -301,7 +301,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .download-button:hover {
   color: #228B22;
-  width: 85%;
+  width: 40vh;
   display: inline-block;
   font-weight: 600;
   background-color: transparent;

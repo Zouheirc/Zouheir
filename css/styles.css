@@ -280,7 +280,7 @@ h1, h2, h3, h4, h5, h6 {
 .summary-download-button-word {
   position: absolute;
   top: calc(85% - 50px);
-  left: calc(17% - 50px);
+  left: calc(20% - 50px);
 }
 
 .download-button {

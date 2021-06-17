@@ -274,7 +274,7 @@ h1, h2, h3, h4, h5, h6 {
 .summary-download-button-pdf {
   position: absolute;
   top: calc(85% - 50px);
-  left: calc(62% - 50px);
+  left: calc(60% - 50px);
 }
 
 .summary-download-button-word {

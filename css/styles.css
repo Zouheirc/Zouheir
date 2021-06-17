@@ -286,9 +286,8 @@ h1, h2, h3, h4, h5, h6 {
 .download-button {
   display: inline-block;
   background: #228B22;
-  width: 40vh;
+  width: 17vw;
   color: #fff;
-  /* text-transform: uppercase; */
   text-decoration: none !important;
   padding: 2% 3%;
   border-radius: 55px;

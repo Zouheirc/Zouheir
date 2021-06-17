@@ -63,7 +63,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-item, .dropdown-button {
-  font-size: 0.7em;
+  font-size: 0.8rem;
   font-weight: 600;
   width: 7.5em;
   height: 1.5em;
@@ -72,7 +72,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   margin-top: 0.8em;
   cursor: pointer;
-  padding-right: 12px;
+  padding-right: 14px;
 }
 
 .nav-item::before,
@@ -252,13 +252,13 @@ h1, h2, h3, h4, h5, h6 {
 .summary-logo-div {
   position: absolute;
   top: calc(20% - 50px);
-  left: calc(52% - 50px);
+  left: calc(50% - 50px);
 }
 
 .summary-p {
   position: absolute;
   top: calc(40% - 50px);
-  left: calc(35% - 50px);
+  left: calc(33% - 50px);
 }
 
 .summary-text {
@@ -280,7 +280,7 @@ h1, h2, h3, h4, h5, h6 {
 .summary-download-button-word {
   position: absolute;
   top: calc(85% - 50px);
-  left: calc(15% - 50px);
+  left: calc(17% - 50px);
 }
 
 .download-button {
@@ -288,9 +288,9 @@ h1, h2, h3, h4, h5, h6 {
   background: #228B22;
   width: 85%;
   color: #fff;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   text-decoration: none !important;
-  padding: 3% 3%;
+  padding: 2% 3%;
   border-radius: 55px;
   box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.4);
   cursor: pointer;
@@ -312,8 +312,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .download-resume-icon {
-  width: 20%;
-  height: auto;
+  width: 15%;
+  height: 35px;
 }
 /* Home Page Heading */
 
@@ -1240,23 +1240,23 @@ h1, h2, h3, h4, h5, h6 {
   .summary-logo-div {
     position: absolute;
     top: calc(20% - 50px);
-    left: calc(55% - 50px);
+    left: calc(57% - 50px);
   }
   .summary-p {
     position: absolute;
     top: calc(45% - 50px);
-    left: calc(40% - 50px);
+    left: calc(45% - 50px);
   }
   .summary-download-button-pdf {
     position: absolute;
     top: calc(75% - 50px);
-    left: calc(48% - 50px);
+    left: calc(45% - 50px);
   }
 
   .summary-download-button-word {
     position: absolute;
     top: calc(95% - 50px);
-    left: calc(48% - 50px);
+    left: calc(45% - 50px);
   }
   .download-button {
     font-size: 0.6rem;

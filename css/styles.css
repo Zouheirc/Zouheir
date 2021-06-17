@@ -274,7 +274,7 @@ h1, h2, h3, h4, h5, h6 {
 .summary-download-button-pdf {
   position: absolute;
   top: calc(85% - 50px);
-  left: calc(60% - 50px);
+  left: calc(62% - 50px);
 }
 
 .summary-download-button-word {
@@ -286,7 +286,7 @@ h1, h2, h3, h4, h5, h6 {
 .download-button {
   display: inline-block;
   background: #228B22;
-  width: 85%;
+  width: 40vh;
   color: #fff;
   /* text-transform: uppercase; */
   text-decoration: none !important;

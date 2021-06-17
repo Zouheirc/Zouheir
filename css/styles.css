@@ -1212,7 +1212,8 @@ h1, h2, h3, h4, h5, h6 {
   }
   .download-button {
     font-size: 0.8rem;
-    padding: 2% 4%;
+    padding: 2% 1%;
+    width: 180px;
   }
 }
 
@@ -1259,6 +1260,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   .download-button {
     font-size: 0.6rem;
+    width: 150px;
   }
   .welcome-page {
     background: url("images/Zouheir.Circle.png") no-repeat 70% 90% fixed;

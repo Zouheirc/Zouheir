@@ -282,18 +282,6 @@ h1, h2, h3, h4, h5, h6 {
   transform: translate(-50%, -50%);
 }
 
-/* .summary-download-button-pdf {
-  position: absolute;
-  top: calc(85% - 50px);
-  left: calc(62% - 50px);
-}
-
-.summary-download-button-word {
-  position: absolute;
-  top: calc(85% - 50px);
-  left: calc(20% - 50px);
-} */
-
 .download-button {
   display: inline-block;
   background: #228B22;
@@ -564,7 +552,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Projects Section  */
 
 #Projects {
-  background: url("images/Projects-Background-Image.jpg") no-repeat center center fixed;
+  /* background: url("images/Projects-Background-Image.jpg") no-repeat center center fixed; */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -574,6 +562,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .resume-heading-projects {
   padding-left: 13%;
+  margin-bottom: -5%;
 }
 
 .projects {

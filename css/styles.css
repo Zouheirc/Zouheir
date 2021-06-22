@@ -247,14 +247,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .summary-logo-div {
   position: absolute;
-  top: calc(20% - 50px);
-  left: calc(50% - 50px);
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-
 .summary-p {
   position: absolute;
-  top: calc(40% - 50px);
-  left: calc(33% - 50px);
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .summary-text {
@@ -269,6 +270,20 @@ h1, h2, h3, h4, h5, h6 {
 
 .summary-download-button-pdf {
   position: absolute;
+  top: 85%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+
+.summary-download-button-word {
+  position: absolute;
+  top: 85%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+}
+
+/* .summary-download-button-pdf {
+  position: absolute;
   top: calc(85% - 50px);
   left: calc(62% - 50px);
 }
@@ -277,7 +292,7 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   top: calc(85% - 50px);
   left: calc(20% - 50px);
-}
+} */
 
 .download-button {
   display: inline-block;
@@ -1204,14 +1219,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@media (min-width: 550px) {
-  .resume-button-div {
-    margin-top: 150px;
-    position: absolute;
-    margin-left: 350px;
-  }
-}
-
 @media (max-width: 1200px) {
   .line {
     display: none;
@@ -1238,49 +1245,43 @@ h1, h2, h3, h4, h5, h6 {
   .download-button:hover {
     width: 30vh;
   }
+  .summary-logo-div {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .summary-p {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .summary-download-button-pdf {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .summary-download-button-word {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 @media (max-width: 900px) {
   .summary-text {
     font-size: 50%;
   }
-  .summary-download-button-pdf {
-    position: absolute;
-    top: calc(75% - 50px);
-    left: calc(40% - 50px);
-  }
-
-  .summary-download-button-word {
-    position: absolute;
-    top: calc(95% - 50px);
-    left: calc(40% - 50px);
-  }
 }
 @media (max-width: 500px) {
   .summary-text {
     font-size: 40%;
   }
-  .summary-logo-div {
-    position: absolute;
-    top: calc(20% - 50px);
-    left: calc(57% - 50px);
-  }
-  .summary-p {
-    position: absolute;
-    top: calc(45% - 50px);
-    left: calc(48% - 50px);
-  }
-  .summary-download-button-pdf {
-    position: absolute;
-    top: calc(75% - 50px);
-    left: calc(40% - 50px);
-  }
 
-  .summary-download-button-word {
-    position: absolute;
-    top: calc(95% - 50px);
-    left: calc(40% - 50px);
-  }
   .download-button {
     font-size: 0.6rem;
     width: 150px;

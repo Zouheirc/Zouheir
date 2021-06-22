@@ -68,7 +68,7 @@ function animatePress(currentColor) {
 }
 
 function playSound(name) {
-  var audio = new Audio("simon-sounds/" + name + ".mp3");
+  var audio = new Audio("css/simon-sounds/" + name + ".mp3");
   audio.play();
 }
 

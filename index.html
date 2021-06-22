@@ -58,9 +58,10 @@
 
 </head>
 
-
 <body>
+
   <div class="main-container">
+
     <header id="header">
       <nav class="navbar bg-transparent navbar-expand-lg">
         <div class="container-fluid">
@@ -77,8 +78,10 @@
               </li>
 
               <li class="dropdown">
-                <span class="dropdown-button" type="button" onclick="window.location='index.html#Download-Resume';" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="dropdown-toggle">Resume</span></span>
+                <span class="dropdown-button" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span
+                    class="dropdown-toggle">Resume</span></span>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <span class="dropdown-button" type="button" onclick="window.location='index.html#Download-Resume';"><span>Download</span></span>
                   <span class="dropdown-button" type="button" onclick="window.location='index.html#Skills';"><span>Skills</span></span>
                   <span class="dropdown-button" type="button" onclick="window.location='index.html#Projects';"><span>Projects</span></span>
                   <span class="dropdown-button" type="button" onclick="window.location='index.html#Work-Experience';"><span>Experience</span></span>
@@ -112,29 +115,29 @@
 
     <section id="skills-introduction">
       <section class="introduction">
-            <div class="summary-div summary-box">
-              <div class="summary-logo-div" id="Download-Resume">
-                <div class="summary-logo">
-                  <div class="moon-logo">
-                    <p class="p-logo" onclick="window.location='index.html';">Z</p>
-                  </div>
-                </div>
-              </div>
-              <div class="summary-p">
-                <h1 class="summary-text">Self Taught Web Developer since 2020 <br> With excellent Communications skills <br> Team player and fast learner <br> Seeking opportunity as Web Developer</h1>
-              </div>
-              <div class="summary-download-button-pdf">
-                <a target="_blank" class="download-button" href="css/images/Zouheir Chalouf_Resume.pdf" download>Download Resume <img class="download-resume-icon" src="css/images/PDF-icon.png" alt=""></a>
-              </div>
-              <div class="summary-download-button-word">
-                <a target="_blank" class="download-button" href="css/images/Zouheir Chalouf_Resume.docx" download>Download Resume <img class="download-resume-icon" src="css/images/Word-icon.png" alt=""></a>
+        <div class="summary-div summary-box">
+          <div class="summary-logo-div" id="Download-Resume">
+            <div class="summary-logo">
+              <div class="moon-logo">
+                <p class="p-logo" onclick="window.location='index.html';">Z</p>
               </div>
             </div>
-        </section>
+          </div>
+          <div class="summary-p">
+            <h1 class="summary-text">Self Taught Web Developer since 2020 <br> With excellent Communications skills <br> Team player and fast learner <br> Seeking opportunity as Web Developer</h1>
+          </div>
+          <div class="summary-download-button-pdf">
+            <a target="_blank" class="download-button" href="css/images/Zouheir Chalouf_Resume.pdf" download>Download Resume <img class="download-resume-icon" src="css/images/PDF-icon.png" alt=""></a>
+          </div>
+          <div class="summary-download-button-word">
+            <a target="_blank" class="download-button" href="css/images/Zouheir Chalouf_Resume.docx" download>Download Resume <img class="download-resume-icon" src="css/images/Word-icon.png" alt=""></a>
+          </div>
+        </div>
+      </section>
 
-        <!-- Skills  -->
+      <!-- Skills  -->
 
-        <section id="Skills">
+      <section id="Skills">
         <div class="resume-heading-div resume-heading-div-skills">
           <h1 class="resume-heading">My Skills</h1>
         </div>
@@ -234,14 +237,47 @@
     <!-- Projects  -->
 
     <section id="Projects">
-      <div class="row">
-        <div class="resume-heading-div">
-          <h1 class="resume-heading">Projects</h1>
-        </div>
-        <div class="dark fire">
-          <h1 class="Blazing" contenteditable="true">Coming Soon</h1>
+      <div class="resume-heading-div resume-heading-projects">
+        <h1 class="resume-heading">Projects</h1>
+      </div>
+      <div class="py-5">
+        <div class="row">
+          <div class="projects-div col-lg-6 mb-3 mb-lg-0" onClick="window.open('tinDog.html');" target="_blank">
+            <div class="projects projects-hover text-white rounded"><img src="css/images/TinDog-Project-Image.png" alt="">
+              <div class="hover-overlay learn-more"><span>Learn More</span></div>
+              <div class="hover-5-content">
+                <h3 class="hover-title font-weight-light mb-0">I built this project during an online course Udemy.com <br> <strong class="font-weight-bold text-white">HTML, CSS, Bootstrap, jQuery. </strong></h3>
+              </div>
+            </div>
+          </div>
+          <div class="projects-div col-lg-6 mb-3 mb-lg-0" onClick="window.open('simon-game.html');" target="_blank">
+            <div class="projects projects-hover text-white rounded"><img src="css/images/SimonGame-Project-Image.png" alt="">
+              <div class="hover-overlay learn-more"><span>Learn More</span></div>
+              <div class="hover-5-content">
+                <h3 class="hover-title font-weight-light mb-0">I built this project during an online course Udemy.com <br> <strong class="font-weight-bold text-white">HTML, CSS, jQuery, JavaScript.</strong></h3>
+              </div>
+            </div>
+          </div>
+          <div class="projects-div col-lg-6 mb-3 mt-4 mb-lg-0" onClick="window.open('drums.html');" target="_blank">
+            <div class="projects projects-hover text-white rounded"><img src="css/images/Drums-Project-Image.png" alt="">
+              <div class="hover-overlay learn-more"><span>Learn More</span></div>
+              <div class="hover-5-content">
+                <h3 class="hover-title font-weight-light mb-0">I built this project during an online course Udemy.com <br> <strong class="font-weight-bold text-white">HTML, CSS, Bootstrap, jQuery, JavaScript.</strong></h3>
+              </div>
+            </div>
+          </div>
+          <div class="projects-div col-lg-6 mb-3 mt-4 mb-lg-0">
+            <div class="projects projects-hover text-white rounded"><img src="css/images/TinDog-Projects-Image.png" alt="">
+              <div class="hover-overlay learn-more"><span>Learn More</span></div>
+              <div class="hover-5-content">
+                <h3 class="hover-title font-weight-light mb-0">New Project Coming Soon <br> <strong class="font-weight-bold text-white">Tools </strong></h3>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+
+      <!-- </div> -->
     </section>
 
 

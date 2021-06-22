@@ -178,10 +178,6 @@ h1, h2, h3, h4, h5, h6 {
   padding: 3% 11%;
 }
 
-.zouheir-img {
-  margin: 100px 0 0 150px;
-  width: 60%;
-}
 
 .welcome-page {
   background: url("images/Zouheir.Circle.png") no-repeat 80% 70% fixed;
@@ -389,7 +385,6 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0% 11% 8%;
 }
 
-
 .skills {
   display: grid;
   grid-gap: 10px;
@@ -552,97 +547,124 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Projects Section  */
+
 #Projects {
-  padding: 5% 1%;
+  background: url("images/Projects-Background-Image.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-bottom: 5%;
 }
 
-@import url(https://fonts.googleapis.com/css?family=Akronim);
+.resume-heading-projects {
+  padding-left: 13%;
+}
 
-.fire {
-  margin: 50px auto;
-  width: 80%;
-  max-width: 1000px;
-  height: 200px;
-  background-position: center center;
-  background-size: 1000px 200px;
-  border-radius: 10px;
-  font-family: 'Akronim';
+.projects {
   overflow: hidden;
-  text-align: center;
-  vertical-align: middle;
+  position: relative;
+  padding-bottom: 60%;
+  cursor: pointer;
 }
 
-.fire:before {
-  content: '';
-  display: inline-block;
+.hover-overlay {
+  width: 100%;
   height: 100%;
-  vertical-align: middle;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 90;
+  transition: all 0.4s;
 }
 
-.Blazing {
-  display: inline-block;
-  margin: 0;
-  color: rgb(255, 115, 0);
-  font-size: 100px;
-  line-height: 50px;
-  min-width: 50px;
-  outline: none;
-  vertical-align: middle;
-  text-shadow:
-    0 3px 20px red,
-    0 0 20px red,
-    0 0 10px orange,
-    4px -5px 6px yellow,
-    -4px -10px 10px yellow,
-    0 -10px 30px yellow;
-  animation: 2s Blazing infinite alternate linear;
+.projects img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.3s;
 }
 
-@keyframes Blazing {
-  0% {
-    text-shadow: 0 3px 20px red, 0 0 20px red,
-      0 0 10px orange,
-      0 0 0 yellow,
-      0 0 5px yellow,
-      -2px -5px 5px yellow,
-      4px -10px 10px yellow;
-  }
+.hover-content {
+  position: relative;
+  z-index: 99;
+}
 
-  25% {
-    text-shadow: 0 3px 20px red, 0 0 30px red,
-      0 0 20px orange,
-      0 0 5px yellow,
-      -2px -5px 5px yellow,
-      3px -10px 10px yellow,
-      -4px -15px 20px yellow;
-  }
+/* DEMO 5 ============================== */
+.projects-hover::after {
+  content: '';
+  width: 100%;
+  height: 10px;
+  background: #228B22;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  display: block;
+  transition: all 0.3s;
+  z-index: 999;
+}
 
-  50% {
-    text-shadow: 0 3px 20px red, 0 0 20px red,
-      0 -5px 10px orange,
-      -2px -5px 5px yellow,
-      3px -10px 10px yellow,
-      -4px -15px 20px yellow,
-      2px -20px 30px rgba(255, 255, 0, 0.5);
-  }
+.projects-hover .hover-overlay {
+  background: rgba(0, 0, 0, 0.4);
+}
 
-  75% {
-    text-shadow: 0 3px 20px red, 0 0 20px red,
-      0 -5px 10px orange,
-      3px -5px 5px yellow,
-      -4px -10px 10px yellow,
-      2px -20px 30px rgba(255, 255, 0, 0.5),
-      0px -25px 40px rgba(255, 255, 0, 0)
-  }
+.hover-title {
+  position: absolute;
+  bottom: 0.1rem;
+  left: 0;
+  width: 100%;
+  transition: all 0.3s;
+  padding: 0.8rem 1rem;
+  z-index: 99;
+  line-height: 1.2rem;
+  opacity: 3;
+  text-align: center;
+}
 
-  100% {
-    text-shadow: 0 3px 20px red, 0 0 20px red,
-      0 0 10px orange,
-      0 0 0 yellow,
-      0 0 5px yellow,
-      -2px -5px 5px yellow,
-      4px -10px 10px yellow;
-  }
+.learn-more span {
+  transition: all 0.4s;
+  opacity: 0;
+  color: #fff;
+  text-align: center;
+  width: 140px;
+  height: 40px;
+  position: absolute;
+  background-color: #228B22;
+  border: 3px solid #228B22;
+  border-radius: 10px;
+  font-family: inherit;
+  font-weight: 600;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.learn-more span:hover {
+  color: #fff;
+  background-color: transparent;
+  text-decoration: none;
+  text-align: center;
+  width: 140px;
+  height: 40px;
+  transition: all 0.4s;
+  font-family: inherit;
+}
+
+.projects-hover:hover .hover-overlay {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.projects-hover:hover .hover-title {
+  bottom: 0;
+}
+
+.projects-hover:hover .learn-more span {
+  opacity: 1;
+}
+
+.projects-hover:hover::after {
+  bottom: 0;
 }
 
 /* Work Experience */
@@ -1149,8 +1171,8 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 50px;
   }
 
-  .zouheir-image {
-    visibility: hidden;
+  .welcome-page {
+    background-image: none;
   }
 
   #testimonials {
@@ -1205,8 +1227,6 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.9rem;
     font-family: inherit;
   }
-}
-@media (max-width: 1200px) {
   .summary-text {
     font-size: 80%;
   }
@@ -1214,6 +1234,9 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.8rem;
     padding: 2% 1%;
     width: 180px;
+  }
+  .download-button:hover {
+    width: 30vh;
   }
 }
 
@@ -1224,13 +1247,13 @@ h1, h2, h3, h4, h5, h6 {
   .summary-download-button-pdf {
     position: absolute;
     top: calc(75% - 50px);
-    left: calc(48% - 50px);
+    left: calc(40% - 50px);
   }
 
   .summary-download-button-word {
     position: absolute;
     top: calc(95% - 50px);
-    left: calc(48% - 50px);
+    left: calc(40% - 50px);
   }
 }
 @media (max-width: 500px) {
@@ -1240,38 +1263,33 @@ h1, h2, h3, h4, h5, h6 {
   .summary-logo-div {
     position: absolute;
     top: calc(20% - 50px);
-    left: calc(59% - 50px);
+    left: calc(57% - 50px);
   }
   .summary-p {
     position: absolute;
     top: calc(45% - 50px);
-    left: calc(45% - 50px);
+    left: calc(48% - 50px);
   }
   .summary-download-button-pdf {
     position: absolute;
     top: calc(75% - 50px);
-    left: calc(43% - 50px);
+    left: calc(40% - 50px);
   }
 
   .summary-download-button-word {
     position: absolute;
     top: calc(95% - 50px);
-    left: calc(43% - 50px);
+    left: calc(40% - 50px);
   }
   .download-button {
     font-size: 0.6rem;
     width: 150px;
   }
+  .download-button:hover {
+    width: 25vh;
+  }
   .download-resume-icon {
     height: 3vh;
-  }
-  .welcome-page {
-    background: url("images/Zouheir.Circle.png") no-repeat 70% 90% fixed;
-    -webkit-background-size: 90px 90px;
-    -moz-background-size: 90px 90px;
-    -o-background-size: 90px 90px;
-    background-size: 90px 90px;
-    padding: 0 3%;
   }
   .p-logo {
     margin: 15px 0 0 15px;

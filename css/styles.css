@@ -1,4 +1,5 @@
 /* Body Html Common Elements */
+
 html {
   scroll-behavior: smooth;
 }
@@ -285,7 +286,7 @@ h1, h2, h3, h4, h5, h6 {
 .download-button {
   display: inline-block;
   background: #228B22;
-  width: 17vw;
+  width: 18vw;
   color: #fff;
   text-decoration: none !important;
   padding: 2% 3%;
@@ -300,7 +301,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .download-button:hover {
   color: #228B22;
-  width: 20vw;
+  width: 18vw;
   display: inline-block;
   font-weight: 600;
   background-color: transparent;
@@ -311,15 +312,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .download-resume-icon {
-  width: 2vw;
-  height: 3.5vh;
+  width: 2.5vw;
+  height: 5vh;
 }
 /* Home Page Heading */
 
 @import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
 
 .resume-heading-div {
-  padding: 7% 0% 5% 15%;
+  padding: 7% 0% 3% 15%;
 }
 
 .resume-heading {
@@ -678,7 +679,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .work-experience {
-  padding: 3% 15%;
+  padding: 0% 15% 3%;
 }
 
 .read-more-state {
@@ -763,7 +764,7 @@ h1, h2, h3, h4, h5, h6 {
 .testimonials {
   text-align: center;
   color: #fff;
-  padding: 3% 11%;
+  padding: 0% 11% 3%;
   cursor: pointer;
 }
 
@@ -1266,9 +1267,16 @@ h1, h2, h3, h4, h5, h6 {
     /* font-size: 40%; */
   }
   .download-resume-icon {
-    /* height: 3vh; */
+    height: 2.5vh;
+    width: 4vw;
   }
   .p-logo {
     margin: 15px 0 0 15px;
+  }
+  .download-button {
+    width: 25vw;
+  }
+  .download-button:hover {
+    width: 25vw;
   }
 }

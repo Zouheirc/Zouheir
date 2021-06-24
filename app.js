@@ -4,7 +4,7 @@
 // font-size: 0.9rem;
 // font-family: inherit;
 
-// Projects Section
+
 
 
 // DropDown navbar

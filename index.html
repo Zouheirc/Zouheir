@@ -18,6 +18,13 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Slabo+13px&display=swap" rel="stylesheet">
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
@@ -60,46 +67,87 @@
 
 <body>
 
+
+
+
   <div class="main-container">
 
     <header id="header">
-      <nav class="navbar bg-transparent navbar-expand-lg">
-        <div class="container-fluid">
-          <div class="moon-logo">
-            <p class="p-logo" onclick="window.location='index.html';">Z</p>
+      <div class="menu-nav" id="navBar">
+        <nav class="navbar bg-transparent navbar-expand-lg">
+          <div class="container-fluid">
+          <div class="nav-logo">
+            <div class="moon-logo">
+              <p class="p-logo" onclick="window.location='index.html';">Z</p>
+            </div>
           </div>
           <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <span onclick="window.location='index.html';">Home</span>
-              </li>
-              <li class="nav-item">
-                <span onclick="window.location='contact.html';">Contact</span>
-              </li>
-              <li class="nav-item">
-                <span onclick="window.location='login.html';">Login</span>
-              </li>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
 
-              <li class="dropdown">
-                <span class="dropdown-button" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="dropdown-toggle">Resume</span></span>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <span class="dropdown-button" type="button" onclick="window.location='index.html#Download-Resume';"><span>Download</span></span>
-                  <span class="dropdown-button" type="button" onclick="window.location='index.html#Skills';"><span>Skills</span></span>
-                  <span class="dropdown-button" type="button" onclick="window.location='index.html#Projects';"><span>Projects</span></span>
-                  <span class="dropdown-button" type="button" onclick="window.location='index.html#Work-Experience';"><span>Experience</span></span>
-                  <span class="dropdown-button" type="button" onclick="window.location='index.html#Education';"><span>Education</span></span>
-                  <span class="dropdown-button" type="button" onclick="window.location='index.html#Courses';"><span>Courses</span></span>
-                </div>
-              </li>
+                
+                <li class="nav-item">
+                  <span onclick="window.location='index.html';"><font class="nav-fonts">Home</font></span>
+                </li>
+                <li class="nav-item">
+                  <span onclick="window.location='contact.html';"><font class="nav-fonts">Contact</font></span>
+                </li>
+                <li class="nav-item">
+                  <span onclick="window.location='login.html';"><font class="nav-fonts">Login</font></span>
+                </li>
 
-            </ul>
+
+                <!-- Big Screen DropDown -->
+
+                <li class="dropdown">
+                  <span class="dropdown-button" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="dropdown-toggle"><font class="nav-fonts">Professional</font></span></span>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <span class="dropdown-button" type="button" onclick="window.location='index.html#Skills';"><span><font class="nav-fonts">Skills</font></span></span>
+                    <span class="dropdown-button" type="button" onclick="window.location='index.html#Projects';"><span><font class="nav-fonts">Portfolio</font></span></span>
+                    <span class="dropdown-button" type="button" onclick="window.location='index.html#Work-Experience';"><span><font class="nav-fonts">Experience</font></span></span>
+                  </div>
+                </li>
+
+                <li class="dropdown">
+                  <span class="dropdown-button" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="dropdown-toggle"><font class="nav-fonts">Resume</font></span></span>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <span class="dropdown-button" type="button" onclick="window.location='index.html#Download-Resume';"><span><font class="nav-fonts">Download</font></span></span>
+                    <span class="dropdown-button" type="button" onclick="window.location='index.html#Education';"><span><font class="nav-fonts">Education</font></span></span>
+                    <span class="dropdown-button" type="button" onclick="window.location='index.html#Courses';"><span><font class="nav-fonts">Courses</font></span></span>
+                  </div>
+                </li>
+
+                <!-- Mobile View  -->
+
+                <li class="nav-item dropdown-mobile">
+                  <span onclick="window.location='index.html#Download-Resume';"><font class="nav-fonts">Download</font></span>
+                </li>
+                <li class="nav-item dropdown-mobile">
+                  <span onclick="window.location='index.html#Skills';"><font class="nav-fonts">Skills</font></span>
+                </li>
+                <li class="nav-item dropdown-mobile">
+                  <span onclick="window.location='index.html#Projects';"><font class="nav-fonts">Portfolio</font></span>
+                </li>
+                <li class="nav-item dropdown-mobile">
+                  <span onclick="window.location='index.html#Work-Experience';"><font class="nav-fonts">Experience</font></span>
+                </li>
+                <li class="nav-item dropdown-mobile">
+                  <span onclick="window.location='index.html#Education';"><font class="nav-fonts">Education</font></span>
+                </li>
+                <li class="nav-item dropdown-mobile">
+                  <span onclick="window.location='index.html#Courses';"><font class="nav-fonts">Courses</font></span>
+                </li>
+
+              </ul>
+            </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
+    <div class="spacer">&nbsp;
+    </div>
 
     <section class="welcome-page">
       <div class="row">
@@ -235,55 +283,58 @@
     </section>
 
     <!-- Projects  -->
+    <section id="Work-Experience">
 
     <section id="Projects">
-      <div class="resume-heading-div">
-        <h1 class="resume-heading">Projects</h1>
-      </div>
-      <div class="py-1">
-        <div class="row">
-          <div class="projects-div col-lg-6 mb-3 mb-lg-0" onClick="window.open('tinDog.html');" target="_blank">
-            <div class="projects projects-hover text-white rounded"><img src="css/images/TinDog-Project-Image.png" alt="">
-              <div class="hover-overlay learn-more"><span>Learn More</span></div>
-              <div class="hover-5-content">
-                <h3 class="hover-title font-weight-light mb-0">Project was done during an online course Udemy.com <br> <strong class="font-weight-bold text-white">HTML, CSS, Bootstrap, jQuery. </strong></h3>
+
+      <div class="Work-Experience-overlaying">
+
+        <div class="resume-heading-div">
+          <h1 class="resume-heading">Projects</h1>
+        </div>
+        <div class="py-1">
+          <div class="row">
+            <div class="projects-div col-lg-6 mb-3 mb-lg-0" onClick="window.open('tinDog.html');" target="_blank">
+              <div class="projects projects-hover text-white rounded"><img src="css/images/TinDog-Project-Image.png" alt="">
+                <div class="hover-overlay learn-more"><span>Learn More</span></div>
+                <div class="hover-5-content">
+                  <h3 class="hover-title font-weight-light mb-0">Project was done during an online course Udemy.com <br> <strong class="font-weight-bold text-white">HTML, CSS, Bootstrap, jQuery. </strong></h3>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="projects-div col-lg-6 mb-3 mb-lg-0" onClick="window.open('simon-game.html');" target="_blank">
-            <div class="projects projects-hover text-white rounded"><img src="css/images/SimonGame-Project-Image.png" alt="">
-              <div class="hover-overlay learn-more"><span>Learn More</span></div>
-              <div class="hover-5-content">
-                <h3 class="hover-title font-weight-light mb-0">Project was done during an online course Udemy.com <br> <strong class="font-weight-bold text-white">HTML, CSS, jQuery, JavaScript.</strong></h3>
+            <div class="projects-div col-lg-6 mb-3 mb-lg-0" onClick="window.open('simon-game.html');" target="_blank">
+              <div class="projects projects-hover text-white rounded"><img src="css/images/SimonGame-Project-Image.png" alt="">
+                <div class="hover-overlay learn-more"><span>Learn More</span></div>
+                <div class="hover-5-content">
+                  <h3 class="hover-title font-weight-light mb-0">Project was done during an online course Udemy.com <br> <strong class="font-weight-bold text-white">HTML, CSS, jQuery, JavaScript.</strong></h3>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="projects-div col-lg-6 mb-3 mt-4 mb-lg-0" onClick="window.open('drums.html');" target="_blank">
-            <div class="projects projects-hover text-white rounded"><img src="css/images/Drums-Project-Image.png" alt="">
-              <div class="hover-overlay learn-more"><span>Learn More</span></div>
-              <div class="hover-5-content">
-                <h3 class="hover-title font-weight-light mb-0">Project was done during an online course Udemy.com <br> <strong class="font-weight-bold text-white">HTML, CSS, Bootstrap, jQuery, JavaScript.</strong></h3>
+            <div class="projects-div col-lg-6 mb-3 mt-4 mb-lg-0" onClick="window.open('drums.html');" target="_blank">
+              <div class="projects projects-hover text-white rounded"><img src="css/images/Drums-Project-Image.png" alt="">
+                <div class="hover-overlay learn-more"><span>Learn More</span></div>
+                <div class="hover-5-content">
+                  <h3 class="hover-title font-weight-light mb-0">Project was done during an online course Udemy.com <br> <strong class="font-weight-bold text-white">HTML, CSS, Bootstrap, jQuery, JavaScript.</strong></h3>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="projects-div col-lg-6 mb-3 mt-4 mb-lg-0">
-            <div class="projects projects-hover text-white rounded"><img src="css/images/TinDog-Projects-Image.png" alt="">
-              <div class="hover-overlay learn-more"><span>Learn More</span></div>
-              <div class="hover-5-content">
-                <h3 class="hover-title font-weight-light mb-0">New Project Coming Soon <br> <strong class="font-weight-bold text-white">Tools </strong></h3>
+            <div class="projects-div col-lg-6 mb-3 mt-4 mb-lg-0">
+              <div class="projects projects-hover text-white rounded"><img src="css/images/TinDog-Projects-Image.png" alt="">
+                <div class="hover-overlay learn-more"><span>Learn More</span></div>
+                <div class="hover-5-content">
+                  <h3 class="hover-title font-weight-light mb-0">New Project Coming Soon <br> <strong class="font-weight-bold text-white">Tools </strong></h3>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-
-      <!-- </div> -->
     </section>
 
 
     <!-- Work Experience  -->
 
-    <section id="Work-Experience">
+    <div class="Work-Experience-overlaying">
       <div class="resume-heading-div">
         <h1 class="resume-heading">Work Experience</h1>
       </div>
@@ -438,167 +489,301 @@
           </ul>
         </div>
       </div>
+    </div>
     </section>
 
     <!-- Certifications  -->
 
     <section id="Education">
-        <div class="resume-heading-div">
-          <h1 class="resume-heading">Education</h1>
-        </div>
-        <div class="testimonials">
-        <div id="carouselWorkExperience" class="carousel slide" data-ride="carousel" data-pause="hover" data-interval="7000">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselWorkExperience" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselWorkExperience" data-slide-to="1"></li>
-            <li data-target="#carouselWorkExperience" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <!-- <em>Bachelor Degree - Business Administration</em> -->
-              <div>
-                <img class="certificates" src="css/images/Bachelor-Degree.png" alt="Bachelor Degree - Business Administration">
-              </div>
-              <img class="testimonial-image" src="css/images/Zouheir.Circle.png" alt="Zouheir-Photo">
-              <em class="certificates-heading">Lebanese American University - 2009</em>
-            </div>
-            <div class="carousel-item">
-              <!-- <em>IT Business Analyst</em> -->
-              <div>
-                <img class="certificates" src="css/images/IT-Business-Analyst.jpg" alt="IT Business Analyst Course">
-              </div>
-              <img class="testimonial-image" src="css/images/Zouheir.Circle.png" alt="Zouheir-Photo">
-              <em class="certificates-heading">Illinois, Schaumburg - 2018 - Online, Udemy.com - 2020</em>
-            </div>
-            <div class="carousel-item">
-              <!-- <em>Full Stack Web Development Course</em> -->
-              <div>
-                <img class="certificates" src="css/images/Web-Development.jpg" alt="The Complete 2020 Web Development Bootcamp online course">
-              </div>
-              <img class="testimonial-image" src="css/images/Zouheir.Circle.png" alt="Zouheir-Photo">
-              <em class="certificates-heading">Online, Udemy.com - 2020, 2021</em>
-            </div>
+<div class="Work-Experience-overlaying">
+  <div class="resume-heading-div">
+    <h1 class="resume-heading">Education</h1>
+  </div>
+  <div class="testimonials">
+    <div id="carouselWorkExperience" class="carousel slide" data-ride="carousel" data-pause="hover" data-interval="7000">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselWorkExperience" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselWorkExperience" data-slide-to="1"></li>
+        <li data-target="#carouselWorkExperience" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <!-- <em>Bachelor Degree - Business Administration</em> -->
+          <div>
+            <img class="certificates" src="css/images/Bachelor-Degree.png" alt="Bachelor Degree - Business Administration">
           </div>
-          <a class="carousel-control-prev" type="button" href="#carouselWorkExperience" data-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-          </a>
-          <a class="carousel-control-next" type="button" href="#carouselWorkExperience" data-slide="next">
-            <span class="carousel-control-next-icon carousel-control-size"></span>
-          </a>
+          <img class="testimonial-image" src="css/images/Zouheir.Circle.png" alt="Zouheir-Photo">
+          <em class="certificates-heading">Lebanese American University - 2009</em>
+        </div>
+        <div class="carousel-item">
+          <!-- <em>IT Business Analyst</em> -->
+          <div>
+            <img class="certificates" src="css/images/IT-Business-Analyst.jpg" alt="IT Business Analyst Course">
+          </div>
+          <img class="testimonial-image" src="css/images/Zouheir.Circle.png" alt="Zouheir-Photo">
+          <em class="certificates-heading">Illinois, Schaumburg - 2018 - Online, Udemy.com - 2020</em>
+        </div>
+        <div class="carousel-item">
+          <!-- <em>Full Stack Web Development Course</em> -->
+          <div>
+            <img class="certificates" src="css/images/Web-Development.jpg" alt="The Complete 2020 Web Development Bootcamp online course">
+          </div>
+          <img class="testimonial-image" src="css/images/Zouheir.Circle.png" alt="Zouheir-Photo">
+          <em class="certificates-heading">Online, Udemy.com - 2020, 2021</em>
         </div>
       </div>
-    </section>
+      <a class="carousel-control-prev" type="button" href="#carouselWorkExperience" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" type="button" href="#carouselWorkExperience" data-slide="next">
+        <span class="carousel-control-next-icon carousel-control-size"></span>
+      </a>
+    </div>
+  </div>
 
-    <!-- Short Training Certificates -->
+<!-- Short Training Certificates -->
 
-    <section id="Courses">
-      <div class="resume-heading-div">
-        <h1 class="resume-heading">Short Courses</h1>
-      </div>
-      <div class="row">
-        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-          <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Leadership Attendance Certificate" data-image="css/images/Diploma-Leadership.png" data-target="#image-gallery">
-            <img class="img-thumbnail" src="css/images/Diploma-Leadership.png" alt="Leadership Attendance Certificate">
-          </a>
-        </div>
+<section id="Courses">
+  <div class="resume-heading-div">
+    <h1 class="resume-heading">Short Courses</h1>
+  </div>
+  <div class="row">
+    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+      <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Leadership Attendance Certificate" data-image="css/images/Diploma-Leadership.png" data-target="#image-gallery">
+        <img class="img-thumbnail" src="css/images/Diploma-Leadership.png" alt="Leadership Attendance Certificate">
+      </a>
+    </div>
 
-        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-          <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Administrative Leadership Attendance Certificate" data-image="css/images/Administrative-Leadership.png" data-target="#image-gallery">
-            <img class="img-thumbnail" src="css/images/Administrative-Leadership.png" alt="Administrative Leadership Attendance Certificate">
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-          <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Outstanding Preparation Attendance Certificate" data-image="css/images/Director-Outstanding-Preparation.png" data-target="#image-gallery">
-            <img class="img-thumbnail" src="css/images/Director-Outstanding-Preparation.png" alt="Outstanding Preparation Attendance Certificate">
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-          <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Communication Skills Attendance Certificate" data-image="css/images/Communication-Skills.png" data-target="#image-gallery">
-            <img class="img-thumbnail" src="css/images/Communication-Skills.png" alt="Communication Skills Attendance Certificate">
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-          <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Evaluation Performance Attendance Certificate" data-image="css/images/Evaluation-Performance.png" data-target="#image-gallery">
-            <img class="img-thumbnail" src="css/images/Evaluation-Performance.png" alt="Evaluation Performance Attendance Certificate">
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-          <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="How To Succeed Attendance Certificate" data-image="css/images/How-To-Succeed.png" data-target="#image-gallery">
-            <img class="img-thumbnail" src="css/images/How-To-Succeed.png" alt="How To Succeed Attendance Certificate">
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-          <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Leadership Attendance Certificate" data-image="css/images/Leadership.png" data-target="#image-gallery">
-            <img class="img-thumbnail" src="css/images/Leadership.png" alt="Leadership Attendance Certificate">
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-          <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Meeting Management Attendance Certificate" data-image="css/images/Meeting-Management.png" data-target="#image-gallery">
-            <img class="img-thumbnail" src="css/images/Meeting-Management.png" alt="Meeting Management Attendance Certificate">
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-          <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Motivation Attendance Certificate" data-image="css/images/Motivate-Your-Employees.png" data-target="#image-gallery">
-            <img class="img-thumbnail" src="css/images/Motivate-Your-Employees.png" alt="Motivation Attendance Certificate">
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-          <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Strategic Planning Attendance Certificate" data-image="css/images/Strategic-Planning.png" data-target="#image-gallery">
-            <img class="img-thumbnail" src="css/images/Strategic-Planning.png" alt="Strategic Planning Attendance Certificate">
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-          <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Body Language Attendance Certificate" data-image="css/images/Body-Language.png" data-target="#image-gallery">
-            <img class="img-thumbnail" src="css/images/Body-Language.png" alt="Body Language Attendance Certificate">
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-          <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Time Management Attendance Certificate" data-image="css/images/Time-Management.png" data-target="#image-gallery">
-            <img class="img-thumbnail" src="css/images/Time-Management.png" alt="Time Management Attendance Certificate">
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-          <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Conflict Management Attendance Certificate" data-image="css/images/Conflict-Management.png" data-target="#image-gallery">
-            <img class="img-thumbnail" src="css/images/Conflict-Management.png" alt="Conflict Management Attendance Certificate">
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-          <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Authorization Attendance Certificate" data-image="css/images/Authorization.png" data-target="#image-gallery">
-            <img class="img-thumbnail" src="css/images/Authorization.png" alt="Authorization Attendance Certificate">
-          </a>
-        </div>
+    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+      <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Administrative Leadership Attendance Certificate" data-image="css/images/Administrative-Leadership.png" data-target="#image-gallery">
+        <img class="img-thumbnail" src="css/images/Administrative-Leadership.png" alt="Administrative Leadership Attendance Certificate">
+      </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+      <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Outstanding Preparation Attendance Certificate" data-image="css/images/Director-Outstanding-Preparation.png" data-target="#image-gallery">
+        <img class="img-thumbnail" src="css/images/Director-Outstanding-Preparation.png" alt="Outstanding Preparation Attendance Certificate">
+      </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+      <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Communication Skills Attendance Certificate" data-image="css/images/Communication-Skills.png" data-target="#image-gallery">
+        <img class="img-thumbnail" src="css/images/Communication-Skills.png" alt="Communication Skills Attendance Certificate">
+      </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+      <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Evaluation Performance Attendance Certificate" data-image="css/images/Evaluation-Performance.png" data-target="#image-gallery">
+        <img class="img-thumbnail" src="css/images/Evaluation-Performance.png" alt="Evaluation Performance Attendance Certificate">
+      </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+      <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="How To Succeed Attendance Certificate" data-image="css/images/How-To-Succeed.png" data-target="#image-gallery">
+        <img class="img-thumbnail" src="css/images/How-To-Succeed.png" alt="How To Succeed Attendance Certificate">
+      </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+      <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Leadership Attendance Certificate" data-image="css/images/Leadership.png" data-target="#image-gallery">
+        <img class="img-thumbnail" src="css/images/Leadership.png" alt="Leadership Attendance Certificate">
+      </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+      <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Meeting Management Attendance Certificate" data-image="css/images/Meeting-Management.png" data-target="#image-gallery">
+        <img class="img-thumbnail" src="css/images/Meeting-Management.png" alt="Meeting Management Attendance Certificate">
+      </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+      <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Motivation Attendance Certificate" data-image="css/images/Motivate-Your-Employees.png" data-target="#image-gallery">
+        <img class="img-thumbnail" src="css/images/Motivate-Your-Employees.png" alt="Motivation Attendance Certificate">
+      </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+      <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Strategic Planning Attendance Certificate" data-image="css/images/Strategic-Planning.png" data-target="#image-gallery">
+        <img class="img-thumbnail" src="css/images/Strategic-Planning.png" alt="Strategic Planning Attendance Certificate">
+      </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+      <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Body Language Attendance Certificate" data-image="css/images/Body-Language.png" data-target="#image-gallery">
+        <img class="img-thumbnail" src="css/images/Body-Language.png" alt="Body Language Attendance Certificate">
+      </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+      <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Time Management Attendance Certificate" data-image="css/images/Time-Management.png" data-target="#image-gallery">
+        <img class="img-thumbnail" src="css/images/Time-Management.png" alt="Time Management Attendance Certificate">
+      </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+      <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Conflict Management Attendance Certificate" data-image="css/images/Conflict-Management.png" data-target="#image-gallery">
+        <img class="img-thumbnail" src="css/images/Conflict-Management.png" alt="Conflict Management Attendance Certificate">
+      </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+      <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Authorization Attendance Certificate" data-image="css/images/Authorization.png" data-target="#image-gallery">
+        <img class="img-thumbnail" src="css/images/Authorization.png" alt="Authorization Attendance Certificate">
+      </a>
+    </div>
 
 
-        <div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h4 class="modal-title" id="image-gallery-title"></h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span>
-                </button>
-              </div>
-              <!-- <div class="modal-body">
-                        </div> -->
-              <img id="image-gallery-image" class="img-responsive col-md-12" src="">
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary float-left" id="show-previous-image"><i class="fas fa-arrow-alt-circle-left fa-2x"></i>
-                </button>
+    <div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="image-gallery-title"></h4>
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span>
+            </button>
+          </div>
+          <!-- <div class="modal-body">
+                    </div> -->
+          <img id="image-gallery-image" class="img-responsive col-md-12" src="">
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary float-left" id="show-previous-image"><i class="fas fa-arrow-alt-circle-left fa-2x"></i>
+            </button>
 
-                <button type="button" id="show-next-image" class="btn btn-secondary float-right"><i class="fas fa-arrow-alt-circle-right fa-2x"></i>
-                </button>
-              </div>
-            </div>
+            <button type="button" id="show-next-image" class="btn btn-secondary float-right"><i class="fas fa-arrow-alt-circle-right fa-2x"></i>
+            </button>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+</div>
+  </section>
 
-    <footer id="footer">
+
+  <!-- Remove the container if you want to extend the Footer to full width. -->
+<div class="my-0">
+  <!-- Footer -->
+  <footer
+          class="text-center text-lg-start text-white"
+          style="background-color: rgba(51, 59, 80, 255)"
+          >
+    <!-- Grid container -->
+    <div class="p-2 pb-0">
+      <!-- Section: Links -->
+      <section id="Footer">
+        <!--Grid row-->
+        <div class="row">
+          <!-- Grid column -->
+          <!-- <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <div class="footer-logo-div">
+              <div class="footer-logo">
+                <div class="moon-logo">
+                  <p class="p-logo" onclick="window.location='index.html';">Z</p>
+                </div>
+              </div>
+            </div>
+          </div> -->
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Projects</h6>
+            <p>
+              <a class="text-white" onClick="window.open('tinDog.html');" target="_blank"><button class="btn btn-success btn-sm" type="button" name="button"> Project #1</a></button>
+            </p>
+            <p>
+              <a class="text-white" onClick="window.open('simon-game.html');" target="_blank"><button class="btn btn-success btn-sm" type="button" name="button"> Project #2</a></button>
+            </p>
+            <p>
+              <a class="text-white" onClick="window.open('drums.html');" target="_blank"><button class="btn btn-success btn-sm" type="button" name="button"> Project #3</a></button>
+            </p>
+            <p>
+              <a class="text-white"><button class="btn btn-success btn-sm" type="button" name="button"> Project #4</a></button>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-4 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+            <p><i class="fas fa-home mr-3"></i> Wheeling, IL 60090, US</p>
+            <p><i class="fas fa-envelope mr-3"></i>Zouheir-c@hotmail.com</p>
+            <p><i class="fas fa-phone mr-3"></i> + 1 224 522 1124</p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Contact Me</h6>
+
+            <!-- Facebook -->
+            <a
+               class="btn btn-primary btn-floating m-1"
+               style="background-color: #3b5998" target="_blank"
+               href="https://www.facebook.com/Zouheir.Chalouf"
+               role="button"
+               ><i class="fab fa-facebook"></i
+              ></a>
+
+            <!-- Twitter -->
+            <a
+               class="btn btn-primary btn-floating m-1"
+               style="background-color: #55acee" target="_blank"
+               href="https://twitter.com/zouheirc?lang=en"
+               role="button"
+               ><i class="fab fa-twitter"></i
+              ></a>
+
+            <!-- Linkedin -->
+            <a
+               class="btn btn-primary btn-floating m-1"
+               style="background-color: #0082ca" target="_blank"
+               href="https://www.linkedin.com/in/zouheir-chalouf-93a123180"
+               role="button"
+               ><i class="fab fa-linkedin-in"></i
+              ></a>
+
+            <!-- Github -->
+            <a
+               class="btn btn-primary btn-floating m-1"
+               style="background-color: #333333" target="_blank"
+               href="https://zouheirc.github.io/Zouheir/"
+               role="button"
+               ><i class="fab fa-github"></i
+              ></a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Copyright -->
+
+    <div
+         class="text-center p-5 footer-copyright"
+         style="background-color: rgba(0, 0, 0, 0.2)"
+         >
+        <div class="logo-footer">
+          <div class="moon-logo">
+            <p class="p-logo" onclick="window.location='index.html';">Z</p>
+          </div>
+        </div>
+      © 2021 by Zouheir Chalouf:
+      <a class="text-white" target="_blank" href="https://zouheirc.github.io/Zouheir/"
+         >Zouheir.com</a
+        >
+    </div>
+
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</div>
+<!-- End of .container -->
+
+
+
+
+
+    <!-- <footer id="footer">
       <a target="_blank" href="https://www.facebook.com/Zouheir.Chalouf"><i class="social-icon fab fa-facebook-f"></i></a>
       <a target="_blank" href="https://twitter.com/zouheirc?lang=en"><i class="social-icon fab fa-twitter"></i></a>
       <a target="_blank" href="https://www.linkedin.com/in/zouheir-chalouf-93a123180"><i class="social-icon fab fa-linkedin-in"></i></a>
       <p>© 2021 by Zouheir Chalouf.</p>
-    </footer>
+    </footer> -->
 
   </div>
   <!-- Javascript  -->

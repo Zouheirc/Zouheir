@@ -4,6 +4,8 @@
 // font-size: 0.9rem;
 // font-family: inherit;
 
+
+
 $(window).scroll(function() {
     if ($(window).scrollTop() > 10) {
         $('#navBar').addClass('floatingNav');

@@ -28,7 +28,7 @@
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
-  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
   <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -80,17 +80,25 @@
             <div class="nav-logo">
               <div class="moon-logo">
                 <p class="p-logo" onclick="window.location='index.html';">Z</p>
+                <form action="" class="search-bar">
+                  <div class="input-group mb-4 border border-3 border-success rounded-pill p-0">
+                    <input type="search" placeholder="Search" aria-describedby="button-addon3" class="form-control text-white bg-none border-0">
+                    <div class="input-group-append border-0">
+                      <button id="button-addon3" type="button" class="btn btn-link text-success"><i class="fa fa-search"></i></button>
+                    </div>
+                  </div>
+                </form>
+                <!-- End -->
               </div>
             </div>
+
+
+
+
             <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <!-- <div class="hamburger" id="hamburger" onclick="myFunction(this)">
-  <div class="icon1"></div>
-  <div class="icon2"></div>
-  <div class="icon3"></div>
-</div> -->
               <ul class="navbar-nav ml-auto">
 
 
@@ -99,6 +107,45 @@
                     <font class="nav-fonts">Home</font>
                   </span>
                 </li>
+
+
+                <!-- Big Screen DropDown -->
+
+                <li class="dropdown">
+                  <span class="dropdown-button" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="dropdown-toggle">
+                    <font class="nav-fonts">Professional</font>
+                  </span></span>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <span class="dropdown-button" type="button" onclick="window.location='index.html#Skills';"><span>
+                      <font class="nav-fonts">Skills</font>
+                    </span></span>
+                    <span class="dropdown-button" type="button" onclick="window.location='index.html#Projects';"><span>
+                      <font class="nav-fonts">Portfolio</font>
+                    </span></span>
+                    <span class="dropdown-button" type="button" onclick="window.location='index.html#Work-Experience';"><span>
+                      <font class="nav-fonts">Experience</font>
+                    </span></span>
+                  </div>
+                </li>
+
+                <li class="dropdown">
+                  <span class="dropdown-button" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="dropdown-toggle">
+                    <font class="nav-fonts">Resume</font>
+                  </span></span>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <span class="dropdown-button" type="button" onclick="window.location='index.html#Download-Resume';"><span>
+                      <font class="nav-fonts">Download</font>
+                    </span></span>
+                    <span class="dropdown-button" type="button" onclick="window.location='index.html#Education';"><span>
+                      <font class="nav-fonts">Education</font>
+                    </span></span>
+                    <span class="dropdown-button" type="button" onclick="window.location='index.html#Courses';"><span>
+                      <font class="nav-fonts">Courses</font>
+                    </span></span>
+                  </div>
+                </li>
+
+
                 <li class="nav-item">
                   <span onclick="window.location='contact.html';">
                     <font class="nav-fonts">Contact</font>
@@ -111,41 +158,6 @@
                 </li>
 
 
-                <!-- Big Screen DropDown -->
-
-                <li class="dropdown">
-                  <span class="dropdown-button" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="dropdown-toggle">
-                      <font class="nav-fonts">Professional</font>
-                    </span></span>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <span class="dropdown-button" type="button" onclick="window.location='index.html#Skills';"><span>
-                        <font class="nav-fonts">Skills</font>
-                      </span></span>
-                    <span class="dropdown-button" type="button" onclick="window.location='index.html#Projects';"><span>
-                        <font class="nav-fonts">Portfolio</font>
-                      </span></span>
-                    <span class="dropdown-button" type="button" onclick="window.location='index.html#Work-Experience';"><span>
-                        <font class="nav-fonts">Experience</font>
-                      </span></span>
-                  </div>
-                </li>
-
-                <li class="dropdown">
-                  <span class="dropdown-button" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="dropdown-toggle">
-                      <font class="nav-fonts">Resume</font>
-                    </span></span>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <span class="dropdown-button" type="button" onclick="window.location='index.html#Download-Resume';"><span>
-                        <font class="nav-fonts">Download</font>
-                      </span></span>
-                    <span class="dropdown-button" type="button" onclick="window.location='index.html#Education';"><span>
-                        <font class="nav-fonts">Education</font>
-                      </span></span>
-                    <span class="dropdown-button" type="button" onclick="window.location='index.html#Courses';"><span>
-                        <font class="nav-fonts">Courses</font>
-                      </span></span>
-                  </div>
-                </li>
 
                 <!-- Mobile View  -->
 
@@ -187,20 +199,20 @@
       </div>
     </header>
 
-    <div id="Work-Experience-background">
+    <div id="below-navbar">
       <div class="spacer1 Work-Experience-overlaying">&nbsp;
       </div>
 
       <section class="welcome-page Work-Experience-overlaying">
         <div class="row">
 
+          <img class="zouheir-img" src="css/images/Zouheir.Circle.png" alt="">
           <div class="introducing col-lg-12 col-sm-12">
             <h1 class="introducing-myself">I<span class="introducing-symbol">'</span>m</h1>
             <h1 class="introducing-myself">Zouheir <br />Chalouf<span class="introducing-symbol">.</span></h1>
             <h1 class="occupation">UX/UI Designer & WEB</h1>
             <h1 class="occupation">DEVELOPER</h1>
           </div>
-
         </div>
       </section>
     </div>
@@ -338,7 +350,7 @@
           </div>
           <div class="py-1">
             <div class="row">
-              <div class="projects-div col-lg-6 mb-3 mb-lg-0" onClick="window.open('tinDog.html');" target="_blank">
+              <div class="projects-div col-lg-6 mb-3 mb-lg-0" onClick="window.open('tinDog.html');">
                 <div class="projects projects-hover text-white rounded"><img src="css/images/TinDog-Project-Image.png" alt="">
                   <div class="hover-overlay learn-more"><span>Learn More</span></div>
                   <div class="hover-5-content">
@@ -346,7 +358,7 @@
                   </div>
                 </div>
               </div>
-              <div class="projects-div col-lg-6 mb-3 mb-lg-0" onClick="window.open('simon-game.html');" target="_blank">
+              <div class="projects-div col-lg-6 mb-3 mb-lg-0" onClick="window.open('simon-game.html');">
                 <div class="projects projects-hover text-white rounded"><img src="css/images/SimonGame-Project-Image.png" alt="">
                   <div class="hover-overlay learn-more"><span>Learn More</span></div>
                   <div class="hover-5-content">
@@ -354,7 +366,7 @@
                   </div>
                 </div>
               </div>
-              <div class="projects-div col-lg-6 mb-3 mt-4 mb-lg-0" onClick="window.open('drums.html');" target="_blank">
+              <div class="projects-div col-lg-6 mb-3 mt-4 mb-lg-0" onClick="window.open('drums.html');">
                 <div class="projects projects-hover text-white rounded"><img src="css/images/Drums-Project-Image.png" alt="">
                   <div class="hover-overlay learn-more"><span>Learn More</span></div>
                   <div class="hover-5-content">
@@ -707,13 +719,13 @@
               <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
                 <h6 class="text-uppercase mb-4 font-weight-bold">Projects</h6>
                 <p>
-                  <a class="text-white" onClick="window.open('tinDog.html');" target="_blank"><button class="btn btn-outline-secondary btn-block" type="button" name="button">TinDog</a></button>
+                  <a class="text-white" onClick="window.open('tinDog.html');"><button class="btn btn-outline-secondary btn-block" type="button" name="button">TinDog</a></button>
                 </p>
                 <p>
-                  <a class="text-white" onClick="window.open('simon-game.html');" target="_blank"><button class="btn btn-outline-secondary btn-block" type="button" name="button">Simon Game</a></button>
+                  <a class="text-white" onClick="window.open('simon-game.html');"><button class="btn btn-outline-secondary btn-block" type="button" name="button">Simon Game</a></button>
                 </p>
                 <p>
-                  <a class="text-white" onClick="window.open('drums.html');" target="_blank"><button class="btn btn-outline-secondary btn-block" type="button" name="button">Drums</a></button>
+                  <a class="text-white" onClick="window.open('drums.html');"><button class="btn btn-outline-secondary btn-block" type="button" name="button">Drums</a></button>
                 </p>
                 <!-- <p>
                   <a class="text-white"><button class="btn btn-outline-secondary btn-block" type="button" name="button">Project #4</a></button>

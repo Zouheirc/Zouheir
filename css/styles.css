@@ -45,6 +45,36 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
+.form-control:focus {
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.form-control::placeholder {
+  font-size: 0.95rem;
+  color: #aaa;
+  font-style: italic;
+}
+
+.form-control {
+  background-color: transparent;
+}
+
+.search-bar {
+  margin: 0 0 0 130px;
+  padding-top: 15px;
+  width: 200px;
+}
+
+.border-3 {
+  border-width: 3px !important;
+  border-color: rgba(0, 215, 72, 255) !important;
+}
+
+#button-addon3 {
+  color: rgba(0, 215, 72, 255) !important;
+}
+
 .dropdown:hover .dropdown-menu {
   display: block;
 }
@@ -121,7 +151,8 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 991.98px) {
   .navbar-nav {
-    margin-left: initial !important;
+    /* margin-left: initial !important; */
+    margin-left: -60px !important;
   }
   .dropdown {
     display: none;
@@ -130,27 +161,28 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
   }
   .menu-nav {
-    background-color: rgb(72, 79, 89);
+    background-color: rgb(107,117,132);
     position: fixed;
     width: 100%;
     z-index: 999;
     height: 10vh;
   }
   .floatingNav {
-    box-shadow: 0px 1px 10px rgb(72, 79, 89);
+    box-shadow: 0px 1px 10px rgb(107,117,132);
   }
   .nav-logo {
     padding-top: 10px;
   }
   .nav-item span, .dropdown-button span {
-    background-color: rgb(72, 79, 89) !important;
+    background-color: rgb(107,117,132) !important;
+    width: 7rem;
   }
 }
 
 .nav-item, .dropdown-button {
-  font-size: 0.8rem;
-  font-weight: 400;
-  width: 7.5em;
+  font-size: 1rem;
+  font-weight: 500;
+  width: 6.5rem;
   height: 1.5em;
   color: rgba(0, 215, 72, 255);
   /* border-left: 0.08em solid; */
@@ -158,6 +190,9 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0.8em;
   cursor: pointer;
   padding-right: 15px;
+}
+.nav-item {
+width: 4.5rem
 }
 
 /* .nav-item::before,
@@ -205,6 +240,7 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   font-family: "Montserrat-Bold";
   font-size: 1rem;
+  font-weight: 500;
   text-transform: capitalize;
   transform: translateX(calc(0.15em * 3 - 0.08em * 2));
   transition: 0.3s;
@@ -266,25 +302,27 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 999;
   }
   .menu-nav::before {
+    opacity: 0.7;
     border-radius: 100%;
     position: absolute;
-    background-color: rgb(72, 79, 89);
+    background-color: rgb(107,117,132);
     right: -200px;
     left: -200px;
     top: -30px;
     content: '';
     bottom: 20px;
+
   }
   .floatingNav::before {
-    box-shadow: 5px 1px 10px #999;
+    box-shadow: 5px 1px 10px rgb(107,117,132);
     border-radius: 100%;
-    background-color: rgb(72, 79, 89);
+    background-color: rgb(107,117,132);
     right: -200px;
     left: -200px;
     top: -50px;
     content: '';
     bottom: 20px;
-    opacity: 0.8;
+    opacity: 0.6;
   }
   .dropdown-mobile {
     display: none;
@@ -303,13 +341,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .welcome-page {
-  /* background: url("images/Zouheir.Circle.png") no-repeat 80% 70% fixed;
-  background-color: rgb(83, 91, 103);
-  -webkit-background-size: 300px 300px;
-  -moz-background-size: 300px 300px;
-  -o-background-size: 300px 300px;
-  background-size: 300px 300px; */
   padding: 3% 3%;
+}
+
+#below-navbar {
+  background: url("images/Work-Experience-Background-Image.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /* position: relative; */
+  /* z-index: 0; */
+}
+
+.zouheir-img {
+  position: absolute;
+  padding: 8% 0 0 50%;
 }
 
 .introducing {
@@ -802,7 +849,6 @@ h1, h2, h3, h4, h5, h6 {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  /* background-color: rgba(106,115,130,255); */
 }
 
 .Work-Experience-overlaying {
@@ -1325,8 +1371,10 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .welcome-page {
-    background-image: none;
-    padding-top: 10%;
+    padding-top: 20%;
+  }
+  .zouheir-img {
+    display: none;
   }
 
   #testimonials {

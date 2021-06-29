@@ -804,7 +804,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .Work-Experience-overlaying {
-  background: rgba(39, 62, 84, 0.82);
+  background: rgba(39, 62, 84, 0.90);
   overflow: hidden;
   height: 100%;
   z-index: 2;

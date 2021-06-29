@@ -70,10 +70,12 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 1000
 } */
 @media (max-width: 991.98px) {
+  .container-fluid {
+    padding: 1% 5% 0% 5%;
+    position: relative;
+  }
   .navbar .navbar-collapse {
-    background: rgba(106, 115, 130, 0.8);
-    opacity: 0;
-    position: fixed;
+    background: rgba(255,255,255,0.9);
     top: 10vh;
     left: 0;
     right: 0;
@@ -81,38 +83,35 @@ h1, h2, h3, h4, h5, h6 {
     transition: opacity 0.35s ease;
     display: flex;
     flex-direction: column;
-    align-content: center;
-    text-align: center !important;
+    align-content: right;
+    text-align: right !important;
   }
-
   .navbar .navbar-collapse.collapse {
+      width: 100%;
     display: flex;
     opacity: 0;
     pointer-events: auto;
   }
-
   .navbar .navbar-collapse.collapsing[style*="height"] {
     left: -75%;
     transition: height 0s ease;
     opacity: 1;
     height: 100vh !important;
   }
-
   .navbar .navbar-collapse.collapsing {
     opacity: 0;
     height: 100vh
   }
-
   .navbar .navbar-collapse.collapse.show {
     left: 0;
-        transition: left 300ms ease-in-out;
+    transition: left 400ms ease-in-out;
     opacity: 1;
     pointer-events: auto;
+    position: fixed;
   }
   .navbar-toggler.collapsed ~ .navbar-collapse {
-        transition: left 500ms ease-in-out;
-    }
-
+    transition: left 500ms ease-in-out;
+  }
   .navbar .navbar-collapse .navbar-nav {
     margin-right: initial !important;
     margin-bottom: auto;
@@ -123,20 +122,12 @@ h1, h2, h3, h4, h5, h6 {
   .navbar-nav {
     margin-left: initial !important;
   }
-
   .dropdown {
     display: none;
   }
-
   .dropdown-mobile {
     display: block;
   }
-
-  .container-fluid {
-    padding: 1% 5% 0% 5%;
-    position: relative;
-  }
-
   .menu-nav {
     background-color: rgb(72, 79, 89);
     position: fixed;
@@ -144,15 +135,12 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 999;
     height: 10vh;
   }
-
   .floatingNav {
     box-shadow: 0px 1px 10px rgb(72, 79, 89);
   }
-
   .nav-logo {
     padding-top: 10px;
   }
-
   .nav-item span, .dropdown-button span {
     background-color: rgb(72, 79, 89) !important;
   }
@@ -202,6 +190,7 @@ h1, h2, h3, h4, h5, h6 {
   left: calc(-0.15em * 2 - 0.08em * 3);
   filter: brightness(0.6);
 } */
+
 .nav-item span, .dropdown-button span {
   position: relative;
   height: 120%;
@@ -275,7 +264,6 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     z-index: 999;
   }
-
   .menu-nav::before {
     border-radius: 100%;
     position: absolute;
@@ -286,7 +274,6 @@ h1, h2, h3, h4, h5, h6 {
     content: '';
     bottom: 20px;
   }
-
   .floatingNav::before {
     box-shadow: 5px 1px 10px #999;
     border-radius: 100%;
@@ -298,7 +285,6 @@ h1, h2, h3, h4, h5, h6 {
     bottom: 20px;
     opacity: 0.8;
   }
-
   .dropdown-mobile {
     display: none;
   }
@@ -1291,9 +1277,9 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 0.7rem;
   line-height: 1.2rem;
 } */
-.social-icon {
+/* .social-icon {
   margin: 20px 10px;
-}
+} */
 
 .logo-footer {
   position: absolute;

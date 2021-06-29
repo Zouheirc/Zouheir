@@ -41,7 +41,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* NavBar Animation  */
 .container-fluid {
-  padding: 1% 5% 0% 5%;
+  padding: 1% 5% 0 5%;
   position: relative;
 }
 
@@ -809,7 +809,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Work Experience */
-#Work-Experience {
+#Work-Experience-background {
   background: url("images/Work-Experience-Background-Image.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;

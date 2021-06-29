@@ -4,6 +4,27 @@
 // font-size: 0.9rem;
 // font-family: inherit;
 
+// display navbar collapse on click
+
+
+// var hamburger = document.getElementById('hamburger');
+// var menu = document.getElementById('navbar--middle');
+// menu.style.display = "none";
+// hamburger.addEventListener('click', function() {
+//   this.classList.toggle("change");
+//   if (menu.style.display === "none") {
+//     menu.style.display = "block";
+//   } else {
+//     menu.style.display = "none";
+//   }
+// });
+
+
+
+// onClick Functions for navbar collapse
+$('.navbar-nav>li>span').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+});
 
 
 $(window).scroll(function() {

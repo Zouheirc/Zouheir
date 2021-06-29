@@ -66,9 +66,9 @@ h1, h2, h3, h4, h5, h6 {
   outline-color: rgba(0, 215, 72, 255) !important;
 }
 
-/* .navbar .navbar-toggler {
+.navbar .navbar-toggler {
   z-index: 1000
-} */
+}
 @media (max-width: 991.98px) {
   .container-fluid {
     padding: 1% 5% 0% 5%;
@@ -87,10 +87,11 @@ h1, h2, h3, h4, h5, h6 {
     text-align: right !important;
   }
   .navbar .navbar-collapse.collapse {
-    display: flex;
+    display: none;
     opacity: 0;
     pointer-events: auto;
   }
+
   .navbar .navbar-collapse.collapsing[style*="height"] {
     left: -75%;
     transition: height 0s ease;
@@ -107,6 +108,7 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 1;
     pointer-events: auto;
     position: fixed;
+    display: flex;
   }
   .navbar-toggler.collapsed ~ .navbar-collapse {
     transition: left 500ms ease-in-out;

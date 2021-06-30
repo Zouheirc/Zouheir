@@ -109,7 +109,7 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
   }
   .search-bar {
-    margin-left: 90px;
+    margin-left: 110px;
     width: 150px;
   }
   .p-logo-footer {
@@ -1359,7 +1359,7 @@ width: 4.5rem
     position: absolute;
     z-index: 1;
     left: 45vw;
-    bottom: 10vh;
+    bottom: 3vh;
   }
 
   #Courses {

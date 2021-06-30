@@ -45,6 +45,8 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
+/* Search Bar */
+
 .form-control:focus {
   box-shadow: none;
   background-color: transparent;
@@ -61,7 +63,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .search-bar {
-  margin: 0 0 0 130px;
+  margin-left: 130px;
   padding-top: 15px;
   width: 200px;
 }
@@ -74,6 +76,8 @@ h1, h2, h3, h4, h5, h6 {
 #button-addon3 {
   color: rgba(0, 215, 72, 255) !important;
 }
+
+/* NavBar Dropdown Menu */
 
 .dropdown:hover .dropdown-menu {
   display: block;
@@ -103,6 +107,13 @@ h1, h2, h3, h4, h5, h6 {
   .container-fluid {
     padding: 1% 5% 0% 5%;
     position: relative;
+  }
+  .search-bar {
+    margin-left: 90px;
+    width: 150px;
+  }
+  .p-logo-footer {
+    margin-left: -2px !important;
   }
   .navbar .navbar-collapse {
     background: rgba(255,255,255,0.9);
@@ -1348,7 +1359,7 @@ width: 4.5rem
     position: absolute;
     z-index: 1;
     left: 45vw;
-    bottom: 3vh;
+    bottom: 10vh;
   }
 
   #Courses {

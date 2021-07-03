@@ -88,8 +88,8 @@
                     </div>
                   </div>
                 </form>
-                <!-- End -->
               </div>
+              <!-- End -->
             </div>
 
 
@@ -111,53 +111,51 @@
 
                 <!-- Big Screen DropDown -->
 
-                <li class="dropdown">
+                <li class="dropdown dropdown-screen">
                   <span class="dropdown-button" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="dropdown-toggle">
-                    <font class="nav-fonts">Professional</font>
-                  </span></span>
+                      <font class="nav-fonts">Professional</font>
+                    </span></span>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <span class="dropdown-button" type="button" onclick="window.location='index.html#Skills';"><span>
-                      <font class="nav-fonts">Skills</font>
-                    </span></span>
+                        <font class="nav-fonts">Skills</font>
+                      </span></span>
+                      <span class="dropdown-button" type="button" onclick="window.location='index.html#Work-Experience';"><span>
+                        <font class="nav-fonts">Experience</font>
+                      </span></span>
                     <span class="dropdown-button" type="button" onclick="window.location='index.html#Projects';"><span>
-                      <font class="nav-fonts">Portfolio</font>
-                    </span></span>
-                    <span class="dropdown-button" type="button" onclick="window.location='index.html#Work-Experience';"><span>
-                      <font class="nav-fonts">Experience</font>
-                    </span></span>
+                        <font class="nav-fonts">Portfolio</font>
+                      </span></span>
                   </div>
                 </li>
 
-                <li class="dropdown">
+                <li class="dropdown dropdown-screen">
                   <span class="dropdown-button" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="dropdown-toggle">
-                    <font class="nav-fonts">Resume</font>
-                  </span></span>
+                      <font class="nav-fonts">Resume</font>
+                    </span></span>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <span class="dropdown-button" type="button" onclick="window.location='index.html#Download-Resume';"><span>
-                      <font class="nav-fonts">Download</font>
-                    </span></span>
+                        <font class="nav-fonts">Download</font>
+                      </span></span>
                     <span class="dropdown-button" type="button" onclick="window.location='index.html#Education';"><span>
-                      <font class="nav-fonts">Education</font>
-                    </span></span>
+                        <font class="nav-fonts">Education</font>
+                      </span></span>
                     <span class="dropdown-button" type="button" onclick="window.location='index.html#Courses';"><span>
-                      <font class="nav-fonts">Courses</font>
-                    </span></span>
+                        <font class="nav-fonts">Courses</font>
+                      </span></span>
                   </div>
                 </li>
 
 
-                <li class="nav-item">
+                <li class="nav-item dropdown-screen">
                   <span onclick="window.location='contact.html';">
                     <font class="nav-fonts">Contact</font>
                   </span>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item dropdown-screen">
                   <span onclick="window.location='login.html';">
                     <font class="nav-fonts">Login</font>
                   </span>
                 </li>
-
-
 
                 <!-- Mobile View  -->
 
@@ -168,27 +166,22 @@
                 </li>
                 <li class="nav-item dropdown-mobile">
                   <span onclick="window.location='index.html#Skills';">
-                    <font class="nav-fonts">Skills</font>
-                  </span>
-                </li>
-                <li class="nav-item dropdown-mobile">
-                  <span onclick="window.location='index.html#Projects';">
-                    <font class="nav-fonts">Portfolio</font>
-                  </span>
-                </li>
-                <li class="nav-item dropdown-mobile">
-                  <span onclick="window.location='index.html#Work-Experience';">
-                    <font class="nav-fonts">Experience</font>
+                    <font class="nav-fonts">Professional</font>
                   </span>
                 </li>
                 <li class="nav-item dropdown-mobile">
                   <span onclick="window.location='index.html#Education';">
-                    <font class="nav-fonts">Education</font>
+                    <font class="nav-fonts">Resume</font>
                   </span>
                 </li>
                 <li class="nav-item dropdown-mobile">
-                  <span onclick="window.location='index.html#Courses';">
-                    <font class="nav-fonts">Courses</font>
+                  <span onclick="window.location='contact.html';">
+                    <font class="nav-fonts">Contact</font>
+                  </span>
+                </li>
+                <li class="nav-item dropdown-mobile">
+                  <span onclick="window.location='login.html';">
+                    <font class="nav-fonts">Login</font>
                   </span>
                 </li>
 
@@ -221,9 +214,9 @@
       <section class="introduction">
         <div class="summary-div summary-box">
           <div class="summary-logo-div" id="Download-Resume">
-            <div class="summary-logo">
+            <div class="summary-logo" onclick="window.location='index.html';">
               <div class="moon-logo">
-                <p class="p-logo" onclick="window.location='index.html';">Z</p>
+                <p class="p-logo">Z</p>
               </div>
             </div>
           </div>
@@ -338,449 +331,520 @@
       </section>
     </section>
 
-    <!-- Projects  -->
 
-    <section id="Work-Experience-background">
-      <section id="Projects">
 
-        <div class="Work-Experience-overlaying">
+      <!-- Work Experience and Projects -->
 
-          <div class="resume-heading-div">
-            <h1 class="resume-heading">Projects</h1>
+      <section id="Work-Experience-background">
+
+      <div id="Work-Experience" class="Work-Experience-overlaying">
+        <div class="resume-heading-div">
+          <h1 class="resume-heading">Work Experience</h1>
+        </div>
+        <div class="py-2">
+          <!-- timeline item 1 -->
+          <div class="row no-gutters">
+            <div class="col-sm">
+              <!--spacer-->
+            </div>
+            <!-- timeline item 1 center dot -->
+            <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+              <div class="row h-50">
+                <div class="col border-right">&nbsp;</div>
+                <div class="col">&nbsp;</div>
+              </div>
+              <h5 class="m-2">
+                <span class="badge badge-pill bg-success">&nbsp;</span>
+              </h5>
+              <div class="row h-50">
+                <div class="col border-right">&nbsp;</div>
+                <div class="col">&nbsp;</div>
+              </div>
+            </div>
+            <!-- timeline item 1 event content -->
+            <div class="col-sm py-2">
+              <div class="card bg-transparent border-0">
+                <div class="card-body">
+                  <div class="d-flex justify-content-start text-success font-weight-bold small">2016 - 2021</div>
+                  <h4 class="card-title text-left text-success font-weight-bold">Self-Employed</h4>
+                  <p class="card-text text-left text-white">Self-Employed</p>
+                    <button class="ml-auto p-2 custom-btn btn-12 font-weight-bold" type="button" data-target="#Job-Description-1-button" data-toggle="collapse">Job Description ▼</button>
+                  <div class="collapse" id="Job-Description-1-button">
+                    <div class="p-2 small">
+                      <input type="checkbox" class="read-more-state" id="description-1-readmore" />
+                      <ul class="read-more-wrap text-white">
+                        <div><i class="fas fa-hand-point-right"></i> Completed lease form or agreement</div>
+                        <div><i class="fas fa-hand-point-right"></i> Responsible for insuring the “model” apartments and target apartments are ready for show: responsible for maintaining work areas and office in clean and orderly manner: need to have
+                          an awareness of the “curb appeal” of
+                          the property</div>
+                        <div><i class="fas fa-hand-point-right"></i> Thorough knowledge of the lease terms, specifications and all community policies</div><span class="read-more-target">
+                        <div><i class="fas fa-hand-point-right"></i> Knowledgeable of current market conditions</div>
+                          <div><i class="fas fa-hand-point-right"></i> Fully informed of current rental rates, sizes, locations and all amenities of property</div>
+                          <div><i class="fas fa-hand-point-right"></i> Responsible to conduct out-reach marketing once per week</div>
+                          <div><i class="fas fa-hand-point-right"></i> Develop and maintain an on-going resident retention program under direction of community manager.</div>
+                          <div><i class="fas fa-hand-point-right"></i> Responsible to play an active role in the renewal process.</div>
+                          <div><i class="fas fa-hand-point-right"></i> Responsible for proper maintenance of all resident and property files.</div>
+                          <div><i class="fas fa-hand-point-right"></i> Responsible for maintaining and updating leasing and property information handbook and advertising log book</div>
+                          <div><i class="fas fa-hand-point-right"></i> Efficient and timely processing of all required administrative forms, reports and related information.</div>
+                        </span>
+                      </ul>
+                      <label for="description-1-readmore" class="read-more-trigger custom-btn btn-12"></label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="py-1">
-            <div class="row">
-              <div class="projects-div col-lg-6 mb-3 mb-lg-0" onClick="window.open('tinDog.html');">
-                <div class="projects projects-hover text-white rounded"><img src="css/images/TinDog-Project-Image.png" alt="">
-                  <div class="hover-overlay learn-more"><span>Learn More</span></div>
-                  <div class="hover-5-content">
-                    <h3 class="hover-title font-weight-light mb-0">Project was done during an online course Udemy.com <br> <strong class="font-weight-bold text-white">HTML, CSS, Bootstrap, jQuery. </strong></h3>
+          <!--/row-->
+
+          <!-- timeline item 2 -->
+          <div class="row no-gutters">
+            <div class="col-sm py-2">
+              <div class="card bg-transparent border-0">
+                <div class="card-body">
+                  <div class="d-flex justify-content-end text-success font-weight-bold small">2012 - 2015</div>
+                  <h4 class="card-title text-right text-success font-weight-bold">AlFardan Group</h4>
+                  <p class="card-text text-right text-white">Senior Leasing Consultant</p>
+                  <button class="d-flex ml-auto custom-btn btn-12 font-weight-bold" type="button" data-target="#Job-Description-2-button" data-toggle="collapse">Job Description ▼</button>
+                  <div class="collapse" id="Job-Description-2-button">
+                    <div class="p-2 small">
+                      <input type="checkbox" class="read-more-state" id="description-2-readmore" />
+                      <ul class="read-more-wrap text-white">
+                        <div><i class="fas fa-hand-point-right"></i> Completed lease form or agreement</div>
+                        <div><i class="fas fa-hand-point-right"></i> Responsible for insuring the “model” apartments and target apartments are ready for show: responsible for maintaining work areas and office in clean and orderly manner: need to have
+                          an awareness of the “curb appeal” of
+                          the property</div>
+                        <div><i class="fas fa-hand-point-right"></i> Thorough knowledge of the lease terms, specifications and all community policies</div><span class="read-more-target">
+                        <div><i class="fas fa-hand-point-right"></i> Knowledgeable of current market conditions</div>
+                          <div><i class="fas fa-hand-point-right"></i> Fully informed of current rental rates, sizes, locations and all amenities of property</div>
+                          <div><i class="fas fa-hand-point-right"></i> Responsible to conduct out-reach marketing once per week</div>
+                          <div><i class="fas fa-hand-point-right"></i> Develop and maintain an on-going resident retention program under direction of community manager.</div>
+                          <div><i class="fas fa-hand-point-right"></i> Responsible to play an active role in the renewal process.</div>
+                          <div><i class="fas fa-hand-point-right"></i> Responsible for proper maintenance of all resident and property files.</div>
+                          <div><i class="fas fa-hand-point-right"></i> Responsible for maintaining and updating leasing and property information handbook and advertising log book</div>
+                          <div><i class="fas fa-hand-point-right"></i> Efficient and timely processing of all required administrative forms, reports and related information.</div>
+                        </span>
+                      </ul>
+                      <label for="description-2-readmore" class="read-more-trigger custom-btn btn-12"></label>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="projects-div col-lg-6 mb-3 mb-lg-0" onClick="window.open('simon-game.html');">
-                <div class="projects projects-hover text-white rounded"><img src="css/images/SimonGame-Project-Image.png" alt="">
-                  <div class="hover-overlay learn-more"><span>Learn More</span></div>
-                  <div class="hover-5-content">
-                    <h3 class="hover-title font-weight-light mb-0">Project was done during an online course Udemy.com <br> <strong class="font-weight-bold text-white">HTML, CSS, jQuery, JavaScript.</strong></h3>
+            </div>
+            <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+              <div class="row h-50">
+                <div class="col border-right">&nbsp;</div>
+                <div class="col">&nbsp;</div>
+              </div>
+              <h5 class="m-2">
+                <span class="badge badge-pill bg-success">&nbsp;</span>
+              </h5>
+              <div class="row h-50">
+                <div class="col border-right">&nbsp;</div>
+                <div class="col">&nbsp;</div>
+              </div>
+            </div>
+            <div class="col-sm">
+              <!--spacer-->
+            </div>
+          </div>
+          <!--/row-->
+          <!-- timeline item 3 -->
+          <div class="row no-gutters">
+            <div class="col-sm">
+              <!--spacer-->
+            </div>
+            <!-- timeline item 1 center dot -->
+            <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+              <div class="row h-50">
+                <div class="col border-right">&nbsp;</div>
+                <div class="col">&nbsp;</div>
+              </div>
+              <h5 class="m-2">
+                <span class="badge badge-pill bg-success">&nbsp;</span>
+              </h5>
+              <div class="row h-50">
+                <div class="col border-right">&nbsp;</div>
+                <div class="col">&nbsp;</div>
+              </div>
+            </div>
+            <!-- timeline item 3 event content -->
+            <div class="col-sm py-2">
+              <div class="card bg-transparent border-0">
+                <div class="card-body">
+                  <div class="d-flex justify-content-start text-success font-weight-bold small">2011 - 2012</div>
+                  <h4 class="card-title text-left text-success font-weight-bold">SKS</h4>
+                  <p class="card-text text-left text-white">Business Consultant</p>
+                  <button class="ml-auto p-2 custom-btn btn-12 font-weight-bold" type="button" data-target="#Job-Description-3-button" data-toggle="collapse">Job Description ▼</button>
+                  <div class="collapse" id="Job-Description-3-button">
+                    <div class="p-2 small">
+                      <input type="checkbox" class="read-more-state" id="description-3-readmore" />
+                      <ul class="read-more-wrap text-white">
+                        <div><i class="fas fa-hand-point-right"></i> Completed lease form or agreement</div>
+                        <div><i class="fas fa-hand-point-right"></i> Responsible for insuring the “model” apartments and target apartments are ready for show: responsible for maintaining work areas and office in clean and orderly manner: need to have
+                          an awareness of the “curb appeal” of the property</div>
+                        <div><i class="fas fa-hand-point-right"></i> Thorough knowledge of the lease terms, specifications and all community policies</div><span class="read-more-target">
+                        <div><i class="fas fa-hand-point-right"></i> Knowledgeable of current market conditions</div>
+                          <div><i class="fas fa-hand-point-right"></i> Fully informed of current rental rates, sizes, locations and all amenities of property</div>
+                          <div><i class="fas fa-hand-point-right"></i> Responsible to conduct out-reach marketing once per week</div>
+                          <div><i class="fas fa-hand-point-right"></i> Develop and maintain an on-going resident retention program under direction of community manager.</div>
+                          <div><i class="fas fa-hand-point-right"></i> Responsible to play an active role in the renewal process.</div>
+                          <div><i class="fas fa-hand-point-right"></i> Responsible for proper maintenance of all resident and property files.</div>
+                          <div><i class="fas fa-hand-point-right"></i> Responsible for maintaining and updating leasing and property information handbook and advertising log book</div>
+                          <div><i class="fas fa-hand-point-right"></i> Efficient and timely processing of all required administrative forms, reports and related information.</div>
+                        </span>
+                      </ul>
+                      <label for="description-3-readmore" class="read-more-trigger custom-btn btn-12"></label>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="projects-div col-lg-6 mb-3 mt-4 mb-lg-0" onClick="window.open('drums.html');">
-                <div class="projects projects-hover text-white rounded"><img src="css/images/Drums-Project-Image.png" alt="">
-                  <div class="hover-overlay learn-more"><span>Learn More</span></div>
-                  <div class="hover-5-content">
-                    <h3 class="hover-title font-weight-light mb-0">Project was done during an online course Udemy.com <br> <strong class="font-weight-bold text-white">HTML, CSS, Bootstrap, jQuery, JavaScript.</strong></h3>
+            </div>
+          </div>
+          <!--/row-->
+          <!-- timeline item 4 -->
+          <div class="row no-gutters">
+            <div class="col-sm py-2">
+              <div class="card bg-transparent border-0">
+                <div class="card-body">
+                  <div class="d-flex justify-content-end text-success font-weight-bold small">2006 - 2011</div>
+                  <h4 class="card-title text-right text-success font-weight-bold">New Horizons</h4>
+                  <p class="card-text text-right text-white">Account Manager</p>
+                  <button class="d-flex ml-auto custom-btn btn-12 font-weight-bold" type="button" data-target="#Job-Description-4-button" data-toggle="collapse">Job Description ▼</button>
+                  <div class="collapse" id="Job-Description-4-button">
+                    <div class="p-2 small">
+                      <input type="checkbox" class="read-more-state" id="description-4-readmore" />
+                      <ul class="read-more-wrap text-white">
+                        <div><i class="fas fa-hand-point-right"></i> Completed lease form or agreement</div>
+                        <div><i class="fas fa-hand-point-right"></i> Responsible for insuring the “model” apartments and target apartments are ready for show: responsible for maintaining work areas and office in clean and orderly manner: need to have
+                          an awareness of the “curb appeal” of
+                          the property</div>
+                        <div><i class="fas fa-hand-point-right"></i> Thorough knowledge of the lease terms, specifications and all community policies</div><span class="read-more-target">
+                        <div><i class="fas fa-hand-point-right"></i> Knowledgeable of current market conditions</div>
+                          <div><i class="fas fa-hand-point-right"></i> Fully informed of current rental rates, sizes, locations and all amenities of property</div>
+                          <div><i class="fas fa-hand-point-right"></i> Responsible to conduct out-reach marketing once per week</div>
+                          <div><i class="fas fa-hand-point-right"></i> Develop and maintain an on-going resident retention program under direction of community manager.</div>
+                          <div><i class="fas fa-hand-point-right"></i> Responsible to play an active role in the renewal process.</div>
+                          <div><i class="fas fa-hand-point-right"></i> Responsible for proper maintenance of all resident and property files.</div>
+                          <div><i class="fas fa-hand-point-right"></i> Responsible for maintaining and updating leasing and property information handbook and advertising log book</div>
+                          <div><i class="fas fa-hand-point-right"></i> Efficient and timely processing of all required administrative forms, reports and related information.</div>
+                        </span>
+                      </ul>
+                      <label for="description-4-readmore" class="read-more-trigger custom-btn btn-12"></label>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="projects-div col-lg-6 mb-3 mt-4 mb-lg-0">
-                <div class="projects projects-hover text-white rounded"><img src="css/images/TinDog-Projects-Image.png" alt="">
-                  <div class="hover-overlay learn-more"><span>Learn More</span></div>
-                  <div class="hover-5-content">
-                    <h3 class="hover-title font-weight-light mb-0">New Project Coming Soon <br> <strong class="font-weight-bold text-white">Tools </strong></h3>
-                  </div>
+            </div>
+            <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+              <div class="row h-50">
+                <div class="col border-right">&nbsp;</div>
+                <div class="col">&nbsp;</div>
+              </div>
+              <h5 class="m-2">
+                <span class="badge badge-pill bg-success">&nbsp;</span>
+              </h5>
+              <div class="row h-50">
+                <div class="col border-right">&nbsp;</div>
+                <div class="col">&nbsp;</div>
+              </div>
+            </div>
+            <div class="col-sm">
+              <!--spacer-->
+            </div>
+          </div>
+          <!--/row-->
+        </div>
+
+      </div>
+  </div>
+
+      <!-- Projects  -->
+
+  <section id="Projects">
+
+    <div class="Work-Experience-overlaying">
+
+      <div class="resume-heading-div">
+        <h1 class="resume-heading">Projects</h1>
+      </div>
+      <div class="py-1">
+        <div class="row">
+          <div class="projects-div col-lg-6 mb-3 mb-lg-0" onClick="window.open('tinDog.html');">
+            <div class="projects projects-hover text-white rounded"><img src="css/images/TinDog-Project-Image.png" alt="">
+              <div class="hover-overlay learn-more"><span>Learn More</span></div>
+              <div class="hover-5-content">
+                <h3 class="hover-title font-weight-light mb-0">Project was done during an online course Udemy.com <br> <strong class="font-weight-bold text-white">HTML, CSS, Bootstrap, jQuery. </strong></h3>
+              </div>
+            </div>
+          </div>
+          <div class="projects-div col-lg-6 mb-3 mb-lg-0" onClick="window.open('simon-game.html');">
+            <div class="projects projects-hover text-white rounded"><img src="css/images/SimonGame-Project-Image.png" alt="">
+              <div class="hover-overlay learn-more"><span>Learn More</span></div>
+              <div class="hover-5-content">
+                <h3 class="hover-title font-weight-light mb-0">Project was done during an online course Udemy.com <br> <strong class="font-weight-bold text-white">HTML, CSS, jQuery, JavaScript.</strong></h3>
+              </div>
+            </div>
+          </div>
+          <div class="projects-div col-lg-6 mb-3 mt-4 mb-lg-0" onClick="window.open('drums.html');">
+            <div class="projects projects-hover text-white rounded"><img src="css/images/Drums-Project-Image.png" alt="">
+              <div class="hover-overlay learn-more"><span>Learn More</span></div>
+              <div class="hover-5-content">
+                <h3 class="hover-title font-weight-light mb-0">Project was done during an online course Udemy.com <br> <strong class="font-weight-bold text-white">HTML, CSS, Bootstrap, jQuery, JavaScript.</strong></h3>
+              </div>
+            </div>
+          </div>
+          <div class="projects-div col-lg-6 mb-3 mt-4 mb-lg-0">
+            <div class="projects projects-hover text-white rounded"><img src="css/images/TinDog-Projects-Image.png" alt="">
+              <div class="hover-overlay learn-more"><span>Learn More</span></div>
+              <div class="hover-5-content">
+                <h3 class="hover-title font-weight-light mb-0">New Project Coming Soon <br> <strong class="font-weight-bold text-white">Tools </strong></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </section>
+
+
+  <!-- Certifications  -->
+
+  <section id="Education">
+    <div class="Work-Experience-overlaying">
+      <div class="resume-heading-div">
+        <h1 class="resume-heading">Education</h1>
+      </div>
+      <div class="testimonials">
+        <div id="carouselWorkExperience" class="carousel slide" data-ride="carousel" data-pause="hover" data-interval="7000">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselWorkExperience" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselWorkExperience" data-slide-to="1"></li>
+            <li data-target="#carouselWorkExperience" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+
+            <div class="carousel-item active">
+              <div>
+                <img class="certificates" src="css/images/Web-Development.jpg" alt="The Complete 2020 Web Development Bootcamp online course">
+              </div>
+              <img class="testimonial-image" src="css/images/Zouheir.Circle.png" alt="Zouheir-Photo">
+              <em class="certificates-heading">Online, Udemy.com - 2020, 2021</em>
+            </div>
+
+            <div class="carousel-item">
+              <div>
+                <img class="certificates" src="css/images/Bachelor-Degree.png" alt="Bachelor Degree - Business Administration">
+              </div>
+              <img class="testimonial-image" src="css/images/Zouheir.Circle.png" alt="Zouheir-Photo">
+              <em class="certificates-heading">Lebanese American University - 2009</em>
+            </div>
+
+            <div class="carousel-item">
+              <div>
+                <img class="certificates" src="css/images/IT-Business-Analyst.jpg" alt="IT Business Analyst Course">
+              </div>
+              <img class="testimonial-image" src="css/images/Zouheir.Circle.png" alt="Zouheir-Photo">
+              <em class="certificates-heading">Illinois & Udemy.com - 2018 & 2020</em>
+            </div>
+
+          </div>
+          <a class="carousel-control-prev" type="button" href="#carouselWorkExperience" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" type="button" href="#carouselWorkExperience" data-slide="next">
+            <span class="carousel-control-next-icon carousel-control-size"></span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Short Training Certificates -->
+
+      <section id="Courses">
+        <div class="resume-heading-div">
+          <h1 class="resume-heading">Short Courses</h1>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Leadership Attendance Certificate" data-image="css/images/Diploma-Leadership.png" data-target="#image-gallery">
+              <img class="img-thumbnail" src="css/images/Diploma-Leadership.png" alt="Leadership Attendance Certificate">
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Administrative Leadership Attendance Certificate" data-image="css/images/Administrative-Leadership.png" data-target="#image-gallery">
+              <img class="img-thumbnail" src="css/images/Administrative-Leadership.png" alt="Administrative Leadership Attendance Certificate">
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Outstanding Preparation Attendance Certificate" data-image="css/images/Director-Outstanding-Preparation.png" data-target="#image-gallery">
+              <img class="img-thumbnail" src="css/images/Director-Outstanding-Preparation.png" alt="Outstanding Preparation Attendance Certificate">
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Communication Skills Attendance Certificate" data-image="css/images/Communication-Skills.png" data-target="#image-gallery">
+              <img class="img-thumbnail" src="css/images/Communication-Skills.png" alt="Communication Skills Attendance Certificate">
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Evaluation Performance Attendance Certificate" data-image="css/images/Evaluation-Performance.png" data-target="#image-gallery">
+              <img class="img-thumbnail" src="css/images/Evaluation-Performance.png" alt="Evaluation Performance Attendance Certificate">
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="How To Succeed Attendance Certificate" data-image="css/images/How-To-Succeed.png" data-target="#image-gallery">
+              <img class="img-thumbnail" src="css/images/How-To-Succeed.png" alt="How To Succeed Attendance Certificate">
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Leadership Attendance Certificate" data-image="css/images/Leadership.png" data-target="#image-gallery">
+              <img class="img-thumbnail" src="css/images/Leadership.png" alt="Leadership Attendance Certificate">
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Meeting Management Attendance Certificate" data-image="css/images/Meeting-Management.png" data-target="#image-gallery">
+              <img class="img-thumbnail" src="css/images/Meeting-Management.png" alt="Meeting Management Attendance Certificate">
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Motivation Attendance Certificate" data-image="css/images/Motivate-Your-Employees.png" data-target="#image-gallery">
+              <img class="img-thumbnail" src="css/images/Motivate-Your-Employees.png" alt="Motivation Attendance Certificate">
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Strategic Planning Attendance Certificate" data-image="css/images/Strategic-Planning.png" data-target="#image-gallery">
+              <img class="img-thumbnail" src="css/images/Strategic-Planning.png" alt="Strategic Planning Attendance Certificate">
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Body Language Attendance Certificate" data-image="css/images/Body-Language.png" data-target="#image-gallery">
+              <img class="img-thumbnail" src="css/images/Body-Language.png" alt="Body Language Attendance Certificate">
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Time Management Attendance Certificate" data-image="css/images/Time-Management.png" data-target="#image-gallery">
+              <img class="img-thumbnail" src="css/images/Time-Management.png" alt="Time Management Attendance Certificate">
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Conflict Management Attendance Certificate" data-image="css/images/Conflict-Management.png" data-target="#image-gallery">
+              <img class="img-thumbnail" src="css/images/Conflict-Management.png" alt="Conflict Management Attendance Certificate">
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Authorization Attendance Certificate" data-image="css/images/Authorization.png" data-target="#image-gallery">
+              <img class="img-thumbnail" src="css/images/Authorization.png" alt="Authorization Attendance Certificate">
+            </a>
+          </div>
+
+
+          <div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title" id="image-gallery-title"></h4>
+                  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                </div>
+                <img id="image-gallery-image" class="img-responsive col-md-12" src="">
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary float-left" id="show-previous-image"><i class="fas fa-arrow-alt-circle-left fa-2x"></i>
+                  </button>
+
+                  <button type="button" id="show-next-image" class="btn btn-secondary float-right"><i class="fas fa-arrow-alt-circle-right fa-2x"></i>
+                  </button>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+    </div>
+  </section>
 
 
-      <!-- Work Experience  -->
 
-      <div id="Work-Experience" class="Work-Experience-overlaying">
-        <div class="resume-heading-div">
-          <h1 class="resume-heading">Work Experience</h1>
-        </div>
-        <div class="row work-experience">
-          <div class="col-lg-12">
-            <ul class="timeline">
-              <li>
-                <div class="timeline-image">
-                  <h1 class="job-location">2016-2021</h1>
-                  <h6 class="job-location">Self Employed</h6>
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h2 class="timeline-image-small-screen">2016-2021</h2>
-                    <h4 class="subheading">USA, Illinois</h4>
-                    <br>
-                  </div>
-                  <div class="timeline-body">
-                    <div class="job-description">
-                      <input type="checkbox" class="read-more-state" id="description1-readmore" />
-                      <ul class="read-more-wrap">
-                        <li>Completed lease form or agreement</li>
-                        <li>Responsible for insuring the “model” apartments and target apartments are ready for show: responsible for maintaining work areas and office in clean and orderly manner: need to have an awareness of the “curb appeal” of the
-                          property</li>
-                        <li>Thorough knowledge of the lease terms, specifications and all community policies</li>
-                        <li>Knowledgeable of current market conditions</li><span class="read-more-target">
-                          <li>Fully informed of current rental rates, sizes, locations and all amenities of property</li>
-                          <li>Responsible to conduct out-reach marketing once per week</li>
-                          <li>Develop and maintain an on-going resident retention program under direction of community manager.</li>
-                          <li>Responsible to play an active role in the renewal process.</li>
-                          <li>Responsible for proper maintenance of all resident and property files.</li>
-                          <li>Responsible for maintaining and updating leasing and property information handbook and advertising log book</li>
-                          <li>Efficient and timely processing of all required administrative forms, reports and related information.</li>
-                          <li>Responsible for reporting unusual or extraordinary circumstances regarding the property or residents</li>
-                          <li>Courteous, efficient handling of resident requests and complaints.</li>
-                        </span>
-                      </ul>
-                      <label for="description1-readmore" class="read-more-trigger custom-btn btn-12"></label>
-                    </div>
-                  </div>
-                </div>
-                <div class="line"></div>
-              </li>
-              <li class="timeline-inverted">
-                <div class="timeline-image">
-                  <h1 class="job-location">2012-2016</h1>
-                  <h6 class="job-location">AlFardan Group</h6>
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h2 class="timeline-image-small-screen">2012-2016</h2>
-                    <h3 class="timeline-image-small-screen">AlFardan Group</h3>
+  <div class="my-0">
 
-                    <h4 class="job-title">Senior Leasing Consultant</h4>
-                    <h4 class="subheading">Doha - Qatar</h4>
-                    <br>
-                  </div>
-                  <div class="timeline-body">
-                    <div class="job-description">
-                      <input type="checkbox" class="read-more-state" id="description2-readmore" />
-                      <ul class="read-more-wrap">
-                        <li>Completed lease form or agreement</li>
-                        <li>Responsible for insuring the “model” apartments and target apartments are ready for show: responsible for maintaining work areas and office in clean and orderly manner: need to have an awareness of the “curb appeal” of the
-                          property</li>
-                        <li>Thorough knowledge of the lease terms, specifications and all community policies</li>
-                        <li>Knowledgeable of current market conditions</li><span class="read-more-target">
-                          <li>Fully informed of current rental rates, sizes, locations and all amenities of property</li>
-                          <li>Responsible to conduct out-reach marketing once per week</li>
-                          <li>Develop and maintain an on-going resident retention program under direction of community manager.</li>
-                          <li>Responsible to play an active role in the renewal process.</li>
-                          <li>Responsible for proper maintenance of all resident and property files.</li>
-                          <li>Responsible for maintaining and updating leasing and property information handbook and advertising log book</li>
-                          <li>Efficient and timely processing of all required administrative forms, reports and related information.</li>
-                          <li>Responsible for reporting unusual or extraordinary circumstances regarding the property or residents</li>
-                          <li>Courteous, efficient handling of resident requests and complaints.</li>
-                      </ul>
-                      <label for="description2-readmore" class="read-more-trigger custom-btn btn-12"></label>
-                    </div>
-                  </div>
-                </div>
-                <div class="line"></div>
-              </li>
-              <li>
-                <div class="timeline-image">
-                  <h1 class="job-location">2011-2012</h1>
-                  <h6 class="job-location">SKS</h6>
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h2 class="timeline-image-small-screen">2011-2012</h2>
-                    <h3 class="timeline-image-small-screen">SKS</h3>
-                    <h4 class="job-title">Business Consultant</h4>
-                    <h4 class="subheading">Doha - Qatar</h4>
-                    <br>
-                  </div>
-                  <div class="timeline-body">
-                    <div class="job-description">
-                      <input type="checkbox" class="read-more-state" id="description3-readmore" />
-                      <ul class="read-more-wrap">
-                        <li>Maintaining and developing relationships with existing customers via meetings, telephone calls and emails by providing support, information, and guidance; researching and recommending new opportunities; recommending profit
-                          and service improvements</li>
-                        <li>Developing and qualifying leads and closing sales</li>
-                        <li>Implementing the Sales Policies and procedures in the company</li>
-                        <li>Establishing business relations with the corporate sector</li><span class="read-more-target">
-                          <li>Attending and presenting at external meetings or road show functions to aid business development</li>
-                          <li>Maximize the levels of repeat business being generated by the relationship</li>
-                          <li>Ensuring that the company’s brand reaches the position in those respective key accounts</li>
-                          <li>Developing new sales strategies and implementing them</li>
-                          <li>Plans, develops, and implements strategies for generating resources and/or revenues for the organization.</li>
-                          <li>Participates in the development, negotiation, implementation, and maintenance of contractual arrangements</li>
-                      </ul>
-                      <label for="description3-readmore" class="read-more-trigger custom-btn btn-12"></label>
-                    </div>
-                  </div>
-                </div>
-                <div class="line"></div>
-              </li>
-              <li class="timeline-inverted">
-                <div class="timeline-image">
-                  <h1 class="job-location">2006-2011</h1>
-                  <h6 class="job-location">New Horizons</h6>
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h2 class="timeline-image-small-screen">2006-2011</h2>
-                    <h3 class="timeline-image-small-screen">New Horizons</h3>
+    <footer class="text-center text-lg-start text-white" style="background-color: rgba(51, 59, 80, 255)">
 
-                    <h4 class="job-title">Account Manager</h4>
-                    <h4 class="subheading">Dubai - UAE</h4>
-                    <br>
-                  </div>
-                  <div class="timeline-body">
-                    <div class="job-description">
-                      <input type="checkbox" class="read-more-state" id="description5-readmore" />
-                      <ul class="read-more-wrap">
-                        <li>Maintained and developing relationships with existing customers via meetings, telephone calls and emails by providing support, information, and guidance</li>
-                        <li>Researched and recommended new opportunities including profit and service improvements</li>
-                        <li>Developed qualifying leads and closing sales</li>
-                        <li>Established business relations with the corporate sector</li><span class="read-more-target">
-                          <li>Participated in the development, negotiation, implementation, and maintenance of contractual arrangements</li>
-                          <li>Maximized the levels of repeat business being generated by the relationship</li>
-                          <li>Identified new markets and business opportunities</li>
-                          <li>Negotiated terms of an agreement and closed sales and variations in price, delivery and specifications with managers</li>
-                          <li>Attended and presented at external meetings or road show functions to aid business development</li>
-                      </ul>
-                      <label for="description5-readmore" class="read-more-trigger custom-btn btn-12"></label>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+      <div class="p-2 pb-0">
 
-    <!-- Certifications  -->
+        <section id="Footer">
 
-    <section id="Education">
-      <div class="Work-Experience-overlaying">
-        <div class="resume-heading-div">
-          <h1 class="resume-heading">Education</h1>
-        </div>
-        <div class="testimonials">
-          <div id="carouselWorkExperience" class="carousel slide" data-ride="carousel" data-pause="hover" data-interval="7000">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselWorkExperience" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselWorkExperience" data-slide-to="1"></li>
-              <li data-target="#carouselWorkExperience" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-
-                <div>
-                  <img class="certificates" src="css/images/Bachelor-Degree.png" alt="Bachelor Degree - Business Administration">
-                </div>
-                <img class="testimonial-image" src="css/images/Zouheir.Circle.png" alt="Zouheir-Photo">
-                <em class="certificates-heading">Lebanese American University - 2009</em>
-              </div>
-              <div class="carousel-item">
-
-                <div>
-                  <img class="certificates" src="css/images/IT-Business-Analyst.jpg" alt="IT Business Analyst Course">
-                </div>
-                <img class="testimonial-image" src="css/images/Zouheir.Circle.png" alt="Zouheir-Photo">
-                <em class="certificates-heading">Illinois, Schaumburg - 2018 - Online, Udemy.com - 2020</em>
-              </div>
-              <div class="carousel-item">
-
-                <div>
-                  <img class="certificates" src="css/images/Web-Development.jpg" alt="The Complete 2020 Web Development Bootcamp online course">
-                </div>
-                <img class="testimonial-image" src="css/images/Zouheir.Circle.png" alt="Zouheir-Photo">
-                <em class="certificates-heading">Online, Udemy.com - 2020, 2021</em>
-              </div>
-            </div>
-            <a class="carousel-control-prev" type="button" href="#carouselWorkExperience" data-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
-            </a>
-            <a class="carousel-control-next" type="button" href="#carouselWorkExperience" data-slide="next">
-              <span class="carousel-control-next-icon carousel-control-size"></span>
-            </a>
-          </div>
-        </div>
-
-        <!-- Short Training Certificates -->
-
-        <section id="Courses">
-          <div class="resume-heading-div">
-            <h1 class="resume-heading">Short Courses</h1>
-          </div>
           <div class="row">
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-              <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Leadership Attendance Certificate" data-image="css/images/Diploma-Leadership.png" data-target="#image-gallery">
-                <img class="img-thumbnail" src="css/images/Diploma-Leadership.png" alt="Leadership Attendance Certificate">
-              </a>
-            </div>
 
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-              <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Administrative Leadership Attendance Certificate" data-image="css/images/Administrative-Leadership.png" data-target="#image-gallery">
-                <img class="img-thumbnail" src="css/images/Administrative-Leadership.png" alt="Administrative Leadership Attendance Certificate">
-              </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-              <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Outstanding Preparation Attendance Certificate" data-image="css/images/Director-Outstanding-Preparation.png" data-target="#image-gallery">
-                <img class="img-thumbnail" src="css/images/Director-Outstanding-Preparation.png" alt="Outstanding Preparation Attendance Certificate">
-              </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-              <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Communication Skills Attendance Certificate" data-image="css/images/Communication-Skills.png" data-target="#image-gallery">
-                <img class="img-thumbnail" src="css/images/Communication-Skills.png" alt="Communication Skills Attendance Certificate">
-              </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-              <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Evaluation Performance Attendance Certificate" data-image="css/images/Evaluation-Performance.png" data-target="#image-gallery">
-                <img class="img-thumbnail" src="css/images/Evaluation-Performance.png" alt="Evaluation Performance Attendance Certificate">
-              </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-              <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="How To Succeed Attendance Certificate" data-image="css/images/How-To-Succeed.png" data-target="#image-gallery">
-                <img class="img-thumbnail" src="css/images/How-To-Succeed.png" alt="How To Succeed Attendance Certificate">
-              </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-              <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Leadership Attendance Certificate" data-image="css/images/Leadership.png" data-target="#image-gallery">
-                <img class="img-thumbnail" src="css/images/Leadership.png" alt="Leadership Attendance Certificate">
-              </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-              <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Meeting Management Attendance Certificate" data-image="css/images/Meeting-Management.png" data-target="#image-gallery">
-                <img class="img-thumbnail" src="css/images/Meeting-Management.png" alt="Meeting Management Attendance Certificate">
-              </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-              <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Motivation Attendance Certificate" data-image="css/images/Motivate-Your-Employees.png" data-target="#image-gallery">
-                <img class="img-thumbnail" src="css/images/Motivate-Your-Employees.png" alt="Motivation Attendance Certificate">
-              </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-              <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Strategic Planning Attendance Certificate" data-image="css/images/Strategic-Planning.png" data-target="#image-gallery">
-                <img class="img-thumbnail" src="css/images/Strategic-Planning.png" alt="Strategic Planning Attendance Certificate">
-              </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-              <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Body Language Attendance Certificate" data-image="css/images/Body-Language.png" data-target="#image-gallery">
-                <img class="img-thumbnail" src="css/images/Body-Language.png" alt="Body Language Attendance Certificate">
-              </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-              <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Time Management Attendance Certificate" data-image="css/images/Time-Management.png" data-target="#image-gallery">
-                <img class="img-thumbnail" src="css/images/Time-Management.png" alt="Time Management Attendance Certificate">
-              </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-              <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Conflict Management Attendance Certificate" data-image="css/images/Conflict-Management.png" data-target="#image-gallery">
-                <img class="img-thumbnail" src="css/images/Conflict-Management.png" alt="Conflict Management Attendance Certificate">
-              </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-              <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Authorization Attendance Certificate" data-image="css/images/Authorization.png" data-target="#image-gallery">
-                <img class="img-thumbnail" src="css/images/Authorization.png" alt="Authorization Attendance Certificate">
-              </a>
+            <hr class="w-100 clearfix d-md-none" />
+
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Projects</h6>
+              <p>
+                <a class="text-white" onClick="window.open('tinDog.html');"><button class="btn btn-outline-secondary btn-block" type="button" name="button">TinDog</a></button>
+              </p>
+              <p>
+                <a class="text-white" onClick="window.open('simon-game.html');"><button class="btn btn-outline-secondary btn-block" type="button" name="button">Simon Game</a></button>
+              </p>
+              <p>
+                <a class="text-white" onClick="window.open('drums.html');"><button class="btn btn-outline-secondary btn-block" type="button" name="button">Drums</a></button>
+              </p>
+              <!-- <p>
+                  <a class="text-white"><button class="btn btn-outline-secondary btn-block" type="button" name="button">Project #4</a></button>
+                </p> -->
             </div>
 
 
-            <div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h4 class="modal-title" id="image-gallery-title"></h4>
-                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    </div>
-                  <img id="image-gallery-image" class="img-responsive col-md-12" src="">
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary float-left" id="show-previous-image"><i class="fas fa-arrow-alt-circle-left fa-2x"></i>
-                    </button>
+            <hr class="w-100 clearfix d-md-none" />
 
-                    <button type="button" id="show-next-image" class="btn btn-secondary float-right"><i class="fas fa-arrow-alt-circle-right fa-2x"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
+
+            <div class="col-md-4 col-lg-3 col-xl-4 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+              <p><a href="https://goo.gl/maps/QLTQ8eH6sFUp8aB59" target="_blank"><i class="fas fa-home mr-3"></i> Wheeling, IL 60090, US</a></p>
+              <p><a href="mailto:john@example.com"><i class="fas fa-envelope mr-3"></i>Zouheir-c@hotmail.com</a></p>
+              <p><a href="tel:+12245221124"><i class="fas fa-phone mr-3"></i>+1 224 522 1124</a></p>
+            </div>
+
+            <hr class="w-100 clearfix d-md-none" />
+
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Follow Me</h6>
+
+
+              <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" target="_blank" href="https://www.facebook.com/Zouheir.Chalouf" role="button"><i class="fab fa-facebook"></i></a>
+
+
+              <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee" target="_blank" href="https://twitter.com/zouheirc?lang=en" role="button"><i class="fab fa-twitter"></i></a>
+
+
+              <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca" target="_blank" href="https://www.linkedin.com/in/zouheir-chalouf-93a123180" role="button"><i class="fab fa-linkedin-in"></i></a>
+
+
+              <a class="btn btn-primary btn-floating m-1" style="background-color: #333333" target="_blank" href="https://zouheirc.github.io/Zouheir/" role="button"><i class="fab fa-github"></i></a>
             </div>
           </div>
         </section>
       </div>
-    </section>
 
 
 
-    <div class="my-0">
-
-      <footer class="text-center text-lg-start text-white" style="background-color: rgba(51, 59, 80, 255)">
-
-        <div class="p-2 pb-0">
-
-          <section id="Footer">
-
-            <div class="row">
-
-              <hr class="w-100 clearfix d-md-none" />
-
-              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 font-weight-bold">Projects</h6>
-                <p>
-                  <a class="text-white" onClick="window.open('tinDog.html');"><button class="btn btn-outline-secondary btn-block" type="button" name="button">TinDog</a></button>
-                </p>
-                <p>
-                  <a class="text-white" onClick="window.open('simon-game.html');"><button class="btn btn-outline-secondary btn-block" type="button" name="button">Simon Game</a></button>
-                </p>
-                <p>
-                  <a class="text-white" onClick="window.open('drums.html');"><button class="btn btn-outline-secondary btn-block" type="button" name="button">Drums</a></button>
-                </p>
-                <!-- <p>
-                  <a class="text-white"><button class="btn btn-outline-secondary btn-block" type="button" name="button">Project #4</a></button>
-                </p> -->
-              </div>
-
-
-              <hr class="w-100 clearfix d-md-none" />
-
-
-              <hr class="w-100 clearfix d-md-none" />
-
-              <div class="col-md-4 col-lg-3 col-xl-4 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
-                <p><a href="https://goo.gl/maps/QLTQ8eH6sFUp8aB59" target="_blank"><i class="fas fa-home mr-3"></i> Wheeling, IL 60090, US</a></p>
-                <p><a href="mailto:john@example.com"><i class="fas fa-envelope mr-3"></i>Zouheir-c@hotmail.com</a></p>
-                <p><a href="tel:+12245221124"><i class="fas fa-phone mr-3"></i>+1 224 522 1124</a></p>
-              </div>
-
-              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 font-weight-bold">Contact Me</h6>
-
-
-                <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" target="_blank" href="https://www.facebook.com/Zouheir.Chalouf" role="button"><i class="fab fa-facebook"></i></a>
-
-
-                <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee" target="_blank" href="https://twitter.com/zouheirc?lang=en" role="button"><i class="fab fa-twitter"></i></a>
-
-
-                <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca" target="_blank" href="https://www.linkedin.com/in/zouheir-chalouf-93a123180" role="button"><i class="fab fa-linkedin-in"></i></a>
-
-
-                <a class="btn btn-primary btn-floating m-1" style="background-color: #333333" target="_blank" href="https://zouheirc.github.io/Zouheir/" role="button"><i class="fab fa-github"></i></a>
-              </div>
-            </div>
-          </section>
-        </div>
-
-
-
-        <div class="text-center p-5 footer-copyright" style="background-color: rgba(0, 0, 0, 0.2)">
-          © Copyright 2020 by Zouheir Chalouf:
-          <a class="text-white" target="_blank" href="https://zouheirc.github.io/Zouheir/">Zouheir.com</a>
-          <div class="logo-footer">
-            <div class="moon-logo">
-              <p class="p-logo p-logo-footer" onclick="window.location='index.html';">Z</p>
-            </div>
+      <div class="text-center p-5 footer-copyright" style="background-color: rgba(0, 0, 0, 0.2)">
+        © Copyright 2020 by Zouheir Chalouf:
+        <a class="text-white" target="_blank" href="https://zouheirc.github.io/Zouheir/">Zouheir.com</a>
+        <div class="logo-footer" onclick="window.location='index.html';">
+          <div class="moon-logo">
+            <p class="p-logo p-logo-footer">Z</p>
           </div>
         </div>
+      </div>
 
-      </footer>
+    </footer>
 
-    </div>
+  </div>
 
-    <!-- <footer id="footer">
+  <!-- <footer id="footer">
       <a target="_blank" href="https://www.facebook.com/Zouheir.Chalouf"><i class="social-icon fab fa-facebook-f"></i></a>
       <a target="_blank" href="https://twitter.com/zouheirc?lang=en"><i class="social-icon fab fa-twitter"></i></a>
       <a target="_blank" href="https://www.linkedin.com/in/zouheir-chalouf-93a123180"><i class="social-icon fab fa-linkedin-in"></i></a>

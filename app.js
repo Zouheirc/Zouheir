@@ -5,8 +5,6 @@
 // font-family: inherit;
 
 
-
-
 // onClick Functions for navbar collapse
 $('.navbar-nav>li>span').on('click', function(){
     $('.navbar-collapse').collapse('hide');

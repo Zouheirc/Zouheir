@@ -159,6 +159,15 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: initial !important;
     margin-bottom: auto;
   }
+  .projects-div {
+    margin-left: 15%;
+  }
+}
+
+@media (max-width: 400px) {
+  .menu-nav {
+    height: 13%;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -173,20 +182,20 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
   }
   .menu-nav {
-    background-color: rgb(107,117,132);
+    background-color: rgba(51, 59, 80, 255);
     position: fixed;
     width: 100%;
     z-index: 999;
-    height: 10vh;
+    height: 14%;
   }
   .floatingNav {
-    box-shadow: 0px 1px 10px rgb(107,117,132);
+    box-shadow: 0px 1px 10px rgba(51, 59, 80, 255);
   }
   .nav-logo {
     padding-top: 10px;
   }
   .nav-item span, .dropdown-button span {
-    background-color: rgb(107,117,132) !important;
+    background-color: rgba(51, 59, 80, 255) !important;
     width: 7rem;
   }
 }
@@ -318,7 +327,7 @@ width: 4.5rem
     opacity: 0.7;
     border-radius: 100%;
     position: absolute;
-    background-color: rgb(107,117,132);
+    background-color: rgba(51, 59, 80, 255);
     right: -200px;
     left: -200px;
     top: -30px;
@@ -327,9 +336,9 @@ width: 4.5rem
 
   }
   .floatingNav::before {
-    box-shadow: 5px 1px 10px rgb(107,117,132);
+    box-shadow: 5px 1px 10px rgba(51, 59, 80, 255);
     border-radius: 100%;
-    background-color: rgb(107,117,132);
+    background-color: rgba(51, 59, 80, 255);
     right: -200px;
     left: -200px;
     top: -50px;
@@ -369,7 +378,9 @@ width: 4.5rem
 
 .zouheir-img {
   position: absolute;
-  padding: 8% 0 0 50%;
+  /* padding: 8% 0 0 70%; */
+  margin: 7% 0 0 50%;
+  border-radius: 50%;
 }
 
 .introducing {
@@ -513,7 +524,7 @@ width: 4.5rem
 .resume-heading {
   font-size: calc(10px + 8vh);
   line-height: calc(10px + 10vh);
-  text-shadow: 0 0 5px rgba(0, 207, 68, 255), 0 0 15px rgba(0, 207, 68, 255), 0 0 20px rgba(0, 207, 68, 255), 0 0 40px rgba(0, 207, 68, 255), 0 0 60px #ff0000, 0 0 10px rgba(0, 207, 68, 255), 0 0 98px #ff0000;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.9), 0 0 15px rgba(255, 255, 255, 0.9), 0 0 20px rgba(255, 255, 255, 0.9), 0 0 40px rgba(255, 255, 255, 0.9), 0 0 60px #ff0000, 0 0 10px rgba(255, 255, 255, 0.9), 0 0 98px #ff0000;
   color: #fff6a9;
   font-family: "Sacramento", cursive;
   animation: blink 8s infinite;
@@ -544,7 +555,7 @@ width: 4.5rem
   54%,
   56%,
   100% {
-    text-shadow: 0 0 5px rgba(0, 207, 68, 255), 0 0 15px rgba(0, 207, 68, 255), 0 0 20px rgba(0, 207, 68, 255), 0 0 40px rgba(0, 207, 68, 255), 0 0 60px #ff0000, 0 0 10px rgba(0, 207, 68, 255), 0 0 98px #ff0000;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.9), 0 0 15px rgba(255, 255, 255, 0.9), 0 0 20px rgba(255, 255, 255, 0.9), 0 0 40px rgba(255, 255, 255, 0.9), 0 0 60px #ff0000, 0 0 10px rgba(255, 255, 255, 0.9), 0 0 98px #ff0000;
     color: #fff6a9;
   }
 }
@@ -566,7 +577,7 @@ width: 4.5rem
   54%,
   56%,
   100% {
-    text-shadow: 0 0 5px rgba(0, 207, 68, 255), 0 0 15px rgba(0, 207, 68, 255), 0 0 20px rgba(0, 207, 68, 255), 0 0 40px rgba(0, 207, 68, 255), 0 0 60px #ff0000, 0 0 10px rgba(0, 207, 68, 255), 0 0 98px #ff0000;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.9), 0 0 15px rgba(255, 255, 255, 0.9), 0 0 20px rgba(255, 255, 255, 0.9), 0 0 40px rgba(255, 255, 255, 0.9), 0 0 60px #ff0000, 0 0 10px rgba(255, 255, 255, 0.9), 0 0 98px #ff0000;
     color: #fff6a9;
   }
 }
@@ -749,6 +760,10 @@ width: 4.5rem
   margin-bottom: -5%;
 }
 
+.projects-div {
+  width: 75%;
+}
+
 .projects {
   overflow: hidden;
   position: relative;
@@ -866,7 +881,8 @@ width: 4.5rem
 }
 
 .Work-Experience-overlaying {
-  background: rgba(39, 62, 84, 0.90);
+  /* background: rgba(39, 62, 84, 0.90); */
+  background: rgba(48, 74, 99, 0.9);
   overflow: hidden;
   height: 100%;
   z-index: 2;
@@ -1007,7 +1023,11 @@ width: 4.5rem
   #Skills {
     padding-top: 20%;
   }
+  .projects-div {
+    margin-left: 13%;
+  }
 }
+
 
 /* Short Training Certificates */
 #Courses {

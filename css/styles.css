@@ -882,7 +882,7 @@ width: 4.5rem
 
 .Work-Experience-overlaying {
   /* background: rgba(39, 62, 84, 0.90); */
-  background: rgba(48, 74, 99, 0.9);
+  background: rgba(48, 74, 99, 0.8);
   overflow: hidden;
   height: 100%;
   z-index: 2;

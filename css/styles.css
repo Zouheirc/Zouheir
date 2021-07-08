@@ -118,7 +118,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   .navbar .navbar-collapse {
     background: rgba(255,255,255,0.9);
-    top: 13.1vh;
+    top: 13.0vh;
     left: 0;
     right: 0;
     bottom: 0;
@@ -1187,6 +1187,7 @@ width: 4.5rem
 
   .download-button {
     width: 35vw;
+    height: 4vh;
   }
 
   .download-button:hover {

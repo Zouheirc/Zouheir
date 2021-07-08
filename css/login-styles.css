@@ -112,10 +112,18 @@
     0 10px 10px rgba(0, 0, 0, 0.22);
   position: relative;
   overflow: hidden;
-  width: 55%;
+  width: 65%;
   max-width: 100%;
   min-height: 480px;
-  margin: 8% auto;
+  margin: 8% 0 8% 17%;
+}
+
+@media (max-width: 900px) {
+  .sign-in-container {
+    top: 0;
+    width: 50%;
+    z-index: 2;
+  }
 }
 
 .form-container {

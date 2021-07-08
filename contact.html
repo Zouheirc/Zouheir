@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
-  <meta charset="utf-8">
-  <title>Contact Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Zouheir's Home Page</title>
 
   <!-- CSS Stylesheets -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -18,10 +18,17 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Slabo+13px&display=swap" rel="stylesheet">
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
-  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
   <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -44,6 +51,7 @@
   <!-- Bootstrap Scripts -->
 
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="" crossorigin="anonymous"></script>
+  <script src="jQuery.scrollSpeed.js"></script>
   <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -57,84 +65,256 @@
 
 </head>
 
-
 <body>
+
+
+
+
   <div class="main-container">
+
     <header id="header">
-      <nav class="navbar bg-transparent navbar-expand-lg">
-        <div class="container-fluid">
-          <div class="moon-logo">
-            <p class="p-logo" onclick="window.location='index.html';">Z</p>
-          </div>
-          <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <span onclick="window.location='index.html';">Home</span>
-              </li>
-              <li class="nav-item">
-                <span onclick="window.location='contact.html';">Contact</span>
-              </li>
-              <li class="nav-item">
-                <span onclick="window.location='login.html';">Login</span>
-              </li>
 
-              <li class="dropdown">
-                <span class="dropdown-button" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="dropdown-toggle">Resume</span></span>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <span class="dropdown-button" type="button" onclick="window.location='index.html#Download-Resume';"><span>Download</span></span>
-                  <span class="dropdown-button" type="button" onclick="window.location='index.html#Skills';"><span>Skills</span></span>
-                  <span class="dropdown-button" type="button" onclick="window.location='index.html#Projects';"><span>Projects</span></span>
-                  <span class="dropdown-button" type="button" onclick="window.location='index.html#Work-Experience';"><span>Experience</span></span>
-                  <span class="dropdown-button" type="button" onclick="window.location='index.html#Education';"><span>Education</span></span>
-                  <span class="dropdown-button" type="button" onclick="window.location='index.html#Courses';"><span>Courses</span></span>
-                </div>
-              </li>
+      <div class="menu-nav" id="navBar">
+        <nav class="navbar bg-transparent navbar-expand-lg">
+          <div class="container-fluid">
+            <div class="nav-logo">
+              <div class="moon-logo">
+                <p class="p-logo" onclick="window.location='index.html';">Z</p>
+                <form action="" class="search-bar">
+                  <div class="input-group mb-4 border border-3 border-success rounded-pill p-0">
+                    <input type="search" placeholder="Search" aria-describedby="button-addon3" class="form-control text-white bg-none border-0">
+                    <div class="input-group-append border-0">
+                      <button id="button-addon3" type="button" class="btn btn-link text-success"><i class="fa fa-search"></i></button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <!-- End -->
+            </div>
 
-            </ul>
+
+
+
+            <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+
+
+                <li class="nav-item">
+                  <span onclick="window.location='index.html';">
+                    <font class="nav-fonts">Home</font>
+                  </span>
+                </li>
+
+
+                <!-- Big Screen DropDown -->
+
+                <li class="dropdown dropdown-screen">
+                  <span class="dropdown-button" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="dropdown-toggle">
+                      <font class="nav-fonts">Professional</font>
+                    </span></span>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <span class="dropdown-button" type="button" onclick="window.location='index.html#Skills';"><span>
+                        <font class="nav-fonts">Skills</font>
+                      </span></span>
+                    <span class="dropdown-button" type="button" onclick="window.location='index.html#Work-Experience';"><span>
+                        <font class="nav-fonts">Experience</font>
+                      </span></span>
+                    <span class="dropdown-button" type="button" onclick="window.location='index.html#Projects';"><span>
+                        <font class="nav-fonts">Portfolio</font>
+                      </span></span>
+                  </div>
+                </li>
+
+                <li class="dropdown dropdown-screen">
+                  <span class="dropdown-button" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="dropdown-toggle">
+                      <font class="nav-fonts">Resume</font>
+                    </span></span>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <span class="dropdown-button" type="button" onclick="window.location='index.html#Download-Resume';"><span>
+                        <font class="nav-fonts">Download</font>
+                      </span></span>
+                    <span class="dropdown-button" type="button" onclick="window.location='index.html#Education';"><span>
+                        <font class="nav-fonts">Education</font>
+                      </span></span>
+                    <span class="dropdown-button" type="button" onclick="window.location='index.html#Courses';"><span>
+                        <font class="nav-fonts">Courses</font>
+                      </span></span>
+                  </div>
+                </li>
+
+
+                <li class="nav-item dropdown-screen">
+                  <span onclick="window.location='contact.html';">
+                    <font class="nav-fonts">Contact</font>
+                  </span>
+                </li>
+                <li class="nav-item dropdown-screen">
+                  <span onclick="window.location='login.html';">
+                    <font class="nav-fonts">Login</font>
+                  </span>
+                </li>
+
+                <!-- Mobile View  -->
+
+                <li class="nav-item dropdown-mobile">
+                  <span onclick="window.location='index.html#Download-Resume';">
+                    <font class="nav-fonts">Download</font>
+                  </span>
+                </li>
+                <li class="nav-item dropdown-mobile">
+                  <span onclick="window.location='index.html#Skills';">
+                    <font class="nav-fonts">Professional</font>
+                  </span>
+                </li>
+                <li class="nav-item dropdown-mobile">
+                  <span onclick="window.location='index.html#Education';">
+                    <font class="nav-fonts">Resume</font>
+                  </span>
+                </li>
+                <li class="nav-item dropdown-mobile">
+                  <span onclick="window.location='contact.html';">
+                    <font class="nav-fonts">Contact</font>
+                  </span>
+                </li>
+                <li class="nav-item dropdown-mobile">
+                  <span onclick="window.location='login.html';">
+                    <font class="nav-fonts">Login</font>
+                  </span>
+                </li>
+
+              </ul>
+            </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
 
-<section class="get-in-touch">
- <h1 class="title">Get in touch</h1>
- <form class="contact-form row">
-    <div class="form-field col-lg-6">
-       <input id="name" class="input-text js-input" type="text" required>
-       <label class="label" for="name">Name</label>
+    <div id="below-navbar">
+      <div class="spacer1 Work-Experience-overlaying">&nbsp;
+      </div>
+
+      <section class="welcome-page Work-Experience-overlaying">
+
+        <section class="get-in-touch">
+         <h1 class="title">Get in touch</h1>
+         <form class="contact-form row">
+            <div class="form-field col-lg-6">
+               <input id="name" class="input-text js-input" type="text" required>
+               <label class="label" for="name">Name</label>
+            </div>
+            <div class="form-field col-lg-6 ">
+               <input id="email" class="input-text js-input" type="email" required>
+               <label class="label" for="email">E-mail</label>
+            </div>
+            <div class="form-field col-lg-6 ">
+               <input id="company" class="input-text js-input" type="text" required>
+               <label class="label" for="company">Company Name</label>
+            </div>
+             <div class="form-field col-lg-6 ">
+               <input id="phone" class="input-text js-input" type="text" required>
+               <label class="label" for="phone">Contact Number</label>
+            </div>
+            <div class="form-field col-lg-12">
+               <input id="message" class="input-text js-input" type="text" required>
+               <label class="label" for="message">Message</label>
+            </div>
+            <div class="form-field col-lg-12">
+               <input class="submit-btn" type="submit" value="Submit">
+            </div>
+         </form>
+        </section>
+
+      </section>
     </div>
-    <div class="form-field col-lg-6 ">
-       <input id="email" class="input-text js-input" type="email" required>
-       <label class="label" for="email">E-mail</label>
+
+
+
+    <div class="my-0">
+
+      <footer class="text-center text-lg-start text-white" style="background-color: rgba(51, 59, 80, 255)">
+
+        <div class="p-2 pb-0">
+
+          <section id="Footer">
+
+            <div class="row">
+
+              <hr class="w-100 clearfix d-md-none" />
+
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Projects</h6>
+                <p>
+                  <a class="text-white" onClick="window.open('tinDog.html');"><button class="btn btn-outline-secondary btn-block" type="button" name="button">TinDog</a></button>
+                </p>
+                <p>
+                  <a class="text-white" onClick="window.open('simon-game.html');"><button class="btn btn-outline-secondary btn-block" type="button" name="button">Simon Game</a></button>
+                </p>
+                <p>
+                  <a class="text-white" onClick="window.open('drums.html');"><button class="btn btn-outline-secondary btn-block" type="button" name="button">Drums</a></button>
+                </p>
+                <!-- <p>
+                  <a class="text-white"><button class="btn btn-outline-secondary btn-block" type="button" name="button">Project #4</a></button>
+                </p> -->
+              </div>
+
+
+              <hr class="w-100 clearfix d-md-none" />
+
+
+              <div class="col-md-4 col-lg-3 col-xl-4 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                <p><a href="https://goo.gl/maps/QLTQ8eH6sFUp8aB59" target="_blank"><i class="fas fa-home mr-3"></i> Wheeling, IL 60090, US</a></p>
+                <p><a href="mailto:john@example.com"><i class="fas fa-envelope mr-3"></i>Zouheir-c@hotmail.com</a></p>
+                <p><a href="tel:+12245221124"><i class="fas fa-phone mr-3"></i>+1 224 522 1124</a></p>
+              </div>
+
+              <hr class="w-100 clearfix d-md-none" />
+
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Follow Me</h6>
+
+
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" target="_blank" href="https://www.facebook.com/Zouheir.Chalouf" role="button"><i class="fab fa-facebook"></i></a>
+
+
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee" target="_blank" href="https://twitter.com/zouheirc?lang=en" role="button"><i class="fab fa-twitter"></i></a>
+
+
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca" target="_blank" href="https://www.linkedin.com/in/zouheir-chalouf-93a123180" role="button"><i class="fab fa-linkedin-in"></i></a>
+
+
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #333333" target="_blank" href="https://zouheirc.github.io/Zouheir/" role="button"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </section>
+        </div>
+
+
+
+        <div class="text-center p-5 footer-copyright" style="background-color: rgba(0, 0, 0, 0.2)">
+          © Copyright 2020 by Zouheir Chalouf:
+          <a class="text-white" target="_blank" href="https://zouheirc.github.io/Zouheir/">Zouheir.com</a>
+          <div class="logo-footer" onclick="window.location='index.html';">
+            <div class="moon-logo">
+              <p class="p-logo p-logo-footer">Z</p>
+            </div>
+          </div>
+        </div>
+
+      </footer>
+
     </div>
-    <div class="form-field col-lg-6 ">
-       <input id="company" class="input-text js-input" type="text" required>
-       <label class="label" for="company">Company Name</label>
-    </div>
-     <div class="form-field col-lg-6 ">
-       <input id="phone" class="input-text js-input" type="text" required>
-       <label class="label" for="phone">Contact Number</label>
-    </div>
-    <div class="form-field col-lg-12">
-       <input id="message" class="input-text js-input" type="text" required>
-       <label class="label" for="message">Message</label>
-    </div>
-    <div class="form-field col-lg-12">
-       <input class="submit-btn" type="submit" value="Submit">
-    </div>
- </form>
-</section>
-    <footer id="footer">
-        <a target="_blank" href="https://www.facebook.com/Zouheir.Chalouf"><i class="social-icon fab fa-facebook-f"></i></a>
-        <a target="_blank" href="https://twitter.com/zouheirc?lang=en"><i class="social-icon fab fa-twitter"></i></a>
-        <a target="_blank" href="https://www.linkedin.com/in/zouheir-chalouf-93a123180"><i class="social-icon fab fa-linkedin-in"></i></a>
-        <p>© Copyright 2020 Zouheir Chalouf</p>
-    </footer>
+
   </div>
+
   <!-- Javascript  -->
-  <script src="app.js" charset="utf-8"></script>
+
+  <script src="app.js" charset="utf-8">
+  </script>
+
 </body>
+
 </html>

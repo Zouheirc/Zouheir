@@ -13,11 +13,11 @@
   letter-spacing: 3px;
   font-size: 3.2em;
   line-height: 48px;
-  color: #228B22;
-  background: #228B22;
-  background: -moz-linear-gradient(left, #c04d00 0%, #228B22 100%) !important;
-  background: -webkit-linear-gradient(left, #c04d00 0%, #228B22 100%) !important;
-  background: linear-gradient(to right, #c04d00 0%, #228B22 100%) !important;
+  color: rgba(0, 215, 72, 255);
+  background: rgba(0, 215, 72, 255);
+  background: -moz-linear-gradient(left, #c04d00 0%, rgba(0, 215, 72, 255) 100%) !important;
+  background: -webkit-linear-gradient(left, #c04d00 0%, rgba(0, 215, 72, 255) 100%) !important;
+  background: linear-gradient(to right, #c04d00 0%, rgba(0, 215, 72, 255) 100%) !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
 }
@@ -57,7 +57,7 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 400;
-  color: #228B22;
+  color: rgba(0, 215, 72, 255);
   cursor: text;
   transition: -webkit-transform .2s ease-in-out;
   transition: transform .2s ease-in-out;
@@ -68,7 +68,7 @@
 .contact-form .submit-btn {
   display: inline-block;
   background-color: #000;
-  background-image: linear-gradient(125deg, #228B22, #064497);
+  background-image: linear-gradient(125deg, rgba(0, 215, 72, 255), #064497);
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 2px;

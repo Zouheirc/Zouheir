@@ -118,7 +118,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   .navbar .navbar-collapse {
     background: rgba(255,255,255,0.9);
-    top: 10vh;
+    top: 14vh;
     left: 0;
     right: 0;
     bottom: 0;
@@ -172,7 +172,6 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 991.98px) {
   .navbar-nav {
-    /* margin-left: initial !important; */
     margin-left: -60px !important;
   }
   .dropdown-screen {
@@ -513,7 +512,12 @@ width: 4.5rem
   transform: translate(0px, -10px) scale(1.0);
 }
 
-.download-resume-icon {
+.download-resume-icon-pdf {
+  width: 2.5vw;
+  height: 5vh;
+}
+
+.download-resume-icon-word {
   width: 2.5vw;
   height: 5vh;
 }
@@ -1077,8 +1081,13 @@ width: 4.5rem
     bottom: 1vh;
   }
 
-  #Courses {
-    padding: 2% 11% 30%;
+  .download-resume-icon-pdf {
+    width: 2.5vw;
+    height: 3.5vh;
+  }
+
+  .courses {
+    padding: 2% 18% 30%;
   }
 
   .moon-logo, .p-logo {

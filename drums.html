@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Play Drums</title>
@@ -60,139 +61,290 @@
 <body class="drums-page">
   <div class="main-container">
     <header id="header">
-      <nav class="navbar bg-transparent navbar-expand-lg">
-        <div class="container-fluid">
-          <div class="moon-logo">
-            <p class="p-logo" onclick="window.location='index.html';">Z</p>
-          </div>
-          <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <span onclick="window.location='index.html';">Home</span>
-              </li>
-              <li class="nav-item">
-                <span onclick="window.location='contact.html';">Contact</span>
-              </li>
-              <li class="nav-item">
-                <span onclick="window.location='login.html';">Login</span>
-              </li>
 
-              <li class="dropdown">
-                <span class="dropdown-button" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="dropdown-toggle">Resume</span></span>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <span class="dropdown-button" type="button" onclick="window.location='index.html#Download-Resume';"><span>Download</span></span>
-                  <span class="dropdown-button" type="button" onclick="window.location='index.html#Skills';"><span>Skills</span></span>
-                  <span class="dropdown-button" type="button" onclick="window.location='index.html#Projects';"><span>Projects</span></span>
-                  <span class="dropdown-button" type="button" onclick="window.location='index.html#Work-Experience';"><span>Experience</span></span>
-                  <span class="dropdown-button" type="button" onclick="window.location='index.html#Education';"><span>Education</span></span>
-                  <span class="dropdown-button" type="button" onclick="window.location='index.html#Courses';"><span>Courses</span></span>
-                </div>
-              </li>
+      <div class="menu-nav" id="navBar">
+        <nav class="navbar bg-transparent navbar-expand-lg">
+          <div class="container-fluid">
+            <div class="nav-logo">
+              <div class="moon-logo">
+                <p class="p-logo" onclick="window.location='index.html';">Z</p>
+                <form action="" class="search-bar">
+                  <div class="input-group mb-4 border border-3 border-success rounded-pill p-0">
+                    <input type="search" placeholder="Search" aria-describedby="button-addon3" class="form-control text-white bg-none border-0">
+                    <div class="input-group-append border-0">
+                      <button id="button-addon3" type="button" class="btn btn-link text-success"><i class="fa fa-search"></i></button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <!-- End -->
+            </div>
 
-            </ul>
+
+
+
+            <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+
+
+                <li class="nav-item">
+                  <span onclick="window.location='index.html';">
+                    <font class="nav-fonts">Home</font>
+                  </span>
+                </li>
+
+
+                <!-- Big Screen DropDown -->
+
+                <li class="dropdown dropdown-screen">
+                  <span class="dropdown-button" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="dropdown-toggle">
+                      <font class="nav-fonts">Professional</font>
+                    </span></span>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <span class="dropdown-button dropdown-list" type="button" onclick="window.location='index.html#Skills';"><span>
+                        <font class="nav-fonts">Skills</font>
+                      </span></span>
+                    <span class="dropdown-button dropdown-list" type="button" onclick="window.location='index.html#Work-Experience';"><span>
+                        <font class="nav-fonts">Experience</font>
+                      </span></span>
+                    <span class="dropdown-button dropdown-list" type="button" onclick="window.location='index.html#Projects';"><span>
+                        <font class="nav-fonts">Portfolio</font>
+                      </span></span>
+                  </div>
+                </li>
+
+                <li class="dropdown dropdown-screen">
+                  <span class="dropdown-button" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="dropdown-toggle">
+                      <font class="nav-fonts">Resume</font>
+                    </span></span>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <span class="dropdown-button dropdown-list" type="button" onclick="window.location='index.html#Download-Resume';"><span>
+                        <font class="nav-fonts">Download</font>
+                      </span></span>
+                    <span class="dropdown-button dropdown-list" type="button" onclick="window.location='index.html#Education';"><span>
+                        <font class="nav-fonts">Education</font>
+                      </span></span>
+                    <span class="dropdown-button dropdown-list" type="button" onclick="window.location='index.html#Courses';"><span>
+                        <font class="nav-fonts">Courses</font>
+                      </span></span>
+                  </div>
+
+
+                <li class="nav-item dropdown-screen">
+                  <span onclick="window.location='contact.html';">
+                    <font class="nav-fonts">Contact</font>
+                  </span>
+                </li>
+                <li class="nav-item dropdown-screen">
+                  <span onclick="window.location='login.html';">
+                    <font class="nav-fonts">Login</font>
+                  </span>
+                </li>
+                </li>
+
+                <!-- Mobile View  -->
+
+                <li class="nav-item dropdown-mobile">
+                  <span onclick="window.location='index.html#Download-Resume';">
+                    <font class="nav-fonts">Download</font>
+                  </span>
+                </li>
+                <li class="nav-item dropdown-mobile">
+                  <span onclick="window.location='index.html#Skills';">
+                    <font class="nav-fonts">Professional</font>
+                  </span>
+                </li>
+                <li class="nav-item dropdown-mobile">
+                  <span onclick="window.location='index.html#Education';">
+                    <font class="nav-fonts">Resume</font>
+                  </span>
+                </li>
+                <li class="nav-item dropdown-mobile">
+                  <span onclick="window.location='contact.html';">
+                    <font class="nav-fonts">Contact</font>
+                  </span>
+                </li>
+                <li class="nav-item dropdown-mobile">
+                  <span onclick="window.location='login.html';">
+                    <font class="nav-fonts">Login</font>
+                  </span>
+                </li>
+
+              </ul>
+            </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
 
-<section>
-  <h1 id="drums-title">Drum 🥁 Kit</h1>
-  <div class="drums-buttons">
-    <button class="w drum">w</button>
-    <button class="a drum">a</button>
-    <button class="s drum">s</button>
-    <button class="d drum">d</button>
-    <button class="j drum">j</button>
-    <button class="k drum">k</button>
-    <button class="l drum">l</button>
-  </div>
-</section>
-    <footer id="footer">
-        <a target="_blank" href="https://www.facebook.com/Zouheir.Chalouf"><i class="social-icon fab fa-facebook-f"></i></a>
-        <a target="_blank" href="https://twitter.com/zouheirc?lang=en"><i class="social-icon fab fa-twitter"></i></a>
-        <a target="_blank" href="https://www.linkedin.com/in/zouheir-chalouf-93a123180"><i class="social-icon fab fa-linkedin-in"></i></a>
-        <p>© Copyright 2020 Zouheir Chalouf</p>
-    </footer>
+    <section id="Drums">
+      <div class="row drums Work-Experience-overlaying">
+        <h1 id="drums-title">Drum 🥁 Kit</h1>
+        <div class="drums-buttons">
+          <button class="w drum">w</button>
+          <button class="a drum">a</button>
+          <button class="s drum">s</button>
+          <button class="d drum">d</button>
+          <button class="j drum">j</button>
+          <button class="k drum">k</button>
+          <button class="l drum">l</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="my-0">
+
+      <footer class="text-center text-lg-start text-white" style="background-color: rgba(51, 59, 80, 255)">
+
+        <div class="p-2 pb-0">
+
+          <section id="Footer">
+
+            <div class="row">
+
+              <hr class="w-100 clearfix d-md-none" />
+
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Projects</h6>
+                <p>
+                  <a class="text-white" onClick="window.open('tinDog.html');"><button class="btn btn-outline-secondary btn-block" type="button" name="button">TinDog</a></button>
+                </p>
+                <p>
+                  <a class="text-white" onClick="window.open('simon-game.html');"><button class="btn btn-outline-secondary btn-block" type="button" name="button">Simon Game</a></button>
+                </p>
+                <p>
+                  <a class="text-white" onClick="window.open('drums.html');"><button class="btn btn-outline-secondary btn-block" type="button" name="button">Drums</a></button>
+                </p>
+                <!-- <p>
+              <a class="text-white"><button class="btn btn-outline-secondary btn-block" type="button" name="button">Project #4</a></button>
+            </p> -->
+              </div>
+
+
+              <hr class="w-100 clearfix d-md-none" />
+
+
+              <div class="col-md-4 col-lg-3 col-xl-4 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                <p><a href="https://goo.gl/maps/QLTQ8eH6sFUp8aB59" target="_blank"><i class="fas fa-home mr-3"></i> Wheeling, IL 60090, US</a></p>
+                <p><a href="mailto:john@example.com"><i class="fas fa-envelope mr-3"></i>Zouheir-c@hotmail.com</a></p>
+                <p><a href="tel:+12245221124"><i class="fas fa-phone mr-3"></i>+1 224 522 1124</a></p>
+              </div>
+
+              <hr class="w-100 clearfix d-md-none" />
+
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Follow Me</h6>
+
+
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" target="_blank" href="https://www.facebook.com/Zouheir.Chalouf" role="button"><i class="fab fa-facebook"></i></a>
+
+
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee" target="_blank" href="https://twitter.com/zouheirc?lang=en" role="button"><i class="fab fa-twitter"></i></a>
+
+
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca" target="_blank" href="https://www.linkedin.com/in/zouheir-chalouf-93a123180" role="button"><i class="fab fa-linkedin-in"></i></a>
+
+
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #333333" target="_blank" href="https://zouheirc.github.io/Zouheir/" role="button"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </section>
+        </div>
+
+
+
+        <div class="text-center p-5 footer-copyright" style="background-color: rgba(0, 0, 0, 0.2)">
+          © Copyright 2020 by:
+          <a class="text-white" target="_blank" href="https://zouheirc.github.io/Zouheir/"> Zouheir Chalouf</a>
+          <div class="logo-footer" onclick="window.location='index.html';">
+            <div class="moon-logo">
+              <p class="p-logo p-logo-footer">Z</p>
+            </div>
+          </div>
+        </div>
+
+      </footer>
+
+    </div>
+
   </div>
   <!-- Javascript  -->
   <script src="app.js" charset="utf-8"></script>
 
   <script type="text/javascript">
+    // Drums App
 
 
-  // Drums App
+    let numberOfDrumButtons = document.querySelectorAll(".drum").length;
 
+    for (let i = 0; i < numberOfDrumButtons; i++) {
 
-  let numberOfDrumButtons = document.querySelectorAll(".drum").length;
-
-  for (let i = 0; i < numberOfDrumButtons; i++) {
-
-    document.querySelectorAll(".drum")[i].addEventListener("click", function() {
-      let buttonInnerHTML = this.innerHTML;
-      makeSound(buttonInnerHTML);
-      buttonAnimation(buttonInnerHTML);
-    });
-  }
-
-  document.addEventListener("keypress", function(event) {
-    makeSound(event.key);
-    buttonAnimation(event.key);
-  });
-
-  function makeSound(key) {
-    switch (key) {
-      case "w":
-        var tom1 = new Audio("css/sounds/tom-1.mp3");
-        tom1.play();
-        break;
-
-      case "a":
-        var tom2 = new Audio("css/sounds/tom-2.mp3");
-        tom2.play();
-        break;
-
-      case "s":
-        var tom3 = new Audio('css/sounds/tom-3.mp3');
-        tom3.play();
-        break;
-
-      case "d":
-        var tom4 = new Audio('css/sounds/tom-4.mp3');
-        tom4.play();
-        break;
-
-      case "j":
-        var snare = new Audio('css/sounds/snare.mp3');
-        snare.play();
-        break;
-
-      case "k":
-        var crash = new Audio('css/sounds/crash.mp3');
-        crash.play();
-        break;
-
-      case "l":
-        var kick = new Audio('css/sounds/kick-bass.mp3');
-        kick.play();
-        break;
-
-      default:
-        console.log(key);
+      document.querySelectorAll(".drum")[i].addEventListener("click", function() {
+        let buttonInnerHTML = this.innerHTML;
+        makeSound(buttonInnerHTML);
+        buttonAnimation(buttonInnerHTML);
+      });
     }
-  }
 
-  function buttonAnimation(currentKey) {
-    let activeButton = document.querySelector("." + currentKey);
-    activeButton.classList.add("pressed");
-    setTimeout(function() {
-      activeButton.classList.remove("pressed");
-    }, 100);
-  }
+    document.addEventListener("keypress", function(event) {
+      makeSound(event.key);
+      buttonAnimation(event.key);
+    });
 
+    function makeSound(key) {
+      switch (key) {
+        case "w":
+          var tom1 = new Audio("css/sounds/tom-1.mp3");
+          tom1.play();
+          break;
 
+        case "a":
+          var tom2 = new Audio("css/sounds/tom-2.mp3");
+          tom2.play();
+          break;
+
+        case "s":
+          var tom3 = new Audio('css/sounds/tom-3.mp3');
+          tom3.play();
+          break;
+
+        case "d":
+          var tom4 = new Audio('css/sounds/tom-4.mp3');
+          tom4.play();
+          break;
+
+        case "j":
+          var snare = new Audio('css/sounds/snare.mp3');
+          snare.play();
+          break;
+
+        case "k":
+          var crash = new Audio('css/sounds/crash.mp3');
+          crash.play();
+          break;
+
+        case "l":
+          var kick = new Audio('css/sounds/kick-bass.mp3');
+          kick.play();
+          break;
+
+        default:
+          console.log(key);
+      }
+    }
+
+    function buttonAnimation(currentKey) {
+      let activeButton = document.querySelector("." + currentKey);
+      activeButton.classList.add("pressed");
+      setTimeout(function() {
+        activeButton.classList.remove("pressed");
+      }, 100);
+    }
   </script>
-    </body>
-    </html>
+</body>
+
+</html>

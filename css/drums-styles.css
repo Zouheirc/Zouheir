@@ -1,5 +1,11 @@
 /* Drum File */
 
+.drums {
+  /* position: static; */
+  height: 100%;
+  padding-top: 150px;
+}
+
 #drums-title {
   font-size: 4rem;
   color: #DBEDF3;

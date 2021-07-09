@@ -164,12 +164,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@media (max-width: 400px) {
-  .menu-nav {
-    height: 13%;
-  }
-}
-
 @media (max-width: 991.98px) {
   .navbar-nav {
     margin-left: -60px !important;
@@ -185,11 +179,11 @@ h1, h2, h3, h4, h5, h6 {
     position: fixed;
     width: 100%;
     z-index: 999;
-    height: 14%;
+    height: 13%;
   }
-  .floatingNav {
+  /* .floatingNav {
     box-shadow: 0px 1px 10px rgba(51, 59, 80, 255);
-  }
+  } */
   .nav-logo {
     padding-top: 10px;
   }
@@ -347,7 +341,7 @@ width: 4.5rem
     top: -50px;
     content: '';
     bottom: 35px;
-    opacity: 0.6;
+    opacity: 0.3;
   }
   .dropdown-mobile {
     display: none;
@@ -1186,8 +1180,8 @@ width: 4.5rem
   }
 
   .download-button {
-    width: 35vw;
-    height: 4vh;
+    width: 120%;
+    height: 50%;
   }
 
   .download-button:hover {

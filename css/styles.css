@@ -526,7 +526,7 @@ width: 4.5rem
 .resume-heading {
   font-size: calc(10px + 8vh);
   line-height: calc(10px + 10vh);
-  text-shadow: 0 0 5px rgba(255, 255, 255, 0.9), 0 0 15px rgba(255, 255, 255, 0.9), 0 0 20px rgba(255, 255, 255, 0.9), 0 0 40px rgba(255, 255, 255, 0.9), 0 0 60px #ff0000, 0 0 10px rgba(255, 255, 255, 0.9), 0 0 98px #ff0000;
+  text-shadow: 0 0 5px rgba(0, 215, 72, 255), 0 0 15px rgba(0, 215, 72, 255), 0 0 20px rgba(0, 215, 72, 255), 0 0 40px rgba(0, 215, 72, 255), 0 0 60px #ff0000, 0 0 10px rgba(0, 215, 72, 255), 0 0 98px #ff0000;
   color: #fff6a9;
   font-family: "Sacramento", cursive;
   animation: blink 8s infinite;
@@ -557,8 +557,8 @@ width: 4.5rem
   54%,
   56%,
   100% {
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.9), 0 0 15px rgba(255, 255, 255, 0.9), 0 0 20px rgba(255, 255, 255, 0.9), 0 0 40px rgba(255, 255, 255, 0.9), 0 0 60px #ff0000, 0 0 10px rgba(255, 255, 255, 0.9), 0 0 98px #ff0000;
-    color: #fff6a9;
+    text-shadow: 0 0 5px rgba(0, 215, 72, 255), 0 0 15px rgba(0, 215, 72, 255), 0 0 20px rgba(0, 215, 72, 255), 0 0 40px rgba(0, 215, 72, 255), 0 0 60px #ff0000, 0 0 10px rgba(0, 215, 72, 255), 0 0 98px #ff0000;
+    color: rgba(0, 215, 72, 255;
   }
 }
 
@@ -579,8 +579,8 @@ width: 4.5rem
   54%,
   56%,
   100% {
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.9), 0 0 15px rgba(255, 255, 255, 0.9), 0 0 20px rgba(255, 255, 255, 0.9), 0 0 40px rgba(255, 255, 255, 0.9), 0 0 60px #ff0000, 0 0 10px rgba(255, 255, 255, 0.9), 0 0 98px #ff0000;
-    color: #fff6a9;
+    text-shadow: 0 0 5px rgba(0, 215, 72, 255), 0 0 15px rgba(0, 215, 72, 255), 0 0 20px rgba(0, 215, 72, 255), 0 0 40px rgba(0, 215, 72, 255), 0 0 60px #ff0000, 0 0 10px rgba(0, 215, 72, 255), 0 0 98px #ff0000;
+    color: rgb(31,31,31);
   }
 }
 

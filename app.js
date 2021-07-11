@@ -39,7 +39,6 @@ $(document)
 
     loadGallery(true, 'a.thumbnail');
 
-    //This function disables buttons when needed
     function disableButtons(counter_max, counter_current) {
       $('#show-previous-image, #show-next-image')
         .show();
@@ -101,18 +100,17 @@ $(document)
     }
   });
 
-// build key actions
 $(document)
   .keydown(function (e) {
     switch (e.which) {
-      case 37: // left
+      case 37:
         if ((modalId.data('bs.modal') || {})._isShown && $('#show-previous-image').is(":visible")) {
           $('#show-previous-image')
             .click();
         }
         break;
 
-      case 39: // right
+      case 39:
         if ((modalId.data('bs.modal') || {})._isShown && $('#show-next-image').is(":visible")) {
           $('#show-next-image')
             .click();
@@ -120,7 +118,7 @@ $(document)
         break;
 
       default:
-        return; // exit this handler for other keys
+        return;
     }
-    e.preventDefault(); // prevent the default action (scroll / move caret)
+    e.preventDefault();
   });

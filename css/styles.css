@@ -380,6 +380,13 @@ width: 4.5rem
   background-size: cover;
 }
 
+.Work-Experience-overlaying {
+  background: rgba(48, 74, 99, 0.6);
+  overflow: hidden;
+  height: 100%;
+  z-index: 2;
+}
+
 .introduction {
   background: url("images/Introduction-background-image.png") no-repeat;
   background-size: 100% 50%;
@@ -545,7 +552,7 @@ width: 4.5rem
   56%,
   100% {
     text-shadow: 0 0 5px rgba(0, 215, 72, 255), 0 0 15px rgba(0, 215, 72, 255), 0 0 20px rgba(0, 215, 72, 255), 0 0 40px rgba(0, 215, 72, 255), 0 0 60px #ff0000, 0 0 10px rgba(0, 215, 72, 255), 0 0 98px #ff0000;
-    color: rgb(31,31,31);
+    color: #fff;
   }
 }
 
@@ -850,15 +857,32 @@ width: 4.5rem
 }
 
 .Work-Experience-overlaying {
-  background: rgba(48, 74, 99, 0.8);
+  background: rgba(48, 74, 99, 0.7);
   overflow: hidden;
   height: 100%;
   z-index: 2;
 }
 
+.work-experience-details-color {
+  color: rgba(0, 215, 72, 255);
+}
+
 .work-experience {
   padding: 0 0 3%;
   margin: 0 5%;
+}
+
+/* work experience */
+
+.fadeInDownWork {
+  opacity: 0;
+  transform: translate(0, -50vh);
+  transition: all 3s;
+}
+
+.fadeInDownWork.visible {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 
 .read-more-state {
@@ -887,6 +911,7 @@ width: 4.5rem
 }
 
 /* Readmore Button */
+
 .custom-btn {
   padding: 8px 15px;
   font-family: inherit;
@@ -939,6 +964,7 @@ width: 4.5rem
 }
 
 /* Education */
+
 .testimonials {
   text-align: center;
   color: #fff;
@@ -1005,6 +1031,10 @@ width: 4.5rem
   padding-bottom: 15%;
 }
 
+.courses {
+  padding: 0 15% 0 20%;
+}
+
 .btn:focus, .btn:active, button:focus, button:active {
   outline: none !important;
   box-shadow: none !important;
@@ -1053,7 +1083,7 @@ width: 4.5rem
   }
 
   .courses {
-    padding: 2% 18% 30%;
+    padding: 2% 10% 30% 25%;
   }
 
   .moon-logo, .p-logo {

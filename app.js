@@ -4,8 +4,27 @@
 // font-size: 0.9rem;
 // font-family: inherit;
 
+// work experience fadeindown
+
+$(document).on("scroll", function() {
+  var pageTop = $(document).scrollTop();
+  var pageBottom = pageTop + $(window).height();
+  var tags = $(".fadeInDownWork");
+
+  for (var i = 0; i < tags.length; i++) {
+    var fadeInDownWork = tags[i];
+
+    if ($(fadeInDownWork).position().top < pageBottom) {
+      $(fadeInDownWork).addClass("visible");
+    } else {
+      $(fadeInDownWork).removeClass("visible");
+    }
+  }
+});
+
 
 // onClick Functions for navbar collapse
+
 $('.navbar-nav>li>span').on('click', function(){
     $('.navbar-collapse').collapse('hide');
 });

@@ -4,7 +4,13 @@
 // font-size: 0.9rem;
 // font-family: inherit;
 
-// work experience fadeindown
+// ID Scroll Speed Slow
+
+// Work Experience Job Description FadeIn
+
+
+
+// work experience LINE fadeindown
 
 $(document).on("scroll", function() {
   var pageTop = $(document).scrollTop();

@@ -380,13 +380,6 @@ width: 4.5rem
   background-size: cover;
 }
 
-.Work-Experience-overlaying {
-  background: rgba(48, 74, 99, 0.6);
-  overflow: hidden;
-  height: 100%;
-  z-index: 2;
-}
-
 .introduction {
   background: url("images/Introduction-background-image.png") no-repeat;
   background-size: 100% 50%;
@@ -848,6 +841,7 @@ width: 4.5rem
 }
 
 /* Work Experience */
+
 #Work-Experience-background {
   background: url("images/Work-Experience-Background-Image.jpg") no-repeat center center;
   -webkit-background-size: cover;

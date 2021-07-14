@@ -1,21 +1,20 @@
 //jshint esversion:6
 
-// color: #d8e3e7;
-// font-size: 0.9rem;
-// font-family: inherit;
 
-// ID Scroll Speed Slow
+// scroll to the top when user refresh page
 
-// Work Experience Job Description FadeIn
+history.scrollRestoration = "manual";
 
+$(window).on('beforeunload', function(){
+      $(window).scrollTop(0);
+});
 
-
-// work experience LINE fadeindown
+// work experience LINE and description fadeIndown and fadeIn
 
 $(document).on("scroll", function() {
   var pageTop = $(document).scrollTop();
   var pageBottom = pageTop + $(window).height();
-  var tags = $(".fadeInDownWork");
+  var tags = $(".fadeInDownWork, .fadeInWork");
 
   for (var i = 0; i < tags.length; i++) {
     var fadeInDownWork = tags[i];
@@ -29,7 +28,7 @@ $(document).on("scroll", function() {
 });
 
 
-// onClick Functions for navbar collapse
+// onClick Functions for navbar collapse to hide navbar on mobile screen
 
 $('.navbar-nav>li>span').on('click', function(){
     $('.navbar-collapse').collapse('hide');
@@ -55,7 +54,7 @@ $(document).ready(function(){
     });
 });
 
-// Certifications
+// Short Courses Certificates
 
 let modalId = $('#image-gallery');
 

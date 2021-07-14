@@ -1081,6 +1081,12 @@ a {
     height: 20vh;
   }
 
+  .align-div-sm {
+    display:flex;
+       justify-content:center;
+       align-items: center;
+  }
+
   .logo-footer {
     position: absolute;
     z-index: 1;

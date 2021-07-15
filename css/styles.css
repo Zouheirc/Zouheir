@@ -121,8 +121,8 @@ a {
   }
 
   .navbar .navbar-collapse {
-    background: rgba(204, 204, 204, 0.9);
-    top: 13vh;
+    background: rgba(204, 204, 204, 1);
+    top: 14vh;
     left: 0;
     right: 0;
     bottom: 0;
@@ -192,7 +192,7 @@ a {
     position: fixed;
     width: 100%;
     z-index: 999;
-    height: 13%;
+    height: 14%;
   }
 
   /* .floatingNav {

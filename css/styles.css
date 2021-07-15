@@ -1072,6 +1072,10 @@ a {
   bottom: 8vh;
 }
 
+.btn-block:hover {
+  background-color: rgba(0, 215, 72, 255);
+}
+
 @media (max-width: 950px) {
   .summary-box {
     padding-top: 50px;

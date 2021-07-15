@@ -1,6 +1,6 @@
 //jshint esversion:6
 
-// Drums App
+// Drums App // drums.html file
 
 let numberOfDrumButtons = document.querySelectorAll(".drum").length;
 
@@ -69,7 +69,7 @@ function buttonAnimation(currentKey) {
 }
 
 
-// scroll to the top when user refresh page
+// scroll to the top when user refresh page // index.html file
 
 history.scrollRestoration = "manual";
 
@@ -216,7 +216,7 @@ $(document)
   });
 
 
-  // Login app
+  // Login app // login.html file
 
   const sign_in_btn = document.querySelector("#sign-in-btn");
   const sign_up_btn = document.querySelector("#sign-up-btn");

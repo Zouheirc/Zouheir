@@ -343,7 +343,7 @@ a {
 }
 
 .welcome-page {
-  padding: 3% 3%;
+  padding: 5% 3% 0;
 }
 
 #below-navbar {
@@ -1072,8 +1072,13 @@ a {
   bottom: 8vh;
 }
 
+.btn-block {
+  border: 2px solid rgba(0, 215, 72, 255);
+}
+
 .btn-block:hover {
   background-color: rgba(0, 215, 72, 255);
+  border: 2px solid transparent;
 }
 
 @media (max-width: 950px) {

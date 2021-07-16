@@ -1073,6 +1073,11 @@ a {
   bottom: 8vh;
 }
 
+.footer-heading {
+  color: rgba(0, 215, 72, 255);
+  text-decoration: underline;
+}
+
 .btn-block {
   border: 2px solid rgba(0, 215, 72, 255);
 }
